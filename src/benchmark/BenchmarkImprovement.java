@@ -16,7 +16,6 @@ public class BenchmarkImprovement {
    private final BenchmarkResults current;
    private final NumberFormat numberFormat;
 
-
    private final BenchmarkResults first;
 
    /**
@@ -81,6 +80,9 @@ public class BenchmarkImprovement {
     * The very first task to compare to.
     *
     * @see #BenchmarkImprovement(BenchmarkResults, BenchmarkResults, BenchmarkResults, NumberFormat)
+    * @see #getPrevious()
+    * @see #getCurrent()
+    * @see #isCurrentSecondTask()
     */
    public BenchmarkResults getFirst() {
       return first;
@@ -90,6 +92,7 @@ public class BenchmarkImprovement {
     * The immediately-previous task to compare to.
     *
     * @see #BenchmarkImprovement(BenchmarkResults, BenchmarkResults, BenchmarkResults, NumberFormat)
+    * @see #getFirst()
     */
    public BenchmarkResults getPrevious() {
       return previous;
@@ -99,6 +102,7 @@ public class BenchmarkImprovement {
     * The previous task to compare against.
     *
     * @see #BenchmarkImprovement(BenchmarkResults, BenchmarkResults, BenchmarkResults, NumberFormat)
+    * @see #getFirst()
     */
    public BenchmarkResults getCurrent() {
       return current;
@@ -123,13 +127,17 @@ public class BenchmarkImprovement {
    }
 
    /**
-    * The percentage the current task's speed is over the previous
-    * @return
+    * The percentage of current task's speed as compared to the immediately-previous.
+    * @see #getImprovementPercentageOverFirst()
     */
    public double getImprovementPercentageOverPrevious() {
       return getImprovementPercentageOver(getPrevious());
    }
 
+   /**
+    * The percentage of current task's speed as compared to the immediately-previous.
+    * @see #getImprovementPercentageOverPrevious()
+    */
    public double getImprovementPercentageOverFirst() {
       return getImprovementPercentageOver(getFirst());
    }
@@ -138,12 +146,18 @@ public class BenchmarkImprovement {
       return 100.00 - (getCurrent().getTotalNanos() * 100.00f / to_compareTo.getTotalNanos());
    }
 
+   /**
+    * A basic statistic string, containing the current task's speed, and the percentage difference
+    * from the first and immediately-previous. If the current task is the
+    * {@linkplain #isCurrentSecondTask() second}, then only the first is compared against.
+    * @return
+    */
    public String getComparisonOutput() {
       double improvementPctgFirst = getImprovementPercentageOverFirst();
       double improvementPctgPrev = getImprovementPercentageOverPrevious();
 
       String fasterOrSlowerFirst;
-      String fasterOrSlowerPrev;
+
       //Taking the chance it's not exactly the same
       if (improvementPctgFirst <= 0.00f) {
          fasterOrSlowerFirst = "slower";
@@ -151,6 +165,17 @@ public class BenchmarkImprovement {
       } else {
          fasterOrSlowerFirst = "faster";
       }
+
+      if (isCurrentSecondTask()) {
+         return format(
+            "%s (%%%s %s than first)",
+            getCurrentNanosForItersOutput(),
+            improvementPctgFirst, fasterOrSlowerFirst);
+      }
+
+      //Current is third or higher
+
+      String fasterOrSlowerPrev;
 
       if (improvementPctgPrev <= 0.00f) {
          fasterOrSlowerPrev = "slower";
@@ -160,11 +185,18 @@ public class BenchmarkImprovement {
       }
 
       return format(
-         "Task: \"%s\", %s nanoseconds for %d iterations (%%%s %s than previous, %%%s %s than first)",
-         getCurrent().getTaskName(),
-         getNumberFormat().format(getCurrent().getTotalNanos()),
-         getCurrent().getIterations(),
+         "%s (%%%s %s than previous, %%%s %s than first)",
+         getCurrentNanosForItersOutput(),
          improvementPctgPrev, fasterOrSlowerPrev,
          improvementPctgFirst, fasterOrSlowerFirst);
+   }
+
+   public String getCurrentNanosForItersOutput() {
+      return format(
+         "\"%s\", %s nanoseconds for %d iterations",
+         getCurrent().getTaskName(),
+         getNumberFormat().format(getCurrent().getTotalNanos()),
+         getCurrent().getIterations());
+
    }
 }
