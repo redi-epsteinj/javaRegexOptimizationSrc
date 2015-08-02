@@ -6,6 +6,12 @@ public class BenchmarkResults {
    private final String taskName;
    private final int iterations;
 
+   /**
+    * Create an instance with task-name, iteration count, and nanosecond length.
+    * @param task_name May not be null or empty. Get with {@link #getTaskName()}.
+    * @param iterations May not be less than one. Get with {@link #getIterations()}.
+    * @param total_nanos May not be less than one. Get with {@link #getTaskName()}.
+    */
    public BenchmarkResults(String task_name, int iterations, long total_nanos) {
       try {
          if (task_name.length() == 0) {
@@ -17,7 +23,7 @@ public class BenchmarkResults {
       if (iterations < 1) {
          throw new IllegalArgumentException("iterations=" + iterations);
       }
-      if (total_nanos < 1) {
+      if (total_nanos < 1L) {
          throw new IllegalArgumentException("total_nanos=" + iterations);
       }
 
@@ -54,8 +60,5 @@ public class BenchmarkResults {
    public String toString() {
       return  String.format("%s: iterations: %d, total-nanos=%10d",
                             getTaskName(), getIterations(), getTotalNanos());
-   }
-   public static final BenchmarkImprovement improvements(BenchmarkResults other_results) {
-      return null;
    }
 }

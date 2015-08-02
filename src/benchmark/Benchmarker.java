@@ -13,7 +13,7 @@ public class Benchmarker {
 
    /**
     * Create an instance with the execution try count.
-    * @param try_count May not be less than zero. Get with {@link #getTryCount()}.
+    * @param try_count May not be less than zero. Get with {@link #getIterations()}.
     */
    public Benchmarker(int try_count) {
       if (try_count < 1) {
@@ -27,14 +27,14 @@ public class Benchmarker {
     * The number of times to execute the task.
     * @see #Benchmarker(int)
     */
-   public int getTryCount() {
+   public int getIterations() {
       return tryCount;
    }
 
    /**
     * Executes the task the requested number of times, returning the number of nanoseconds it took.
     * @param to_benchmark May not be null.
-    * @return The number of nanoseconds the task takes to execute, the {@linkplain #getTryCount()
+    * @return The number of nanoseconds the task takes to execute, the {@linkplain #getIterations()
     * requested number of times}. Both {@link ToBenchmark#setup() setup} and {@link
     * ToBenchmark#breakdown() breakdown} are included in this time.
     */
@@ -49,7 +49,7 @@ public class Benchmarker {
          throw new BenchmarkSetupFailedException(x);
       }
 
-      for (int tries = 0; tries < getTryCount(); tries++) {
+      for (int tries = 0; tries < getIterations(); tries++) {
          try {
             to_benchmark.runCodeToBeTimed();
          } catch (Exception x) {
@@ -65,6 +65,6 @@ public class Benchmarker {
 
       long totalNanos = System.nanoTime() - lStart;
 
-      return new BenchmarkResults(task_name, getTryCount(), totalNanos);
+      return new BenchmarkResults(task_name, getIterations(), totalNanos);
    }
 }
