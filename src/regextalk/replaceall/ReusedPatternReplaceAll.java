@@ -7,11 +7,12 @@ import java.util.regex.Pattern;
  *
  */
 public class ReusedPatternReplaceAll implements ReplaceAllToBenchmark {
-  public static void main(String[] cmd_lineParams) {
-    new ReusedPatternReplaceAll().runCodeToBeTimed();
-  }
 
-  public static final Pattern pattern = Pattern.compile(FIND_WHAT_REGEX);
+   public static void main(String[] cmd_lineParams) {
+      new ReusedPatternReplaceAll().runCodeToBeTimed();
+   }
+
+   public static final Pattern pattern = Pattern.compile(FIND_WHAT_REGEX);
 
    @Override
    public void runCodeToBeTimed() {

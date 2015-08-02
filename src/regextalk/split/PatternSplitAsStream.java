@@ -1,9 +1,9 @@
 package regextalk.split;
 
-   import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.joining;
 
-   import java.util.Arrays;
-   import java.util.regex.Pattern;
+import java.util.Arrays;
+import java.util.regex.Pattern;
 
 public class PatternSplitAsStream implements SplitToBenchmark {
 
@@ -12,6 +12,7 @@ public class PatternSplitAsStream implements SplitToBenchmark {
    }
 
    private static final String CLOSE_QT_COMMA_OPEN_QT = "\", \"";
+
    @Override
    public void runCodeToBeTimed() {
       Pattern pattern = Pattern.compile(REGEX);

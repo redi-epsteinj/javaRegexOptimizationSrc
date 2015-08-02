@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import regextalk.RegexToBenchmark;
+
 public class RangeRegexUnanchoredMatches implements NumericRangeToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
@@ -12,12 +14,17 @@ public class RangeRegexUnanchoredMatches implements NumericRangeToBenchmark {
 
    @Override
    public void runCodeToBeTimed() {
-      Matcher matcher = Pattern.compile(RangeRegexUnanchoredFind.UNANCHORED_REGEX).matcher(IGNORED_INPUT);
+      Matcher matcher = Pattern.compile(RangeRegexUnanchoredFind.UNANCHORED_REGEX).matcher(
+         RegexToBenchmark.IGNORED_INPUT);
 
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.print(input + ": ");
-         boolean inRange = matcher.reset(input).matches();
-         System.out.println(inRange);
+
+         if (matcher.reset(input).matches()) {
+            System.out.println("in range");
+         } else {
+            System.out.println("NOT in range");
+         }
       });
    }
 }

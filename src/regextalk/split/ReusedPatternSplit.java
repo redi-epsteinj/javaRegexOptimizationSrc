@@ -1,7 +1,7 @@
 package regextalk.split;
 
-   import java.util.Arrays;
-   import java.util.regex.Pattern;
+import java.util.Arrays;
+import java.util.regex.Pattern;
 
 public class ReusedPatternSplit implements SplitToBenchmark {
 

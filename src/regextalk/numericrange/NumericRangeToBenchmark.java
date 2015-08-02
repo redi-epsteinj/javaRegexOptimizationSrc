@@ -1,6 +1,6 @@
 package regextalk.numericrange;
 
-import regextalk.ToBenchmark;
+import benchmark.ToBenchmark;
 
 public interface NumericRangeToBenchmark extends ToBenchmark {
 

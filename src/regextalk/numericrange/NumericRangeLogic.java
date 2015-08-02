@@ -17,10 +17,10 @@ public class NumericRangeLogic implements NumericRangeToBenchmark {
          int num = Integer.parseInt(strNum);       //Definitely a valid integer
          System.out.print(strNum + ": ");
 
-         if(-2055 <= num && num <= 2055) {
+         if (-2055 <= num && num <= 2055) {
             System.out.println("in range");
          } else {
-             System.out.println("not in range");
+            System.out.println("NOT in range");
          }
       });
    }

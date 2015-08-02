@@ -2,12 +2,13 @@ package regextalk.password;
 
 import java.util.Arrays;
 
-import regextalk.ToBenchmark;
+import benchmark.ToBenchmark;
 
 /**
  *
  */
 public interface PasswordToBenchmark extends ToBenchmark {
+
    @Override
    default void runCodeToBeTimed() {
       Arrays.stream(getInputs()).forEach(input -> {
@@ -18,8 +19,9 @@ public interface PasswordToBenchmark extends ToBenchmark {
    }
 
    boolean isPasswordValid(String to_test);
+
    default String[] getInputs() {
-      return new String[] {
+      return new String[]{
          "",                     //bad (bad rules, bad length)
          "abcdefghij",           //bad (bad rules, good length)
          "abc123",               //bad (good rules, bad length)

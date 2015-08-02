@@ -3,9 +3,10 @@ package regextalk.replaceall;
 import java.util.Arrays;
 
 public class StringDotReplaceAll implements ReplaceAllToBenchmark {
-  public static void main(String[] cmd_lineParams) {
-    new StringDotReplaceAll().runCodeToBeTimed();
-  }
+
+   public static void main(String[] cmd_lineParams) {
+      new StringDotReplaceAll().runCodeToBeTimed();
+   }
 
    @Override
    public void runCodeToBeTimed() {

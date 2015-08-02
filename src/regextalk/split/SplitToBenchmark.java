@@ -1,12 +1,13 @@
 package regextalk.split;
 
-import regextalk.ToBenchmark;
+import benchmark.ToBenchmark;
 
 public interface SplitToBenchmark extends ToBenchmark {
+
    public static final String REGEX = "[,./ ]+";
 
    default String[] getInputs() {
-      return new String[] {
+      return new String[]{
          "",
          ",./ ,. /. ,./. ",
          "One, two, three. four/five six",
