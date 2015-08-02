@@ -147,10 +147,10 @@ public class BenchmarkImprovement {
    }
 
    /**
-    * A basic statistic string, containing the current task's speed, and the percentage difference
-    * from the first and immediately-previous. If the current task is the
+    * A basic display-worthy string, containing the current task's speed, and the percentage
+    * difference from the first and immediately-previous. If the current task is the
     * {@linkplain #isCurrentSecondTask() second}, then only the first is compared against.
-    * @return
+    * @see #getCurrentNanosForItersOutput()
     */
    public String getComparisonOutput() {
       double improvementPctgFirst = getImprovementPercentageOverFirst();
@@ -185,15 +185,19 @@ public class BenchmarkImprovement {
       }
 
       return format(
-         "%s (%%%s %s than previous, %%%s %s than first)",
+         "%s (%s%% %s than previous, %s%% %s than first)",
          getCurrentNanosForItersOutput(),
          improvementPctgPrev, fasterOrSlowerPrev,
          improvementPctgFirst, fasterOrSlowerFirst);
    }
 
+   /**
+    * A basic display-worthy string containing the current task's name and speed.
+    * @return
+    */
    public String getCurrentNanosForItersOutput() {
       return format(
-         "\"%s\", %s nanoseconds for %d iterations",
+         "\"%s\" took %s nanoseconds",
          getCurrent().getTaskName(),
          getNumberFormat().format(getCurrent().getTotalNanos()),
          getCurrent().getIterations());
