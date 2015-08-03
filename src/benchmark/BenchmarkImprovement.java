@@ -12,6 +12,8 @@ import java.util.Objects;
  */
 public class BenchmarkImprovement {
 
+   public static final NumberFormat DEFAULT_NUMBER_FORMAT = NumberFormat.getNumberInstance(
+                                                                Locale.US);
    private final BenchmarkResults previous;
    private final BenchmarkResults current;
    private final NumberFormat numberFormat;
@@ -23,13 +25,12 @@ public class BenchmarkImprovement {
     * number format.</p>
     *
     * <p>Equal to <br> &nbsp; &nbsp; <code>{@link #BenchmarkImprovement(BenchmarkResults,
-    * BenchmarkResults, BenchmarkResults, NumberFormat) this}(first, previous, current, {@linkplain
-    * NumberFormat#getNumberInstance(Locale) NumberFormat.getNumberInstance}({@link
-    * Locale#US}))</code></p>
+    * BenchmarkResults, BenchmarkResults, NumberFormat) this}(first, previous, current,
+    * {@link #DEFAULT_NUMBER_FORMAT})</code></p>
     */
    public BenchmarkImprovement(BenchmarkResults first, BenchmarkResults previous,
                                BenchmarkResults current) {
-      this(first, previous, current, NumberFormat.getNumberInstance(Locale.US));
+      this(first, previous, current, DEFAULT_NUMBER_FORMAT);
    }
 
    /**
@@ -68,7 +69,7 @@ public class BenchmarkImprovement {
 
    private void crashIfDifferentIterationCounts(BenchmarkResults current,
                                                 BenchmarkResults the_other, String other_name) {
-      if (current.getIterations() != getPrevious().getIterations()) {
+      if (current.getIterations() != the_other.getIterations()) {
          throw new IllegalArgumentException(
             "current.getIterations() (" + current.getIterations() +
             ") is different than " + other_name + ".getIterations() (" +
@@ -198,7 +199,7 @@ public class BenchmarkImprovement {
    public String getCurrentNanosForItersOutput() {
       return format(
          "\"%s\" took %s nanoseconds",
-         getCurrent().getTaskName(),
+         getCurrent().getToBenchmark(),
          getNumberFormat().format(getCurrent().getTotalNanos()),
          getCurrent().getIterations());
 

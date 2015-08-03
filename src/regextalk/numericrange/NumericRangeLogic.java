@@ -6,7 +6,6 @@ import java.util.Arrays;
  *
  */
 public class NumericRangeLogic implements NumericRangeToBenchmark {
-
    public static void main(String[] cmd_lineParams) {
       new NumericRangeLogic().runCodeToBeTimed();
    }

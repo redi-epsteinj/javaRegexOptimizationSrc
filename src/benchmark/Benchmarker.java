@@ -9,18 +9,18 @@ import java.util.Objects;
  **/
 public class Benchmarker {
 
-   private final int tryCount;
+   private final int iterations;
 
    /**
     * Create an instance with the execution try count.
-    * @param try_count May not be less than zero. Get with {@link #getIterations()}.
+    * @param iterations May not be less than zero. Get with {@link #getIterations()}.
     */
-   public Benchmarker(int try_count) {
-      if (try_count < 1) {
-         throw new IllegalArgumentException("try_count=" + try_count);
+   public Benchmarker(int iterations) {
+      if (iterations < 1) {
+         throw new IllegalArgumentException("iterations=" + iterations);
       }
 
-      tryCount = try_count;
+      this.iterations = iterations;
    }
 
    /**
@@ -28,7 +28,7 @@ public class Benchmarker {
     * @see #Benchmarker(int)
     */
    public int getIterations() {
-      return tryCount;
+      return iterations;
    }
 
    /**
@@ -38,7 +38,7 @@ public class Benchmarker {
     * requested number of times}. Both {@link ToBenchmark#setup() setup} and {@link
     * ToBenchmark#breakdown() breakdown} are included in this time.
     */
-   public BenchmarkResults executeGetDuration(String task_name, ToBenchmark to_benchmark) {
+   public BenchmarkResults executeGetDuration(ToBenchmark to_benchmark) {
       Objects.requireNonNull(to_benchmark, "to_benchmark");
 
       long lStart = System.nanoTime();
@@ -65,6 +65,6 @@ public class Benchmarker {
 
       long totalNanos = System.nanoTime() - lStart;
 
-      return new BenchmarkResults(task_name, getIterations(), totalNanos);
+      return new BenchmarkResults(to_benchmark, getIterations(), totalNanos);
    }
 }
