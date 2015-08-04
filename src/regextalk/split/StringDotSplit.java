@@ -13,7 +13,7 @@ public class StringDotSplit implements SplitToBenchmark {
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.println(input);
          System.out.println("\t" + Arrays.toString(
-            input.split(REGEX, -1)
+               input.split(REGEX, -1)
          ));
       });
    }

@@ -1,15 +1,15 @@
 package regextalk.replaceall;
 
-import benchmark.ToBenchmark;
+import benchmark.TaskToBenchmark;
 
-public interface ReplaceAllToBenchmark extends ToBenchmark {
+public interface ReplaceAllToBenchmark extends TaskToBenchmark {
 
    default String[] getInputs() {
       return new String[]{
-         "",
-         ",./ /,.  ./,/.",
-         "One, two, three. four/five six",
-         "Hello ,./, ./,. /, ./, ./, ./ ,there, ,./ ,./, ./, .!"
+            "",
+            ",./ /,.  ./,/.",
+            "One, two, three. four/five six",
+            "Hello ,./, ./,. /, ./, ./, ./ ,there, ,./ ,./, ./, .!"
       };
    }
 

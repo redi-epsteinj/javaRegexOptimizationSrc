@@ -21,26 +21,35 @@ public class PasswordRegexTwoRules implements PasswordToBenchmark {
    public static final String LKA_SPECIAL = "(?=.*[" + SPECIAL_CHARS + "])";
 
    private static final String REGEX = "" +
-                                       "^" +                                //start of input
-                                       "(?:" +                              //non capturing group
-                                       LKA_LOWER + LKA_UPPER +              //Option 1
+                                       "^" +
+                                       //start of input
+                                       "(?:" +
+                                       //non capturing group
+                                       LKA_LOWER + LKA_UPPER +
+                                       //Option 1
                                        "|" +                                //or
-                                       LKA_LOWER + LKA_DIGIT +              //Option 2
+                                       LKA_LOWER + LKA_DIGIT +
+                                       //Option 2
                                        "|" +                                //or
-                                       LKA_LOWER + LKA_SPECIAL +            //Option 3
+                                       LKA_LOWER + LKA_SPECIAL +
+                                       //Option 3
                                        "|" +                                //or
-                                       LKA_UPPER + LKA_DIGIT +              //Option 4
+                                       LKA_UPPER + LKA_DIGIT +
+                                       //Option 4
                                        "|" +                                //or
-                                       LKA_UPPER + LKA_SPECIAL +            //Option 5
+                                       LKA_UPPER + LKA_SPECIAL +
+                                       //Option 5
                                        "|" +                                //or
-                                       LKA_UPPER + LKA_SPECIAL +            //Option 6
+                                       LKA_UPPER + LKA_SPECIAL +
+                                       //Option 6
                                        ")" +
                                        "[A-Za-z0-9" + SPECIAL_CHARS + "]" +
-                                       "{8,24}" +                           //8 to 24 chars
+                                       "{8,24}" +
+                                       //8 to 24 chars
                                        "$";
 
    private static final Matcher matcher = Pattern.compile(REGEX).matcher(
-      RegexToBenchmark.IGNORED_INPUT);
+         RegexToBenchmark.IGNORED_INPUT);
 
    public boolean isPasswordValid(String password) {
       return matcher.reset(password).matches();

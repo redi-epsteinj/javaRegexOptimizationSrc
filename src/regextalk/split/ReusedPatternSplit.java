@@ -15,7 +15,7 @@ public class ReusedPatternSplit implements SplitToBenchmark {
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.println(input);
          System.out.println(Arrays.toString(
-            pattern.split(input)
+               pattern.split(input)
          ));
       });
    }

@@ -2,12 +2,12 @@ package regextalk.password;
 
 import java.util.Arrays;
 
-import benchmark.ToBenchmark;
+import benchmark.TaskToBenchmark;
 
 /**
  *
  */
-public interface PasswordToBenchmark extends ToBenchmark {
+public interface PasswordToBenchmark extends TaskToBenchmark {
 
    @Override
    default void runCodeToBeTimed() {
@@ -22,14 +22,14 @@ public interface PasswordToBenchmark extends ToBenchmark {
 
    default String[] getInputs() {
       return new String[]{
-         "",                     //bad (bad rules, bad length)
-         "abcdefghij",           //bad (bad rules, good length)
-         "abc123",               //bad (good rules, bad length)
-         "abc123abc",            //3 rules: bad, 2 rules: good
-         "a1$A",                 //bad (good rules, bad length)
-         "abc123$%^ABC",         //good
-         "abcABC123$&*",         //good
-         "abc ABC123$#$"         //bad (whitespace)
+            "",                     //bad (bad rules, bad length)
+            "abcdefghij",           //bad (bad rules, good length)
+            "abc123",               //bad (good rules, bad length)
+            "abc123abc",            //3 rules: bad, 2 rules: good
+            "a1$A",                 //bad (good rules, bad length)
+            "abc123$%^ABC",         //good
+            "abcABC123$&*",         //good
+            "abc ABC123$#$"         //bad (whitespace)
       };
    }
 

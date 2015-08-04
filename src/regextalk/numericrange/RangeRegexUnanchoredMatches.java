@@ -14,8 +14,10 @@ public class RangeRegexUnanchoredMatches implements NumericRangeToBenchmark {
 
    @Override
    public void runCodeToBeTimed() {
-      Matcher matcher = Pattern.compile(RangeRegexUnanchoredFind.UNANCHORED_REGEX).matcher(
-         RegexToBenchmark.IGNORED_INPUT);
+      Matcher
+            matcher =
+            Pattern.compile(RangeRegexUnanchoredFind.UNANCHORED_REGEX).matcher(
+                  RegexToBenchmark.IGNORED_INPUT);
 
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.print(input + ": ");

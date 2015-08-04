@@ -9,7 +9,7 @@ import regextalk.RegexToBenchmark;
 public class RangeRegexAnchored implements NumericRangeToBenchmark {
 
    public static final String ANCHORED_REGEX =
-      "^" + RangeRegexUnanchoredFind.UNANCHORED_REGEX + "$";
+         "^" + RangeRegexUnanchoredFind.UNANCHORED_REGEX + "$";
 
    public static void main(String[] cmd_lineParams) {
       new RangeRegexAnchored().runCodeToBeTimed();
@@ -18,7 +18,10 @@ public class RangeRegexAnchored implements NumericRangeToBenchmark {
 
    @Override
    public void runCodeToBeTimed() {
-      Matcher matcher = Pattern.compile(ANCHORED_REGEX).matcher(RegexToBenchmark.IGNORED_INPUT);
+      Matcher
+            matcher =
+            Pattern.compile(ANCHORED_REGEX)
+                  .matcher(RegexToBenchmark.IGNORED_INPUT);
 
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.print(input + ": ");

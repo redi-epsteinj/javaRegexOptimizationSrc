@@ -1,7 +1,8 @@
 package benchmark;
 
 /**
- * Thrown when the {@link ToBenchmark#setup()} throws an exception for any reason.
+ * Thrown when the {@link TaskToBenchmark#setup()} throws an exception for any
+ * reason.
  */
 public class BenchmarkSetupFailedException extends RuntimeException {
 

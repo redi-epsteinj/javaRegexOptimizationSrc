@@ -3,7 +3,7 @@ package benchmark;
 import java.util.Objects;
 
 /**
- * Determines how long it takes to execute a task multiple times.
+ * Determines how long it takes to execute a single task, multiple times.
  *
  * @see <CODE><A HREF="http://stackoverflow.com/questions/180158/how-do-i-time-a-methods-execution-in-java">http://stackoverflow.com/questions/180158/how-do-i-time-a-methods-execution-in-java</A></CODE>
  **/
@@ -13,7 +13,9 @@ public class Benchmarker {
 
    /**
     * Create an instance with the execution try count.
-    * @param iterations May not be less than zero. Get with {@link #getIterations()}.
+    *
+    * @param iterations May not be less than zero. Get with {@link
+    *                   #getIterations()}.
     */
    public Benchmarker(int iterations) {
       if (iterations < 1) {
@@ -25,6 +27,7 @@ public class Benchmarker {
 
    /**
     * The number of times to execute the task.
+    *
     * @see #Benchmarker(int)
     */
    public int getIterations() {
@@ -32,13 +35,16 @@ public class Benchmarker {
    }
 
    /**
-    * Executes the task the requested number of times, returning the number of nanoseconds it took.
+    * Executes the task the requested number of times, returning the number of
+    * nanoseconds it took.
+    *
     * @param to_benchmark May not be null.
-    * @return The number of nanoseconds the task takes to execute, the {@linkplain #getIterations()
-    * requested number of times}. Both {@link ToBenchmark#setup() setup} and {@link
-    * ToBenchmark#breakdown() breakdown} are included in this time.
+    * @return The number of nanoseconds the task takes to execute, the
+    * {@linkplain #getIterations() requested number of times}. Both {@link
+    * TaskToBenchmark#setup() setup} and {@link TaskToBenchmark#breakdown()
+    * breakdown} are included in this time.
     */
-   public BenchmarkResults executeGetDuration(ToBenchmark to_benchmark) {
+   public BenchmarkResult executeGetDuration(TaskToBenchmark to_benchmark) {
       Objects.requireNonNull(to_benchmark, "to_benchmark");
 
       long lStart = System.nanoTime();
@@ -65,6 +71,6 @@ public class Benchmarker {
 
       long totalNanos = System.nanoTime() - lStart;
 
-      return new BenchmarkResults(to_benchmark, getIterations(), totalNanos);
+      return new BenchmarkResult(to_benchmark, getIterations(), totalNanos);
    }
 }

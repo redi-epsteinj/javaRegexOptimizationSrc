@@ -14,7 +14,7 @@ public class PatternDotSplit implements SplitToBenchmark {
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.println(input);
          System.out.println(Arrays.toString(
-            Pattern.compile(REGEX).split(input)
+               Pattern.compile(REGEX).split(input)
          ));
       });
    }

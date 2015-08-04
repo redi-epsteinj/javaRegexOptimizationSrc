@@ -1,7 +1,8 @@
 package benchmark;
 
 /**
- * Thrown when the {@link ToBenchmark#breakdown()} throws an exception for any reason.
+ * Thrown when the {@link TaskToBenchmark#breakdown()} throws an exception for
+ * any reason.
  */
 public class BenchmarkBreakdownFailedException extends RuntimeException {
 

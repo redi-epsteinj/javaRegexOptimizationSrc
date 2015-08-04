@@ -1,8 +1,8 @@
 package regextalk;
 
-import benchmark.ToBenchmark;
+import benchmark.TaskToBenchmark;
 
-public interface RegexToBenchmark extends ToBenchmark {
+public interface RegexToBenchmark extends TaskToBenchmark {
 
    String IGNORED_INPUT = "ignored input";
 

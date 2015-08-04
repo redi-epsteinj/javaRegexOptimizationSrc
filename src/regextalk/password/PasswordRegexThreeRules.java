@@ -14,7 +14,9 @@ public class PasswordRegexThreeRules implements PasswordToBenchmark {
       new PasswordRegexThreeRules().runCodeToBeTimed();
    }
 
-   private static final String SPECIAL_CHARS = PasswordRegexTwoRules.SPECIAL_CHARS;
+   private static final String
+         SPECIAL_CHARS =
+         PasswordRegexTwoRules.SPECIAL_CHARS;
    private static final String LKA_LOWER = PasswordRegexTwoRules.LKA_LOWER;
    private static final String LKA_UPPER = PasswordRegexTwoRules.LKA_UPPER;
    private static final String LKA_DIGIT = PasswordRegexTwoRules.LKA_DIGIT;
@@ -25,13 +27,20 @@ public class PasswordRegexThreeRules implements PasswordToBenchmark {
                                        //start of input
                                        "(?:" +
                                        //non capturing group
-                                       LKA_LOWER + LKA_UPPER + LKA_DIGIT +             //Option 1
-                                       "|" +                                           //or
-                                       LKA_LOWER + LKA_UPPER + LKA_SPECIAL +           //Option 2
-                                       "|" +                                           //or
-                                       LKA_LOWER + LKA_DIGIT + LKA_SPECIAL +           //Option 3
-                                       "|" +                                           //or
-                                       LKA_UPPER + LKA_DIGIT + LKA_SPECIAL +           //Option 4
+                                       LKA_LOWER + LKA_UPPER + LKA_DIGIT +
+                                       //Option 1
+                                       "|" +
+                                       //or
+                                       LKA_LOWER + LKA_UPPER + LKA_SPECIAL +
+                                       //Option 2
+                                       "|" +
+                                       //or
+                                       LKA_LOWER + LKA_DIGIT + LKA_SPECIAL +
+                                       //Option 3
+                                       "|" +
+                                       //or
+                                       LKA_UPPER + LKA_DIGIT + LKA_SPECIAL +
+                                       //Option 4
                                        ")" +
                                        "[A-Za-z0-9" + SPECIAL_CHARS + "]" +
                                        "{8,24}" +
@@ -39,7 +48,7 @@ public class PasswordRegexThreeRules implements PasswordToBenchmark {
                                        "$";
 
    private static final Matcher matcher = Pattern.compile(REGEX).matcher(
-      RegexToBenchmark.IGNORED_INPUT);
+         RegexToBenchmark.IGNORED_INPUT);
 
    public boolean isPasswordValid(String password) {
       return matcher.reset(password).matches();

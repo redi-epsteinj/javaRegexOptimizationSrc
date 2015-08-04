@@ -19,7 +19,7 @@ public class PatternSplitAsStream implements SplitToBenchmark {
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.println(input);
          String splitsJoined = pattern.splitAsStream(input).collect(
-            joining(CLOSE_QT_COMMA_OPEN_QT, "\"", "\""));
+               joining(CLOSE_QT_COMMA_OPEN_QT, "\"", "\""));
          System.out.println("\t" + splitsJoined);
       });
    }

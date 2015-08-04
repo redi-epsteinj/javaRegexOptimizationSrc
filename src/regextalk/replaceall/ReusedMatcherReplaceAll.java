@@ -12,8 +12,10 @@ public class ReusedMatcherReplaceAll implements ReplaceAllToBenchmark {
       new ReusedMatcherReplaceAll().runCodeToBeTimed();
    }
 
-   public static final Matcher matcher = Pattern.compile(FIND_WHAT_REGEX).matcher(
-      RegexToBenchmark.IGNORED_INPUT);
+   public static final Matcher
+         matcher =
+         Pattern.compile(FIND_WHAT_REGEX).matcher(
+               RegexToBenchmark.IGNORED_INPUT);
 
    @Override
    public void runCodeToBeTimed() {
