@@ -1,4 +1,4 @@
-package regextalk.numericrange.intro.temp;
+package regextalk.numericrange.intro;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
 
