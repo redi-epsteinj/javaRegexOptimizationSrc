@@ -30,6 +30,8 @@ public class Benchmarker {
          throw new IllegalArgumentException("iterations=" + iterations);
       }
 
+      System.out.println(iterations + " iterations");
+
       this.iterations = iterations;
    }
 
@@ -54,6 +56,8 @@ public class Benchmarker {
     */
    public BenchmarkResult executeGetDuration(TaskToBenchmark to_benchmark) {
       Objects.requireNonNull(to_benchmark, "to_benchmark");
+
+      System.out.println(to_benchmark.getClass().getSimpleName() + "...");
 
       PrintStream originalPrintStream = System.out;
       System.setOut(new PrintStream(new OutputStream() {
@@ -124,7 +128,10 @@ public class Benchmarker {
       IntStream.range(1, resultList.size()).forEach(index -> {
          ThreeWayComparer comparer = new ThreeWayComparer(first, resultList.get(index - 1),
                                                           resultList.get(index));
-         comparer.appendOutputForCurrentVsPrevAndFirst(builder).append(LINE_SEP);
+         comparer.appendOutputForCurrentVsPrevAndFirst(builder);
+         if (index < (size - 1)) {
+             builder.append(LINE_SEP);
+         }
       });
 
       return builder;

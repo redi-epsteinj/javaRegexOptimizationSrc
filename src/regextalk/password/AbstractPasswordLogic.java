@@ -1,9 +1,9 @@
 package regextalk.password;
 
+import static regextalk.RegexToBenchmark.IGNORED_INPUT;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import regextalk.RegexToBenchmark;
 
 public abstract class AbstractPasswordLogic implements PasswordToBenchmark {
    private final PasswordToBenchmarkComposer passwordComposer;
@@ -28,16 +28,11 @@ public abstract class AbstractPasswordLogic implements PasswordToBenchmark {
    }
 
    public void setup() {
-      lowerCaseMatcher =
-            Pattern.compile("[a-z]").matcher(RegexToBenchmark.IGNORED_INPUT);
-      upperCaseMatcher = Pattern.compile("[A-Z]").matcher(
-            RegexToBenchmark.IGNORED_INPUT);
-      digitMatcher = Pattern.compile("[0-9]").matcher(
-            RegexToBenchmark.IGNORED_INPUT);
-      symbolMatcher = Pattern.compile("[!@#$%^&+=_)(}{\\]\\[]").matcher(
-            RegexToBenchmark.IGNORED_INPUT);
-      whitespaceMatcher = Pattern.compile("\\s").matcher(
-            RegexToBenchmark.IGNORED_INPUT);
+      lowerCaseMatcher = Pattern.compile("[a-z]").matcher(IGNORED_INPUT);
+      upperCaseMatcher = Pattern.compile("[A-Z]").matcher(IGNORED_INPUT);
+      digitMatcher = Pattern.compile("[0-9]").matcher(IGNORED_INPUT);
+      symbolMatcher = Pattern.compile("[!@#$%^&+=_)(}{\\]\\[]").matcher(IGNORED_INPUT);
+      whitespaceMatcher = Pattern.compile("\\s").matcher(IGNORED_INPUT);
    }
 
    //Additional rule very difficult to add to regex, but trivial to add to logic: Whitespace not

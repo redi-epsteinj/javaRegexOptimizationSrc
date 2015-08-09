@@ -10,7 +10,7 @@ public class Neg12To12Bad extends AbstractReusedMatcherToBenchmark {
 
    @Override
    public String[] getInputs() {
-      return Neg12To12Good.INPUTS;
+      return Neg12To12Good0t9First.INPUTS;
    }
 
    @Override
