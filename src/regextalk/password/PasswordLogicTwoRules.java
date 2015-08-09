@@ -6,7 +6,12 @@ public class PasswordLogicTwoRules extends AbstractPasswordLogic {
       super(2);
    }
 
+   @Override
+   public void setup() {
+      System.out.println(getClass().getSimpleName());
+   }
+
    public static void main(String[] args) {
-      new PasswordLogicTwoRules().runCodeToBeTimed();
+      new PasswordLogicTwoRules().setupRunBreakdown();
    }
 }

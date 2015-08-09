@@ -5,6 +5,11 @@ package benchmark;
  * be compared to another timed-task.
  */
 public interface TaskToBenchmark {
+   default void setupRunBreakdown() {
+      setup();
+      runCodeToBeTimed();
+      breakdown();
+   }
 
    /**
     * One-time only actions that occur before the first call to {@code

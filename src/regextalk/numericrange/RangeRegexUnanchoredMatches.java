@@ -1,32 +1,20 @@
 package regextalk.numericrange;
 
-import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import regextalk.AbstractReusedMatcherToBenchmark;
 
-import regextalk.RegexToBenchmark;
-
-public class RangeRegexUnanchoredMatches implements NumericRangeToBenchmark {
+public class RangeRegexUnanchoredMatches extends AbstractReusedMatcherToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
-      new RangeRegexUnanchoredMatches().runCodeToBeTimed();
+      new RangeRegexUnanchoredMatches().setupRunBreakdown();
    }
 
    @Override
-   public void runCodeToBeTimed() {
-      Matcher
-            matcher =
-            Pattern.compile(RangeRegexUnanchoredFind.UNANCHORED_REGEX).matcher(
-                  RegexToBenchmark.IGNORED_INPUT);
+   public String getRegex() {
+      return RangeRegexUnanchoredFind.REGEX;
+   }
 
-      Arrays.stream(getInputs()).forEach(input -> {
-         System.out.print(input + ": ");
-
-         if (matcher.reset(input).matches()) {
-            System.out.println("in range");
-         } else {
-            System.out.println("NOT in range");
-         }
-      });
+   @Override
+   public String[] getInputs() {
+      return RangeRegexAnchoredFind.INPUTS;
    }
 }

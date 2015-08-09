@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class PatternDotSplit implements SplitToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
-      new PatternDotSplit().runCodeToBeTimed();
+      new PatternDotSplit().setupRunBreakdown();
    }
 
    @Override

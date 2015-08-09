@@ -1,52 +1,55 @@
 package regextalk.numericrange;
 
 import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import regextalk.RegexToBenchmark;
+import regextalk.AbstractReusedMatcherToBenchmark;
 
 /**
  *
  */
-public class RangeRegexUnanchoredFind implements NumericRangeToBenchmark {
+public class RangeRegexUnanchoredFind extends AbstractReusedMatcherToBenchmark {
 
-   public static final String UNANCHORED_REGEX =
+   public static final  String OPTIONAL_DASH_FOLLOWED_BY_A_NUMBER_BOUND = "-?\\b";
+   private static final String FIFTY_TO_55__OR__0_TO_49                 = "5[0-5]|[0-4][0-9]";
+   public static final  String A_ONE_FOLLOWED_BY_ANY_THREE_DIGITS       = "1[0-9]{3}";
+   public static final  String ONE_TO_9_FOLLOWED_BY__ANY_DIGIT_ZERO_TO_TWO_TIMES = "[1-9][0-9]{0,2}";
+   public static final  String ONE_OR_MORE_0S_NOT_PRECEDED_BY_DASH    = "(?<!-)0+";
+
+   public static final String REGEX =
          "(" +            //Capture group for the entire number
-         "-?\\b" +
-         //Optional dash, followed by a word (number) boundary
-         "(?:20" +            //Followed by "20", which is followed by one of
-         "(?:5[0-5]" +        //50 through 55
-         "|" +                      //or
-         "[0-4][0-9])" +      //00 through 49
-         "|" +                                         //or
-         "1[0-9]{3}" +        //a one followed by any three digits
-         "|" +                                         //or
-         "[1-9][0-9]{0,2}" +  //1-9 followed by 0 through 2 of any digit
-         "|" +                                         //or
-         "(?<!-)0+" +         //one-or-more zeros *not* preceded by a dash
-         ")" +            //end "or" non-capture group
-         ")\\b";      //End number capture group, followed by a word-bound
+            OPTIONAL_DASH_FOLLOWED_BY_A_NUMBER_BOUND +
+            "(?:" +
+               "20" +                                       //Followed by "20", which is followed by
+               "(?:" + FIFTY_TO_55__OR__0_TO_49 + ")" +
+               "|" +                                           //or
+               A_ONE_FOLLOWED_BY_ANY_THREE_DIGITS +
+               "|" +                                           //or
+               ONE_TO_9_FOLLOWED_BY__ANY_DIGIT_ZERO_TO_TWO_TIMES +
+               "|" +                                           //or
+               ONE_OR_MORE_0S_NOT_PRECEDED_BY_DASH +
+            ")" +                                          //end "or" non-capture group
+         ")\\b";                                           //End number capture group, followed
+                                                           //by a word-bound
 
    public static void main(String[] cmd_lineParams) {
-      new RangeRegexUnanchoredFind().runCodeToBeTimed();
+      new RangeRegexUnanchoredFind().setupRunBreakdown();
+   }
+
+   @Override
+   public String getRegex() {
+      return REGEX;
+   }
+
+   @Override
+   public String[] getInputs() {
+      return RangeRegexAnchoredFind.INPUTS;
    }
 
    @Override
    public void runCodeToBeTimed() {
-      Matcher
-            matcher =
-            Pattern.compile(RangeRegexUnanchoredFind.UNANCHORED_REGEX).matcher(
-                  RegexToBenchmark.IGNORED_INPUT);
-
       Arrays.stream(getInputs()).forEach(input -> {
-         System.out.print(input + ": ");
-
-         if (matcher.reset(input).find()) {
-            System.out.println("in range");
-         } else {
-            System.out.println("NOT in range");
-         }
+         boolean inRange = getMatcher().reset(input).find();
+         System.out.printf("* %s: %sn range%n", input, (inRange ? "I" : "NOT i"));
       });
    }
 }

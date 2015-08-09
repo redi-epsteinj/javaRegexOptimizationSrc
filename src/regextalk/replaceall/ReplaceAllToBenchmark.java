@@ -1,8 +1,8 @@
 package regextalk.replaceall;
 
-import benchmark.TaskToBenchmark;
+import regextalk.RegexToBenchmark;
 
-public interface ReplaceAllToBenchmark extends TaskToBenchmark {
+public interface ReplaceAllToBenchmark extends RegexToBenchmark {
 
    default String[] getInputs() {
       return new String[]{
@@ -13,6 +13,9 @@ public interface ReplaceAllToBenchmark extends TaskToBenchmark {
       };
    }
 
-   static final String FIND_WHAT_REGEX = "[,./ ]+";
+   default String getRegex() {
+      return "[,./ ]+";
+   }
+
    static final String REPLACE_WITH = "---";
 }

@@ -3,16 +3,19 @@ package regextalk.replaceall;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
-/**
- *
- */
 public class ReusedPatternReplaceAll implements ReplaceAllToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
-      new ReusedPatternReplaceAll().runCodeToBeTimed();
+      new ReusedPatternReplaceAll().setupRunBreakdown();
    }
 
-   public static final Pattern pattern = Pattern.compile(FIND_WHAT_REGEX);
+   private Pattern pattern;
+
+   @Override
+   public void setup() {
+      pattern = Pattern.compile(getRegex());
+      System.out.println(getClass().getSimpleName() + ": " + getRegex());
+   }
 
    @Override
    public void runCodeToBeTimed() {

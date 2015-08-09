@@ -1,6 +1,15 @@
 package benchmark;
 
+import static java.util.stream.Collectors.joining;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.IntStream;
 
 /**
  * Determines how long it takes to execute a single task, multiple times.
@@ -9,6 +18,7 @@ import java.util.Objects;
  **/
 public class Benchmarker {
 
+   private static final String LINE_SEP = System.getProperty("line.separator", "\n");
    private final int iterations;
 
    /**
@@ -47,30 +57,78 @@ public class Benchmarker {
    public BenchmarkResult executeGetDuration(TaskToBenchmark to_benchmark) {
       Objects.requireNonNull(to_benchmark, "to_benchmark");
 
-      long lStart = System.nanoTime();
+      PrintStream originalPrintStream = System.out;
+      System.setOut(new PrintStream(new OutputStream() {
+         @Override public void write(int b) throws IOException {}
+      }));
 
+      long totalNanos;
       try {
-         to_benchmark.setup();
-      } catch (Exception x) {
-         throw new BenchmarkSetupFailedException(x);
-      }
 
-      for (int tries = 0; tries < getIterations(); tries++) {
+         long lStart = System.nanoTime();
+
          try {
-            to_benchmark.runCodeToBeTimed();
+            to_benchmark.setup();
          } catch (Exception x) {
-            throw new BenchmarkProperFailedException(tries, x);
+            throw new BenchmarkSetupFailedException(x);
          }
-      }
 
-      try {
-         to_benchmark.breakdown();
-      } catch (Exception x) {
-         throw new BenchmarkBreakdownFailedException(x);
-      }
+         for (int tries = 0; tries < getIterations(); tries++) {
+            try {
+               to_benchmark.runCodeToBeTimed();
+            } catch (Exception x) {
+               throw new BenchmarkProperFailedException(tries, x);
+            }
+         }
 
-      long totalNanos = System.nanoTime() - lStart;
+         try {
+            to_benchmark.breakdown();
+         } catch (Exception x) {
+            throw new BenchmarkBreakdownFailedException(x);
+         }
+
+         totalNanos = System.nanoTime() - lStart;
+
+      } finally {
+         System.setOut(originalPrintStream);
+      }
 
       return new BenchmarkResult(to_benchmark, getIterations(), totalNanos);
+   }
+
+   public static StringBuilder runTestSequenceAppendResults(StringBuilder builder,  int iterations,
+                                                  TaskToBenchmark... to_benchmarks) {
+      int size;
+      try {
+         size = to_benchmarks.length;
+      } catch (NullPointerException x) {
+         throw new NullPointerException("to_benchmarks");
+      }
+
+      if (size < 2) {
+         throw new IllegalArgumentException("to_benchmarks.length is " + size);
+      }
+
+      List<BenchmarkResult> resultList = new ArrayList<>(to_benchmarks.length);
+      Benchmarker benchmarker = new Benchmarker(iterations);
+      Arrays.stream(to_benchmarks).forEach(task -> {
+         BenchmarkResult result = benchmarker.executeGetDuration(task);
+         resultList.add(result);
+      });
+
+      if (size == 2) {
+          return new BenchmarkComparer(resultList.get(0), resultList.get(1))
+                .appendCurrentVsPreviousTwoLineOutput(builder);
+      }
+
+      BenchmarkResult first = resultList.get(0);
+      builder.append(BenchmarkComparer.getTaskTookNanosOutput(first)).append(LINE_SEP);
+      IntStream.range(1, resultList.size()).forEach(index -> {
+         ThreeWayComparer comparer = new ThreeWayComparer(first, resultList.get(index - 1),
+                                                          resultList.get(index));
+         comparer.appendOutputForCurrentVsPrevAndFirst(builder).append(LINE_SEP);
+      });
+
+      return builder;
    }
 }

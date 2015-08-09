@@ -5,7 +5,8 @@ import java.util.regex.Pattern;
 
 import regextalk.RegexToBenchmark;
 
-public class AbstractPasswordLogic implements PasswordToBenchmark {
+public abstract class AbstractPasswordLogic implements PasswordToBenchmark {
+   private final PasswordToBenchmarkComposer passwordComposer;
 
    private Matcher lowerCaseMatcher;
    private Matcher upperCaseMatcher;
@@ -18,6 +19,7 @@ public class AbstractPasswordLogic implements PasswordToBenchmark {
    private final int specialRuleCount;
 
    public AbstractPasswordLogic(int special_ruleCount) {
+      passwordComposer = new PasswordToBenchmarkComposer();
       specialRuleCount = special_ruleCount;
    }
 
@@ -54,4 +56,8 @@ public class AbstractPasswordLogic implements PasswordToBenchmark {
               && !hasWhitespace);
    }
 
+   @Override
+   public void runCodeToBeTimed() {
+      passwordComposer.runCodeToBeTimed(this);
+   }
 }

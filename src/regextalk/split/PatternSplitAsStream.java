@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class PatternSplitAsStream implements SplitToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
-      new PatternSplitAsStream().runCodeToBeTimed();
+      new PatternSplitAsStream().setupRunBreakdown();
    }
 
    private static final String CLOSE_QT_COMMA_OPEN_QT = "\", \"";

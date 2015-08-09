@@ -18,7 +18,7 @@ public class BenchmarkComparer {
                Locale.US);
    public static final String
          DEFAULT_TOOK_NANOS_TEMPLATE =
-         "\"%s\" took %s nanoseconds";
+         "%s: %s";
    private final BenchmarkResult previous;
    private final BenchmarkResult current;
    private final NumberFormat    numberFormat;
@@ -116,6 +116,13 @@ public class BenchmarkComparer {
                                               BenchmarkResult current) {
       return 100.00 - (current.getTotalNanos() * 100.00f / previous
             .getTotalNanos());
+   }
+
+   public StringBuilder appendCurrentVsPreviousTwoLineOutput(StringBuilder builder) {
+      return builder.append(getTaskTookNanosOutput(getPrevious())).
+            append(System.getProperty("line.separator", "\n")).
+            append(getCurrentTaskTookNanosOutput()).append(", (").
+            append(getPercentageSpeedOfPrevious()).append("% of previous)");
    }
 
    /**

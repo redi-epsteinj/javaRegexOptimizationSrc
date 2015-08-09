@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class StringDotSplit implements SplitToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
-      new StringDotSplit().runCodeToBeTimed();
+      new StringDotSplit().setupRunBreakdown();
    }
 
    @Override
