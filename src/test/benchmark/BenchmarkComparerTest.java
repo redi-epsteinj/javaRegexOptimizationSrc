@@ -1,14 +1,10 @@
 package test.benchmark;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
-import java.text.NumberFormat;
-import java.util.Locale;
 
 import benchmark.BenchmarkComparer;
 import benchmark.BenchmarkResult;
@@ -21,23 +17,18 @@ public class BenchmarkComparerTest {
    @Rule
    public ExpectedException thrown = ExpectedException.none();
 
-   private static final BenchmarkResult NANOS_10 =
-         new ResultWithNanos(10L);
-   private static final BenchmarkResult
-                                        NANOS_5  =
-         new ResultWithNanos(5L);
-   private static final BenchmarkResult
-                                        NANOS_1  =
-         new ResultWithNanos(1L);
+   private static final BenchmarkResult NANOS_10 = new ResultWithNanos(10L);
+   private static final BenchmarkResult NANOS_5 = new ResultWithNanos(5L);
+   private static final BenchmarkResult NANOS_1 = new ResultWithNanos(1L);
 
    public BenchmarkComparer new10Prev5CurrComparer() {
-      return new BenchmarkComparer(NANOS_10, NANOS_5);
+      return new BenchmarkComparer.Builder().build(NANOS_10, NANOS_5);
    }
 
    @Test
    public void constructor_threeParam_localeIsDefault() throws Exception {
-      assertEquals(BenchmarkComparer.DEFAULT_NUMBER_FORMAT,
-                   new10Prev5CurrComparer().getNumberFormat());
+      assertEquals(BenchmarkComparer.DEFAULT_PERCENTAGE_FORMAT,
+                   new10Prev5CurrComparer().getPercentageFormat());
    }
 
    @Test
@@ -53,25 +44,31 @@ public class BenchmarkComparerTest {
    @Test
    public void constructor_previousNull_throwsNPX() {
       thrown.expect(NullPointerException.class);
-      new BenchmarkComparer(null, NANOS_1);
+      new BenchmarkComparer.Builder().build(null, NANOS_1);
    }
 
    @Test
    public void constructor_currentNull_throwsNPX() {
       thrown.expect(NullPointerException.class);
-      new BenchmarkComparer(NANOS_5, null);
+      new BenchmarkComparer.Builder().build(NANOS_5, null);
    }
 
    @Test
-   public void constructor_numberFormatNull_throwsNPX() {
+   public void constructor_nanosFormatNull_throwsNPX() {
       thrown.expect(NullPointerException.class);
-      new BenchmarkComparer(NANOS_5, NANOS_1, null);
+      new BenchmarkComparer.Builder().nanosFormat(null).build(NANOS_5, NANOS_1);
+   }
+
+   @Test
+   public void constructor_percentageFormatNull_throwsNPX() {
+      thrown.expect(NullPointerException.class);
+      new BenchmarkComparer.Builder().percentageFormat(null).build(NANOS_5, NANOS_1);
    }
 
    @Test
    public void constructor_firstAndPrevDiffIterCounts_throwsIAX() {
       thrown.expect(IllegalArgumentException.class);
-      new BenchmarkComparer(
+      new BenchmarkComparer.Builder().build(
             new ResultWithNanos(NANOS_5.getIterations() + 1,
                                 10L),
             NANOS_1);
@@ -85,40 +82,27 @@ public class BenchmarkComparerTest {
    }
 
    @Test
-   public void getTaskTookNanosOutput_containsNameAndNanos() {
-      String output = BenchmarkComparer.
-            getTaskTookNanosOutput("%s: %s", new
-                  ResultWithNanos(1003338347384738L), Locale.US, NumberFormat
-                                         .getNumberInstance(
-                                               Locale.US));
-      assertEquals(ValidTest.class.getName() + ": 1,003,338,347,384,738",
-                   output);
+   public void getTaskTookNanosOutput_10prev3curr_returns70() {
+      BenchmarkComparer comparer = new BenchmarkComparer.Builder().build(new ResultWithNanos(10L),
+                                                                         new ResultWithNanos(3L));
+      assertEquals(70.0d,
+                   comparer.getPercentageSpeedOfPrevious(),
+                   DELTA);
    }
 
    @Test
-   public void getTaskTookNanosOutput_containsClassName() {
-      String output = BenchmarkComparer.getTaskTookNanosOutput(NANOS_10);
-      boolean containsClassName = output.indexOf(ValidTest.class.getName())
-                                  != -1;
-      assertTrue(containsClassName);
+   public void getPreviousTaskTookNanosOutput_containsNameAndNanos() {
+      String output = new BenchmarkComparer.Builder().build(new ResultWithNanos(3L),
+                                                            new ResultWithNanos(1003338347384738L)).
+            getPreviousTaskTookNanosOutput();
+      assertEquals(ValidTest.class.getName() + ": 3", output);
    }
 
    @Test
-   public void getTaskTookNanosOutput_containsNanos() {
-      String output = BenchmarkComparer.getTaskTookNanosOutput(NANOS_10);
-      assertTrue("\" 10\" not in output: <<<" + output + ">>>",
-                 output.indexOf(" 10") != -1);
-   }
-
-   @Test
-   public void zeroParamGetTaskTookNanosOutput_containsNanosOfCurrent() {
-      BenchmarkResult current = new ResultWithNanos(1048374L);
-      String output = new BenchmarkComparer(NANOS_1, current).
+   public void getCurrentTaskTookNanosOutput_containsNameAndNanos() {
+      String output = new BenchmarkComparer.Builder().build(new ResultWithNanos(3L),
+                                                            new ResultWithNanos(1003338347384738L)).
             getCurrentTaskTookNanosOutput();
-      String expectedNanos = BenchmarkComparer.DEFAULT_NUMBER_FORMAT.
-            format(current.getTotalNanos());
-      assertTrue("\" " + expectedNanos +"\" not in output: <<<" +
-                 output + ">>>",
-                 output.indexOf(" " + expectedNanos) != -1);
+      assertEquals(ValidTest.class.getName() + ": 1,003,338,347,384,738", output);
    }
 }

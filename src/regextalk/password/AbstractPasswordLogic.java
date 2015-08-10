@@ -13,7 +13,6 @@ public abstract class AbstractPasswordLogic implements PasswordToBenchmark {
    private Matcher digitMatcher;
    private Matcher symbolMatcher;
    private Matcher whitespaceMatcher;
-
    public static final int MIN_LENGTH = 8;
 
    private final int specialRuleCount;
@@ -38,8 +37,7 @@ public abstract class AbstractPasswordLogic implements PasswordToBenchmark {
    //Additional rule very difficult to add to regex, but trivial to add to logic: Whitespace not
    //allowed. Well...whitespace already not allowed by regex, because space isn't a special character...  :(
    public boolean isPasswordValid(String password) {
-      int
-            specialRulesFollowed =
+      int specialRulesFollowed =
             (lowerCaseMatcher.reset(password).find() ? 1 : 0) +
             (upperCaseMatcher.reset(password).find() ? 1 : 0) +
             (digitMatcher.reset(password).find() ? 1 : 0) +
@@ -53,6 +51,7 @@ public abstract class AbstractPasswordLogic implements PasswordToBenchmark {
 
    @Override
    public void runCodeToBeTimed() {
+      System.out.println(getClass().getName());
       passwordComposer.runCodeToBeTimed(this);
    }
 }

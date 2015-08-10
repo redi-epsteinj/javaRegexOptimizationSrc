@@ -1,5 +1,7 @@
 package regextalk;
 
+import static java.lang.String.format;
+
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -29,9 +31,15 @@ public abstract class AbstractReusedMatcherToBenchmark implements RegexToBenchma
 
    @Override
    public void runCodeToBeTimed() {
+      int[] indexElem0 = {0};
       Arrays.stream(getInputs()).forEach(input -> {
+         if (input == null) {
+             String message = format("input element %d is null. All inputs: %s", indexElem0[0],
+                                     Arrays.toString(getInputs()));
+         }
          boolean inRange = getMatcher().reset(input).matches();
          System.out.printf("* %s: %satched%n", input, (inRange ? "M" : "NOT m"));
+         indexElem0[0]++;
       });
    }
 }

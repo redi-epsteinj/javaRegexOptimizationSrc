@@ -2,74 +2,85 @@ package benchmark;
 
 import static java.lang.String.format;
 
+import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
+import java.util.MissingFormatArgumentException;
 import java.util.Objects;
 
 /**
- * Compares the results of two timed tasks, with convenience functions for basic
- * output strings.
+ * Compares the results of two timed tasks, with convenience functions for basic output strings.
  */
 public class BenchmarkComparer {
 
-   public static final NumberFormat
-         DEFAULT_NUMBER_FORMAT       =
-         NumberFormat.getNumberInstance(
-               Locale.US);
-   public static final String
-         DEFAULT_TOOK_NANOS_TEMPLATE =
-         "%s: %s";
+   public static final String DEFAULT_TOOK_NANOS_TEMPLATE = "%s: %s";
+   public static final String DEFAULT_FASTER_THAN_PREV_TMPL =
+         "%s (%s%% faster than previous)";
+   public static final NumberFormat DEFAULT_NANOS_FORMAT =
+         NumberFormat.getNumberInstance();
+   public static final NumberFormat DEFAULT_PERCENTAGE_FORMAT = newDefaultPctgFmt();
+
+   private static NumberFormat newDefaultPctgFmt() {
+      DecimalFormat format = (DecimalFormat) NumberFormat.getInstance(Locale.getDefault());
+
+      format.setMaximumFractionDigits(2); // << This should
+      format.setMinimumFractionDigits(2); // << do the trick
+      return format;
+   }
+
    private final BenchmarkResult previous;
    private final BenchmarkResult current;
-   private final NumberFormat    numberFormat;
+   private final NumberFormat nanosFormat;
+   private final NumberFormat percentageFormat;
+   private final String fasterThanPrevTmpl;
 
-   /**
-    * <p>Create an instance with two tasks, using United States number
-    * format.</p>
-    *
-    * <p>Equal to <br> &nbsp; &nbsp; <code>{@link #BenchmarkComparer(
-    *BenchmarkResult, BenchmarkResult, NumberFormat) this}(first, previous,
-    * current, {@link #DEFAULT_NUMBER_FORMAT})</code></p>
-    */
-   public BenchmarkComparer(BenchmarkResult previous,
-                            BenchmarkResult current) {
-      this(previous, current, DEFAULT_NUMBER_FORMAT);
+
+   private final String taskNameNanosTmpl;
+   private Locale locale;
+
+   public BenchmarkComparer(final BenchmarkResult previous, final BenchmarkResult current) {
+      this(new BenchmarkComparer.Builder().prevCurrResults(previous, current));
    }
 
    /**
     * <p>Create an instance comparing two tasks and number format.</p>
     *
     * <p>All parameters must be non-null.</p>
-    *
-    * @param previous     Must have the same {@linkplain BenchmarkResult#getIterations()
-    *                     iteration count} as {@code current}. Get with {@link
-    *                     #getPrevious()}.
-    * @param current      Get with {@link #getCurrent()}.
-    * @param numberFormat Get with {@link #getNumberFormat()}.
     */
-   public BenchmarkComparer(BenchmarkResult previous, BenchmarkResult current,
-                            NumberFormat numberFormat) {
-      Objects.requireNonNull(previous, "previous");
-      Objects.requireNonNull(current, "current");
-      Objects.requireNonNull(numberFormat, "numberFormat");
+   public BenchmarkComparer(final BenchmarkComparer.Builder builder) {
+      Objects.requireNonNull(builder, "builder");
 
-      if (previous.getIterations() != current.getIterations()) {
-         final String message = "previous.getIterations() (" +
-                                previous.getIterations() + ") different than "
-                                + "current.getIterations() (" +
-                                current.getIterations() + ")";
-         throw new IllegalArgumentException(message);
+      previous = builder.previous;
+      current = builder.current;
+      nanosFormat = builder.nanosFormat;
+      percentageFormat = builder.percentageFormat;
+      taskNameNanosTmpl = builder.taskNameNanosTmpl;
+      fasterThanPrevTmpl = builder.fasterThanPrevTmpl;
+      locale = builder.locale;
+
+      Objects.requireNonNull(nanosFormat, "builder.nanosFormat");
+      Objects.requireNonNull(percentageFormat, "builder.percentageFormat");
+      Objects.requireNonNull(taskNameNanosTmpl, "builder.taskNameNanosTmpl");
+      Objects.requireNonNull(fasterThanPrevTmpl, "builder.fasterThanPrevTmpl");
+      Objects.requireNonNull(locale, "builder.locale");
+
+      try {
+         if (previous.getIterations() != current.getIterations()) {
+            final String message = "previous.getIterations() (" + previous.getIterations() + ") " +
+                                   "different than current.getIterations() (" +
+                                   current.getIterations() + ")";
+            throw new IllegalArgumentException(message);
+         }
+      } catch (NullPointerException x) {
+         Objects.requireNonNull(previous, "builder.previous");
+         Objects.requireNonNull(current, "builder.current");
       }
-
-      this.previous = previous;
-      this.current = current;
-      this.numberFormat = numberFormat;
    }
 
    /**
     * The previous task to compare to.
     *
-    * @see #BenchmarkComparer(BenchmarkResult, BenchmarkResult, NumberFormat)
+    * @see #BenchmarkComparer(BenchmarkComparer.Builder)
     * @see #getCurrent()
     */
    public BenchmarkResult getPrevious() {
@@ -79,7 +90,7 @@ public class BenchmarkComparer {
    /**
     * The previous task to compare against.
     *
-    * @see #BenchmarkComparer(BenchmarkResult, BenchmarkResult, NumberFormat)
+    * @see #BenchmarkComparer(BenchmarkComparer.Builder)
     * @see #getPrevious()
     */
    public BenchmarkResult getCurrent() {
@@ -87,21 +98,42 @@ public class BenchmarkComparer {
    }
 
    /**
-    * The number format.
+    * The nanoseconds formatter.
     *
-    * @see #BenchmarkComparer(BenchmarkResult, BenchmarkResult, NumberFormat)
+    * @see #BenchmarkComparer(BenchmarkComparer.Builder)
     */
-   public NumberFormat getNumberFormat() {
-      return numberFormat;
+   public NumberFormat getNanosFormat() {
+      return nanosFormat;
    }
 
    /**
-    * <p>The percentage of current task's speed as compared to the
-    * previous.</p>
+    * The percentage formatter.
     *
-    * <p>Equal to <br> &nbsp; &nbsp; <code> {@link #getPercentageSpeedOfPrevious
-    * (BenchmarkResult, BenchmarkResult) getPercentageSpeedOfPrevious}({@link
-    * #getPrevious()}, {@link #getCurrent()})</code>
+    * @see #BenchmarkComparer(BenchmarkComparer.Builder)
+    */
+   public NumberFormat getPercentageFormat() {
+      return percentageFormat;
+   }
+
+   public String getFasterThanPrevTmpl() {
+      return fasterThanPrevTmpl;
+   }
+
+   public String getTaskNameNanosTmpl() {
+      return taskNameNanosTmpl;
+   }
+
+   public Locale getLocale() {
+      return locale;
+   }
+
+
+   /**
+    * <p>The percentage of current task's speed as compared to the previous.</p>
+    *
+    * <p>Equal to <br> &nbsp; &nbsp; <code> {@link #getPercentageSpeedOfPrevious (BenchmarkResult,
+    * BenchmarkResult) getPercentageSpeedOfPrevious}({@link #getPrevious()}, {@link
+    * #getCurrent()})</code>
     */
    public double getPercentageSpeedOfPrevious() {
       return getPercentageSpeedOfPrevious(getPrevious(), getCurrent());
@@ -119,69 +151,144 @@ public class BenchmarkComparer {
    }
 
    public StringBuilder appendCurrentVsPreviousTwoLineOutput(StringBuilder builder) {
-      return builder.append(getTaskTookNanosOutput(getPrevious())).
-            append(System.getProperty("line.separator", "\n")).
-            append(getCurrentTaskTookNanosOutput()).append(", (").
-            append(getPercentageSpeedOfPrevious()).append("% of previous)");
+      final String nanos = getNanosFormat().format(getCurrent().getTotalNanos());
+      final String percent = getPercentageFormat().format(getPercentageSpeedOfPrevious());
+      String message;
+      final String prevTook = getTaskTookNanosOutput(getPrevious());
+      final String currTook = getTaskTookNanosOutput(getCurrent());
+      try {
+         message = format("%s%n" + getFasterThanPrevTmpl(), prevTook, currTook, percent);
+      } catch (MissingFormatArgumentException x) {
+         final String message2 = format("getFasterThanPrevTmpl() (%s) has an extra format " +
+                                        "specifier. Must have exactly two string specifiers (%%s).",
+                                       getFasterThanPrevTmpl());
+         MissingFormatArgumentException x2 = new MissingFormatArgumentException(message2);
+         x2.initCause(x);
+         throw x2;
+      }
+      return builder.append(message);
    }
 
    /**
-    * A basic display-worthy string containing the current task's name and
-    * speed, using the default template and locale.
+    * A basic display-worthy string containing the current task's name and speed, using the default
+    * template and locale.
     *
-    * @see #DEFAULT_TOOK_NANOS_TEMPLATE
+    * @see #getTaskTookNanosOutput(BenchmarkResult)
     * @see #getCurrent()
-    * @see #getNumberFormat()
     */
    public String getCurrentTaskTookNanosOutput() {
-      return getTaskTookNanosOutput(DEFAULT_TOOK_NANOS_TEMPLATE, getCurrent(),
-                                    null, getNumberFormat());
+      return getTaskTookNanosOutput(getCurrent());
    }
 
    /**
-    * A basic display-worthy string containing task's name and speed, using the
-    * default template, locale and number format.
+    * A basic display-worthy string containing the previous task's name and speed, using the default
+    * template and locale.
     *
-    * @see #getTaskTookNanosOutput(String, BenchmarkResult, Locale,
-    * NumberFormat)
-    * @see #DEFAULT_TOOK_NANOS_TEMPLATE
-    * @see #DEFAULT_NUMBER_FORMAT
-    */
-   public static String getTaskTookNanosOutput(BenchmarkResult result) {
-      return getTaskTookNanosOutput(DEFAULT_TOOK_NANOS_TEMPLATE, result, null,
-                                    DEFAULT_NUMBER_FORMAT);
-   }
-
-   /**
-    * <p>A basic display-worthy string containing a task's name and speed.</p>
-    *
-    * @param templateWithTwoSs May not be null, and must contain exactly two
-    *                          string {@linkplain String#format(Locale, String,
-    *                          Object...) format specifiers} ({@code "%s"}). The
-    *                          first specifier is the task's {@linkplain
-    *                          Class#getName() fully-qualified class name}.
-    * @param result            May not be null.
-    * @param locale            Passed directly to {@code String#format}.
-    * @param numberFormat      For formatting {@code result.}{@link
-    *                          BenchmarkResult#getTotalNanos() getTotalNanos()}.
-    *                          May not be null.
     * @see #getTaskTookNanosOutput(BenchmarkResult)
+    * @see #getPrevious()
+    */
+   public String getPreviousTaskTookNanosOutput() {
+      return getTaskTookNanosOutput(getPrevious());
+   }
+
+   /**
+    * A basic display-worthy string containing the current task's name and speed, using the default
+    * template and locale.
+    *
+    * @param result May not be null.
     * @see #getCurrentTaskTookNanosOutput()
     */
-   public static String getTaskTookNanosOutput(String templateWithTwoSs,
-                                               BenchmarkResult result,
-                                               Locale locale,
-                                               NumberFormat numberFormat) {
+   private String getTaskTookNanosOutput(BenchmarkResult result) {
       try {
-         return format(locale,
-                       templateWithTwoSs,
-                       result.getTask().getClass().getName(),
-                       numberFormat.format(result.getTotalNanos()));
-      } catch (NullPointerException npx) {
-         if (templateWithTwoSs == null) {
-            throw new NullPointerException("templateWithTwoSs");
+         return format(getLocale(), getTaskNameNanosTmpl(), result.getTask().getClass()
+                             .getName(),
+                       getNanosFormat().format(result.getTotalNanos()));
+      } catch (MissingFormatArgumentException x) {
+         final String message = format("getTaskNameNanosTmpl() (%s) has an extra format specifier." +
+                                       " Must have exactly two string specifiers (%%s).",
+                                       getTaskNameNanosTmpl());
+         MissingFormatArgumentException x2 = new MissingFormatArgumentException(message);
+         x2.initCause(x);
+         throw x2;
+      } catch (NullPointerException x) {
+         Objects.requireNonNull(result, "result");
+         throw x;
+      }
+   }
+
+   public static class Builder {
+
+      public BenchmarkResult previous;
+      public BenchmarkResult current;
+      public NumberFormat nanosFormat;
+      public NumberFormat percentageFormat;
+      public String taskNameNanosTmpl;
+      public String fasterThanPrevTmpl;
+      private Locale locale;
+
+      public Builder(Builder to_copy) {
+         try {
+            nanosFormat(to_copy.nanosFormat);
+         } catch (NullPointerException x) {
+            Objects.requireNonNull(to_copy, "to_copy");
          }
-         throw npx;
+         percentageFormat(to_copy.percentageFormat);
+         taskNameNanosTemplate(to_copy.taskNameNanosTmpl);
+         fasterThanPrevTemplate(to_copy.fasterThanPrevTmpl);
+         locale(to_copy.locale);
+      }
+
+      public Builder() {
+         nanosFormat(BenchmarkComparer.DEFAULT_NANOS_FORMAT);
+         percentageFormat(BenchmarkComparer.DEFAULT_PERCENTAGE_FORMAT);
+         taskNameNanosTemplate(BenchmarkComparer.DEFAULT_TOOK_NANOS_TEMPLATE);
+         fasterThanPrevTemplate(BenchmarkComparer.DEFAULT_FASTER_THAN_PREV_TMPL);
+         defaultLocale();
+      }
+
+      private Builder defaultLocale() {
+         return locale(Locale.getDefault());
+      }
+
+      private Builder locale(Locale locale) {
+         this.locale = locale;
+         return this;
+      }
+
+      public Builder fasterThanPrevTemplate(String template) {
+         fasterThanPrevTmpl = template;
+         return this;
+      }
+
+      public Builder taskNameNanosTemplate(String template) {
+         taskNameNanosTmpl = template;
+         return this;
+      }
+
+      public Builder percentageFormat(NumberFormat format) {
+         percentageFormat = format;
+         return this;
+      }
+
+      public Builder nanosFormat(NumberFormat format) {
+         nanosFormat = format;
+         return this;
+      }
+
+      /**
+       * @param previous Must have the same {@linkplain BenchmarkResult#getIterations() iteration
+       *                 count} as {@code current}. Get with {@link BenchmarkComparer#getPrevious()}.
+       * @param current  Get with {@link BenchmarkComparer#getCurrent()}.
+       */
+      public Builder prevCurrResults(BenchmarkResult previous, BenchmarkResult current) {
+         this.previous = previous;
+         this.current = current;
+         return this;
+      }
+
+      public BenchmarkComparer build(BenchmarkResult previous, BenchmarkResult current) {
+         prevCurrResults(previous, current);
+         return new BenchmarkComparer(this);
       }
    }
 }

@@ -14,9 +14,7 @@ public class PasswordRegexThreeRules extends AbstractReusedMatcherToBenchmark im
 
    public static void main(String[] args) { new PasswordRegexThreeRules().setupRunBreakdown(); }
 
-   private static final String
-         SPECIAL_CHARS =
-         PasswordRegexTwoRules.SPECIAL_CHARS;
+   private static final String SPECIAL_CHARS = PasswordRegexTwoRules.SPECIAL_CHARS;
    private static final String LKA_LOWER = PasswordRegexTwoRules.LKA_LOWER;
    private static final String LKA_UPPER = PasswordRegexTwoRules.LKA_UPPER;
    private static final String LKA_DIGIT = PasswordRegexTwoRules.LKA_DIGIT;

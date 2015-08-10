@@ -15,9 +15,7 @@ public class Neg400To400Good400Last extends AbstractReusedMatcherToBenchmark {
    public String getRegex() {
       return "-?\\b(?:[1-3]?\\d{1,2}|400)\\b";
    }
-   
+
    @Override
-   public String[] getInputs() {
-      return INPUTS;
-   }
+   public String[] getInputs() { return Neg400To400EveryNumberOrd.INPUTS; }
 }

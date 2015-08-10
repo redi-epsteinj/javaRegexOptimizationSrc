@@ -21,7 +21,6 @@ public class PasswordToBenchmarkComposer {
    public void runCodeToBeTimed(PasswordToBenchmark to_benchmark) {
       Objects.requireNonNull(to_benchmark, "to_benchmark");
 
-      System.out.println(Arrays.toString(getInputs()));
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.print(input + ": ");
          boolean isValid = to_benchmark.isPasswordValid(input);
