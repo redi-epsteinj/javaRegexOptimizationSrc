@@ -1,8 +1,12 @@
 package regextalk.numericrange.intro;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 public class Neg400To400Good400Last extends AbstractReusedMatcherToBenchmark {
+   public Neg400To400Good400Last() {
+      super(MatchOrFind.MATCH);
+   }
 
    public static final String[] INPUTS = new String[]{
          "-401", "-400", "-11", "-10", "0", "400", "401", "Jimmy", "u390x", "-0"};

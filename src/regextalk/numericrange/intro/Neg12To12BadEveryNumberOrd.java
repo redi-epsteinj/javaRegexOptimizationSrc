@@ -1,8 +1,13 @@
 package regextalk.numericrange.intro;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 public class Neg12To12BadEveryNumberOrd extends AbstractReusedMatcherToBenchmark {
+
+   public Neg12To12BadEveryNumberOrd() {
+      super(MatchOrFind.FIND);
+   }
 
    public static void main(String[] ignored) {
       new Neg12To12BadEveryNumberOrd().setupRunBreakdown();

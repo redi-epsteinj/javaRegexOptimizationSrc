@@ -121,25 +121,25 @@ public class Benchmarker {
          }
       }
 
-      System.out.println(totalNanos);
+      System.out.println(BenchmarkComparer.DEFAULT_NANOS_FORMAT.format(totalNanos));
 
       return new BenchmarkResult(to_benchmark, getIterations(), totalNanos);
    }
 
-   public static StringBuilder runTestSequenceAppendResults(StringBuilder builder, String
-         description, int iterations,
-                                                            int seconds_pauseBetweenTests,
-                                                            TaskToBenchmark... to_benchmarks) {
-      return runTestSequenceAppendResults(builder, description, iterations,
-                                          TimedTestConsoleOutput.SUPPRESS,
-                                          seconds_pauseBetweenTests,
-                                          to_benchmarks);
+   public static StringBuilder runTestSuiteAppendResults(StringBuilder builder,
+                                                         String description, int iterations,
+                                                         int seconds_pauseBetweenTests,
+                                                         TaskToBenchmark... to_benchmarks) {
+      return runTestSuiteAppendResults(builder, description, iterations,
+                                       TimedTestConsoleOutput.SUPPRESS,
+                                       seconds_pauseBetweenTests,
+                                       to_benchmarks);
    }
 
-   public static StringBuilder runTestSequenceAppendResults(StringBuilder builder, String
+   public static StringBuilder runTestSuiteAppendResults(StringBuilder builder, String
          description, int iterations, TimedTestConsoleOutput output_action,
-                                                            int mills_pauseBetweenTests,
-                                                            TaskToBenchmark... to_benchmarks) {
+                                                         int mills_pauseBetweenTests,
+                                                         TaskToBenchmark... to_benchmarks) {
       int size;
       try {
          size = to_benchmarks.length;
@@ -170,7 +170,7 @@ public class Benchmarker {
          idxElement0[0]++;
       });
 
-      if(description != null) {
+      if (description != null) {
          System.out.println(description);
       }
 

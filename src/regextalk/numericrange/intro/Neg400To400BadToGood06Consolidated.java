@@ -1,8 +1,12 @@
 package regextalk.numericrange.intro;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 public class Neg400To400BadToGood06Consolidated extends AbstractReusedMatcherToBenchmark {
+   public Neg400To400BadToGood06Consolidated() {
+       super(MatchOrFind.MATCH);
+   }
 
    public static void main(String[] ignored) {
       new Neg400To400BadToGood06Consolidated().setupRunBreakdown();

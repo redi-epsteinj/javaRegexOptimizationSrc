@@ -5,8 +5,14 @@ import static java.util.stream.Collectors.joining;
 import java.util.Arrays;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 public class Neg400To400BadToGood02Dash extends AbstractReusedMatcherToBenchmark {
+
+   public Neg400To400BadToGood02Dash() {
+      super(MatchOrFind.FIND);
+   }
+
 
    public static final String ONE_OR_MORE_ZEROS_NOT_PRECEDED_BY_DASH = "(?<!-)0+";
 

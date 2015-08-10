@@ -1,8 +1,13 @@
 package regextalk.numericrange.intro;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 public class Neg12To12Good0t9First extends AbstractReusedMatcherToBenchmark {
+
+   public Neg12To12Good0t9First() {
+      super(MatchOrFind.FIND);
+   }
 
    public static final String[] INPUTS = new String[]{
          "-13", "-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1",

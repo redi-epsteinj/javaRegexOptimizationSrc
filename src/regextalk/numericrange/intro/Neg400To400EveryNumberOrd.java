@@ -9,8 +9,12 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 public class Neg400To400EveryNumberOrd extends AbstractReusedMatcherToBenchmark {
+   public Neg400To400EveryNumberOrd() {
+       super(MatchOrFind.FIND);
+   }
 
    public static void main(String[] ignored) {
       new Neg400To400EveryNumberOrd().setupRunBreakdown();

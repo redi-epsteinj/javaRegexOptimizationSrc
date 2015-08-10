@@ -1,6 +1,7 @@
 package regextalk.password;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 /**
  * http://stackoverflow.com/questions/28886707/how-to-create-regex-for-passwords-validate-with-length-8-24-and-contain-at-lea
@@ -9,6 +10,7 @@ public class PasswordRegexThreeRules extends AbstractReusedMatcherToBenchmark im
    private final PasswordToBenchmarkComposer passwordComposer;
 
    public PasswordRegexThreeRules() {
+      super(MatchOrFind.MATCH);
       passwordComposer = new PasswordToBenchmarkComposer();
    }
 

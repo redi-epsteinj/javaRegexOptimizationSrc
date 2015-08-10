@@ -1,8 +1,13 @@
 package regextalk.numericrange.intro;
 
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 public class Neg12To12BadBoundedNonCaptured extends AbstractReusedMatcherToBenchmark {
+
+   public Neg12To12BadBoundedNonCaptured() {
+       super(MatchOrFind.FIND);
+   }
 
    public static void main(String[] ignored) {
       new Neg12To12BadBoundedNonCaptured().setupRunBreakdown();
@@ -16,6 +21,5 @@ public class Neg12To12BadBoundedNonCaptured extends AbstractReusedMatcherToBench
    @Override
    public String getRegex() {
       return "\\b(?:-12|-11|-10|-9|-8|-7|-6|-5|-4|-3|-2|-1|0|1|2|3|4|5|6|7|8|9|10|11|12)\\b";
-      //No bounds, captured, ridiculous.
    }
 }

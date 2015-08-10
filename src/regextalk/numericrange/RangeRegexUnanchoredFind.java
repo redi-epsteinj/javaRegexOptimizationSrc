@@ -1,13 +1,16 @@
 package regextalk.numericrange;
 
-import java.util.Arrays;
-
 import regextalk.AbstractReusedMatcherToBenchmark;
+import regextalk.MatchOrFind;
 
 /**
  *
  */
 public class RangeRegexUnanchoredFind extends AbstractReusedMatcherToBenchmark {
+
+   public RangeRegexUnanchoredFind() {
+       super(MatchOrFind.FIND);
+   }
 
    public static final  String OPTIONAL_DASH_FOLLOWED_BY_A_NUMBER_BOUND = "-?\\b";
    private static final String FIFTY_TO_55__OR__0_TO_49                 = "5[0-5]|[0-4][0-9]";
@@ -43,13 +46,5 @@ public class RangeRegexUnanchoredFind extends AbstractReusedMatcherToBenchmark {
    @Override
    public String[] getInputs() {
       return RangeRegexAnchoredFind.INPUTS;
-   }
-
-   @Override
-   public void runCodeToBeTimed() {
-      Arrays.stream(getInputs()).forEach(input -> {
-         boolean inRange = getMatcher().reset(input).find();
-         System.out.printf("* %s: %sn range%n", input, (inRange ? "I" : "NOT i"));
-      });
    }
 }

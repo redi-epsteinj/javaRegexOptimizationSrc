@@ -5,7 +5,6 @@ import java.util.Arrays;
 import regextalk.AbstractReusedMatcherToBenchmark;
 
 public class ReusedMatcherReplaceAll extends AbstractReusedMatcherToBenchmark implements ReplaceAllToBenchmark {
-
    public static void main(String[] cmd_lineParams) {
       new ReusedMatcherReplaceAll().setupRunBreakdown();
    }
