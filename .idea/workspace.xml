@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/benchmark/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.32296652">
+              <caret line="45" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractPasswordRegex.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AbstractPasswordRegex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/regextalk/password/AbstractPasswordRegex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46650717">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#550#551#0" expanded="true" />
                 <element signature="e#575#576#0" expanded="true" />
@@ -132,8 +132,8 @@
         <option value="$PROJECT_DIR$/src/regextalk/AbstractReusedMatcherToBenchmark.java" />
         <option value="$PROJECT_DIR$/src/regextalk/password/PasswordRegexThreeRules.java" />
         <option value="$PROJECT_DIR$/src/regextalk/password/PasswordRegexTwoRules.java" />
-        <option value="$PROJECT_DIR$/src/benchmark/Test.java" />
         <option value="$PROJECT_DIR$/src/regextalk/password/AbstractPasswordRegex.java" />
+        <option value="$PROJECT_DIR$/src/benchmark/Test.java" />
       </list>
     </option>
   </component>
@@ -729,12 +729,12 @@
       <workItem from="1438987374412" duration="13024000" />
       <workItem from="1439078996783" duration="33914000" />
       <workItem from="1439162269245" duration="11620000" />
-      <workItem from="1439206132651" duration="3923000" />
+      <workItem from="1439206132651" duration="4220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138041000" />
+    <option name="totallyTimeSpent" value="138338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="6" />
@@ -992,18 +992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/benchmark/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/regextalk/password/AbstractPasswordRegex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46650717">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
             <element signature="e#550#551#0" expanded="true" />
             <element signature="e#575#576#0" expanded="true" />
@@ -1012,6 +1004,14 @@
             <element signature="e#720#721#0" expanded="true" />
             <element signature="e#772#773#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/benchmark/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32296652">
+          <caret line="45" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

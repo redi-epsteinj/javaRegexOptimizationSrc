@@ -27,17 +27,6 @@ Neg400To400EveryNumberOrd: 48,132,140,794 nanoseconds (48 seconds)
 (100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
 00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
 Neg400To400BadToGood01NonCapturingWithBounds: 
 
@@ -67,14 +56,6 @@ Stop capturing, add word bounds.
 01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
 01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
 01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
 Neg400To400BadToGood02Dash: 
 
@@ -109,19 +90,10 @@ In addition, let's allow the special case of one-or-more zeros, *not* followed b
 (100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
 00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
 01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
 02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
-Neg400To400BadToGood03ZeroToNine: 
+03aZeroToNineD: 
 
 Change each
 
@@ -129,7 +101,34 @@ Change each
 
 to
 
-   4[0-9]
+   4\d
+
+
+\b(?:
+   (?<!-)0+|
+   -?
+   (?:
+      \d|
+      1\d|2\d|3\d|4\d|5\d|6\d|7\d|8\d|9\d|10\d
+      11\d|12\d|13\d|14\d|15\d|16\d|17\d|18\d|19\d|20\d
+      21\d|22\d|23\d|24\d|25\d|26\d|27\d|28\d|29\d|30\d|
+      31\d|32\d|33\d|34\d|35\d|36\d|37\d|38\d|39\d|
+      400
+   )
+)\b
+
+(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
+
+00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
+01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
+01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
+01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
+02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
+03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
+
+03bZeroToNine:
+
+If internationalization is not a requirement, then [0-9] is a little better than \d:
 
 
 \b(?:
@@ -154,11 +153,6 @@ to
 02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
 03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
 03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
 Neg400To400BadToGood04Tens: 
 
@@ -185,10 +179,6 @@ Neg400To400BadToGood04Tens:
 03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
 03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
 04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
 Neg400To400BadToGood05Hundreds: 
 
@@ -224,14 +214,10 @@ to
 03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
 03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
 04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
 Neg400To400BadToGood06Consolidated: 
 
-Consolidate more:
+Consolidating a bit more:
 
 (?:
    (?<!-)0+|
@@ -255,8 +241,6 @@ Consolidate more:
 04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
 05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
 06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
 Neg400To400BadToGood07EasiestOr1st: 
 
@@ -285,7 +269,6 @@ Move the "easiest" or'd element to the start of the group.
 05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
 06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
 07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
-EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563,623,741 (   0.99% prev,  63.77% 1st)   
 
 
 A little more concise, and a little more mind-bending.

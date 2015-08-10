@@ -40,11 +40,11 @@ public class Test {
 
       runSuitePasswordTwoRules();
       runSuitePasswordThreeRules();
-      if (true) { return; }
-      runSuiteNeg400To400();
       runSuiteSplitSpace();
       runSuiteSplit2PlusChars();
       runSuiteReplaceAll();
+      if (true) { return; }
+      runSuiteNeg400To400();
       runSuiteNeg12To12();
       runSuiteRange();
    }
