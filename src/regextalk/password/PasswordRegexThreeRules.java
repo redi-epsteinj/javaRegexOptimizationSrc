@@ -1,19 +1,12 @@
 package regextalk.password;
 
-import regextalk.AbstractReusedMatcherToBenchmark;
-import regextalk.MatchOrFind;
-
 /**
  * http://stackoverflow.com/questions/28886707/how-to-create-regex-for-passwords-validate-with-length-8-24-and-contain-at-lea
  */
-public class PasswordRegexThreeRules extends AbstractReusedMatcherToBenchmark implements PasswordToBenchmark {
-   private final PasswordToBenchmarkComposer passwordComposer;
-
+public class PasswordRegexThreeRules extends AbstractPasswordRegex {
    public PasswordRegexThreeRules() {
-      super(MatchOrFind.MATCH);
-      passwordComposer = new PasswordToBenchmarkComposer();
+       super(REGEX);
    }
-
    public static void main(String[] args) { new PasswordRegexThreeRules().setupRunBreakdown(); }
 
    private static final String SPECIAL_CHARS = PasswordRegexTwoRules.SPECIAL_CHARS;
@@ -36,22 +29,4 @@ public class PasswordRegexThreeRules extends AbstractReusedMatcherToBenchmark im
          "[A-Za-z0-9" + SPECIAL_CHARS + "]" +     //all legal characters
          "{8,24}" +                               //8 to 24 chars
       "$";                                        //end of input
-   @Override
-   public String getRegex() {
-      return REGEX;
-   }
-
-   @Override
-   public String[] getInputs() {
-      return passwordComposer.getInputs();
-   }
-
-   public boolean isPasswordValid(String password) {
-      return getMatcher().reset(password).matches();
-   }
-
-   @Override
-   public void runCodeToBeTimed() {
-      passwordComposer.runCodeToBeTimed(this);
-   }
 }

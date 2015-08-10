@@ -11,7 +11,7 @@ public abstract class AbstractReusedMatcherToBenchmark implements RegexToBenchma
    private final MatchOrFind matchOrFind;
 
    public AbstractReusedMatcherToBenchmark() {
-       this(MatchOrFind.MATCH);
+       this(MatchOrFind.MATCHES);
    }
    
    public AbstractReusedMatcherToBenchmark(MatchOrFind match_orFind) {
@@ -53,7 +53,7 @@ public abstract class AbstractReusedMatcherToBenchmark implements RegexToBenchma
                                     Arrays.toString(getInputs()));
          }
 
-         boolean inRange = (getMatchOrFind() == MatchOrFind.MATCH)
+         boolean inRange = (getMatchOrFind() == MatchOrFind.MATCHES)
                            ? getMatcher().reset(input).matches()
                            : getMatcher().reset(input).find();
          System.out.printf("* %s: %satched%n", input, (inRange ? "M" : "NOT m"));

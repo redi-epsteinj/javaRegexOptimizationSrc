@@ -6,7 +6,7 @@ import regextalk.MatchOrFind;
 public class RangeRegexUnanchoredMatches extends AbstractReusedMatcherToBenchmark {
 
    public RangeRegexUnanchoredMatches() {
-       super(MatchOrFind.MATCH);
+       super(MatchOrFind.MATCHES);
    }
 
    public static void main(String[] cmd_lineParams) {

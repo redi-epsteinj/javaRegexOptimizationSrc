@@ -38,10 +38,10 @@ public class Test {
 
    public static void main(String[] cmd_lineParams) {
 
-      runSuiteNeg400To400();
-      if (true) { return; }
       runSuitePasswordTwoRules();
       runSuitePasswordThreeRules();
+      if (true) { return; }
+      runSuiteNeg400To400();
       runSuiteSplitSpace();
       runSuiteSplit2PlusChars();
       runSuiteReplaceAll();
@@ -136,9 +136,9 @@ public class Test {
       StringBuilder builder = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(builder, null, 100_000, 2000,
                                             new Neg400To400BadToGood00EveryNumberOrd(),
-                                            new Neg400To400BadToGood01cNonCapturingWithBounds(),
                                             new Neg400To400BadToGood01aBounded(),
                                             new Neg400To400BadToGood01bNonCapturing(),
+                                            new Neg400To400BadToGood01cNonCapturingWithBounds(),
                                             new Neg400To400BadToGood02Dash(),
                                             new Neg400To400BadToGood03aZeroToNineD(),
                                             new Neg400To400BadToGood03bZeroToNine(),

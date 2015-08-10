@@ -1,4 +1,5 @@
 package regextalk;
 
-public enum MatchOrFind { MATCH, FIND;
+public enum MatchOrFind {
+   MATCHES, FIND;
 }
