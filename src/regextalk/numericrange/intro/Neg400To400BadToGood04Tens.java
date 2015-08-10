@@ -1,13 +1,6 @@
 package regextalk.numericrange.intro;
 
-import regextalk.AbstractReusedMatcherToBenchmark;
-import regextalk.MatchOrFind;
-
-public class Neg400To400BadToGood04Tens extends AbstractReusedMatcherToBenchmark {
-   public Neg400To400BadToGood04Tens() {
-       super(MatchOrFind.MATCH);
-   }
-
+public class Neg400To400BadToGood04Tens extends AbstractNeg400To400 {
    public static void main(String[] ignored) {
       new Neg400To400BadToGood04Tens().setupRunBreakdown();
    }

@@ -1,13 +1,6 @@
 package regextalk.numericrange.intro;
 
-import regextalk.AbstractReusedMatcherToBenchmark;
-import regextalk.MatchOrFind;
-
-public class Neg12To12BadBoundedNonCaptured extends AbstractReusedMatcherToBenchmark {
-
-   public Neg12To12BadBoundedNonCaptured() {
-       super(MatchOrFind.FIND);
-   }
+public class Neg12To12BadBoundedNonCaptured extends AbstractNeg400To400 {
 
    public static void main(String[] ignored) {
       new Neg12To12BadBoundedNonCaptured().setupRunBreakdown();

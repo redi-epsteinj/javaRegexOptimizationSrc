@@ -1,12 +1,7 @@
 package regextalk.numericrange.intro;
 
-import regextalk.AbstractReusedMatcherToBenchmark;
-import regextalk.MatchOrFind;
+public class Neg400To400EvenBetter extends AbstractNeg400To400 {
 
-public class Neg400To400EvenBetter extends AbstractReusedMatcherToBenchmark {
-   public Neg400To400EvenBetter() {
-       super(MatchOrFind.MATCH);
-   }
    public static void main(String[] ignored) {
       new Neg400To400EvenBetter().setupRunBreakdown();
    }
@@ -17,5 +12,5 @@ public class Neg400To400EvenBetter extends AbstractReusedMatcherToBenchmark {
    }
 
    @Override
-   public String[] getInputs() { return Neg400To400EveryNumberOrd.INPUTS; }
+   public String[] getInputs() { return Neg400To400BadToGood00EveryNumberOrd.INPUTS; }
 }

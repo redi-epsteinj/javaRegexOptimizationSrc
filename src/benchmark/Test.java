@@ -12,13 +12,14 @@ import regextalk.numericrange.intro.Neg400To400BadToGood01aBounded;
 import regextalk.numericrange.intro.Neg400To400BadToGood01bNonCapturing;
 import regextalk.numericrange.intro.Neg400To400BadToGood01cNonCapturingWithBounds;
 import regextalk.numericrange.intro.Neg400To400BadToGood02Dash;
-import regextalk.numericrange.intro.Neg400To400BadToGood03ZeroToNine;
+import regextalk.numericrange.intro.Neg400To400BadToGood03aZeroToNineD;
+import regextalk.numericrange.intro.Neg400To400BadToGood03bZeroToNine;
 import regextalk.numericrange.intro.Neg400To400BadToGood04Tens;
 import regextalk.numericrange.intro.Neg400To400BadToGood05Hundreds;
 import regextalk.numericrange.intro.Neg400To400BadToGood06Consolidated;
 import regextalk.numericrange.intro.Neg400To400BadToGood07EasiestOr1st;
 import regextalk.numericrange.intro.Neg400To400EvenBetter;
-import regextalk.numericrange.intro.Neg400To400EveryNumberOrd;
+import regextalk.numericrange.intro.Neg400To400BadToGood00EveryNumberOrd;
 import regextalk.password.PasswordLogicThreeRules;
 import regextalk.password.PasswordLogicTwoRules;
 import regextalk.password.PasswordRegexThreeRules;
@@ -134,12 +135,13 @@ public class Test {
    public static void runSuiteNeg400To400() {
       StringBuilder builder = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(builder, null, 100_000, 2000,
-                                            new Neg400To400EveryNumberOrd(),
+                                            new Neg400To400BadToGood00EveryNumberOrd(),
+                                            new Neg400To400BadToGood01cNonCapturingWithBounds(),
                                             new Neg400To400BadToGood01aBounded(),
                                             new Neg400To400BadToGood01bNonCapturing(),
-                                            new Neg400To400BadToGood01cNonCapturingWithBounds(),
                                             new Neg400To400BadToGood02Dash(),
-                                            new Neg400To400BadToGood03ZeroToNine(),
+                                            new Neg400To400BadToGood03aZeroToNineD(),
+                                            new Neg400To400BadToGood03bZeroToNine(),
                                             new Neg400To400BadToGood04Tens(),
                                             new Neg400To400BadToGood05Hundreds(),
                                             new Neg400To400BadToGood06Consolidated(),

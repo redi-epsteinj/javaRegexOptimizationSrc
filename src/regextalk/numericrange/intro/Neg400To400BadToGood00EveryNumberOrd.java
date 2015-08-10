@@ -8,16 +8,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import regextalk.AbstractReusedMatcherToBenchmark;
-import regextalk.MatchOrFind;
-
-public class Neg400To400EveryNumberOrd extends AbstractReusedMatcherToBenchmark {
-   public Neg400To400EveryNumberOrd() {
-       super(MatchOrFind.FIND);
-   }
-
+public class Neg400To400BadToGood00EveryNumberOrd extends AbstractNeg400To400 {
    public static void main(String[] ignored) {
-      new Neg400To400EveryNumberOrd().setupRunBreakdown();
+      new Neg400To400BadToGood00EveryNumberOrd().setupRunBreakdown();
    }
 
    public static final String[] INPUTS = newInputs();
@@ -38,7 +31,7 @@ public class Neg400To400EveryNumberOrd extends AbstractReusedMatcherToBenchmark 
       //Now a fraction the size of the original, with random elements from it.
 
       strList.add(0, "-401");
-      strList.addAll(Arrays.asList("401", "Jimmy", "u390x", "-0", "0000"));
+      strList.addAll(Arrays.asList("401", "Jimmy", "u390x", "-0", "0000", "   (45)   "));
 
       return strList.toArray(new String[strList.size()]);
    }

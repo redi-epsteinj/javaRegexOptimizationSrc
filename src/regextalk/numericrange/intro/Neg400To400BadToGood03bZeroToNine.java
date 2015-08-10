@@ -1,19 +1,13 @@
 package regextalk.numericrange.intro;
 
-import regextalk.AbstractReusedMatcherToBenchmark;
-import regextalk.MatchOrFind;
-
-public class Neg400To400BadToGood03ZeroToNine extends AbstractReusedMatcherToBenchmark {
-   public Neg400To400BadToGood03ZeroToNine() {
-       super(MatchOrFind.MATCH);
-   }
+public class Neg400To400BadToGood03bZeroToNine extends AbstractNeg400To400 {
 
    public static void main(String[] ignored) {
-      new Neg400To400BadToGood03ZeroToNine().setupRunBreakdown();
+      new Neg400To400BadToGood03bZeroToNine().setupRunBreakdown();
    }
 
    @Override
-   public String[] getInputs() { return Neg400To400EveryNumberOrd.INPUTS; }
+   public String[] getInputs() { return Neg400To400BadToGood00EveryNumberOrd.INPUTS; }
 
    public static final String ONE_TO_400 =
          "[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9]|" +

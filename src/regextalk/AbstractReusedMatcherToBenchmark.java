@@ -45,6 +45,7 @@ public abstract class AbstractReusedMatcherToBenchmark implements RegexToBenchma
 
    @Override
    public void runCodeToBeTimed() {
+      System.out.println(getMatchOrFind());
       int[] indexElem0 = {0};
       Arrays.stream(getInputs()).forEach(input -> {
          if (input == null) {

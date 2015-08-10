@@ -4,15 +4,7 @@ import static java.util.stream.Collectors.joining;
 
 import java.util.Arrays;
 
-import regextalk.AbstractReusedMatcherToBenchmark;
-import regextalk.MatchOrFind;
-
-public class Neg400To400BadToGood02Dash extends AbstractReusedMatcherToBenchmark {
-
-   public Neg400To400BadToGood02Dash() {
-      super(MatchOrFind.FIND);
-   }
-
+public class Neg400To400BadToGood02Dash extends AbstractNeg400To400 {
 
    public static final String ONE_OR_MORE_ZEROS_NOT_PRECEDED_BY_DASH = "(?<!-)0+";
 
@@ -21,16 +13,16 @@ public class Neg400To400BadToGood02Dash extends AbstractReusedMatcherToBenchmark
    }
 
    @Override
-   public String[] getInputs() { return Neg400To400EveryNumberOrd.INPUTS; }
+   public String[] getInputs() { return Neg400To400BadToGood00EveryNumberOrd.INPUTS; }
 
    public static final String[] ONE_TO_400_PIECES =
-         new String[]{Neg400To400EveryNumberOrd.ONE_TO_50, Neg400To400EveryNumberOrd.FIFTY1_TO_100,
-                      Neg400To400EveryNumberOrd.ONE01_TO_150,
-                      Neg400To400EveryNumberOrd.ONE51_TO_200,
-                      Neg400To400EveryNumberOrd.TWO01_TO_250,
-                      Neg400To400EveryNumberOrd.TWO51_TO_300,
-                      Neg400To400EveryNumberOrd.THREE01_TO_350,
-                      Neg400To400EveryNumberOrd.THREE51_TO_400};
+         new String[]{Neg400To400BadToGood00EveryNumberOrd.ONE_TO_50, Neg400To400BadToGood00EveryNumberOrd.FIFTY1_TO_100,
+                      Neg400To400BadToGood00EveryNumberOrd.ONE01_TO_150,
+                      Neg400To400BadToGood00EveryNumberOrd.ONE51_TO_200,
+                      Neg400To400BadToGood00EveryNumberOrd.TWO01_TO_250,
+                      Neg400To400BadToGood00EveryNumberOrd.TWO51_TO_300,
+                      Neg400To400BadToGood00EveryNumberOrd.THREE01_TO_350,
+                      Neg400To400BadToGood00EveryNumberOrd.THREE51_TO_400};
    public static final String   ONE_TO_400        = Arrays.stream(ONE_TO_400_PIECES).
          collect(joining("|"));
 
