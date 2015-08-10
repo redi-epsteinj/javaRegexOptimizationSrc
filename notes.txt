@@ -1,3 +1,8 @@
+Regular expressions in Java. 
+Optimizing regular expressions and regex-related-java code, with
+Comparative benchmarks to prove it.
+
+
 Neg12To12BadEveryNumberOrd
 
 (
@@ -21,12 +26,7 @@ Neg12To12BadEveryNumberOrd
 Benefits: Easy to understand, good basis to start optimizationss with
 Grossly inefficient, massive redundancies, unbounded, capturing
 
-100,000 iterations, 
-Neg400To400EveryNumberOrd: 48,132,140,794 nanoseconds (48 seconds)
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
-
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
 
 Neg400To400BadToGood01NonCapturingWithBounds: 
 
@@ -50,12 +50,7 @@ Stop capturing, add word bounds.
 391|392|393|394|395|396|397|398|399|400
 )\b
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
 
 Neg400To400BadToGood02Dash: 
 
@@ -87,11 +82,7 @@ In addition, let's allow the special case of one-or-more zeros, *not* followed b
 	   391|392|393|394|395|396|397|398|399|400    
 	) 
 )\b
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
 
 03aZeroToNineD: 
 
@@ -117,19 +108,11 @@ to
    )
 )\b
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
 
 03bZeroToNine:
 
-If internationalization is not a requirement, then [0-9] is a little better than \d:
-
+If internationalization is not a requirement, then [0-9] (exactly ten digits) is a little better than \d (must decide current language, then obtain all digit characters in that language):
 
 \b(?:
    (?<!-)0+|
@@ -144,15 +127,7 @@ If internationalization is not a requirement, then [0-9] is a little better than
    )
 )\b
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
 
 Neg400To400BadToGood04Tens: 
 
@@ -169,16 +144,7 @@ Neg400To400BadToGood04Tens:
    )
 )\b
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
 
 Neg400To400BadToGood05Hundreds: 
 
@@ -204,16 +170,7 @@ to
    )
 )\b
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
 
 Neg400To400BadToGood06Consolidated: 
 
@@ -229,18 +186,7 @@ Consolidating a bit more:
    )
 )
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
 
 Neg400To400BadToGood07EasiestOr1st: 
 
@@ -256,19 +202,7 @@ Move the "easiest" or'd element to the start of the group.
    )
 )
 
-(100,000 iterations)       ------- FIND ------------------------------    ------- MATCHES ------------------------------   
 
-00EveryNumberOrd:          47,253,585,345                                 51,232,254,755
-01aBounded:                53,572,490,923 ( -13.37% prev)                 37,636,583,861 (  26.54% prev)
-01bNonCapturing:           44,037,833,885 (  17.80% prev,   6.81% 1st)    46,135,675,213 ( -22.58% prev,   9.95% 1st)
-01cNonCapturingWithBounds: 53,132,395,793 ( -20.65% prev, -12.44% 1st)    37,759,870,563 (  18.15% prev,  26.30% 1st)
-02Dash:                    30,342,508,921 (  42.89% prev,  35.79% 1st)    25,924,092,390 (  31.34% prev,  49.40% 1st)
-03aZeroToNineD:            17,297,258,273 (  42.99% prev,  63.39% 1st)    18,813,164,638 (  27.43% prev,  63.28% 1st)
-03bZeroToNine:             17,221,216,262 (   0.44% prev,  63.56% 1st)    20,001,767,064 (  -6.32% prev,  60.96% 1st)
-04Tens:                     1,864,859,217 (  89.17% prev,  96.05% 1st)     2,086,224,650 (  89.57% prev,  95.93% 1st)
-05Hundreds:                16,776,636,617 (-799.62% prev,  64.50% 1st)    18,223,555,607 (-773.52% prev,  64.43% 1st)
-06Consolidated:            17,323,043,207 (  -3.26% prev,  63.34% 1st)    18,755,857,716 (  -2.92% prev,  63.39% 1st)
-07EasiestOr1st:            17,129,688,497 (   1.12% prev,  63.75% 1st)    18,750,002,816 (   0.03% prev,  63.40% 1st)
 
 
 A little more concise, and a little more mind-bending.
@@ -299,6 +233,7 @@ EvenBetter:                16,999,019,122 (   0.76% prev,  64.03% 1st)    18,563
 
 
 
+
 PasswordRegexTwoRules: ^(?:(?=.*[a-z])(?=.*[A-Z])|(?=.*[a-z])(?=.*[0-9])|(?=.*[a-z])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[])|(?=.*[A-Z])(?=.*[0-9])|(?=.*[A-Z])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[])|(?=.*[A-Z])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[]))[A-Za-z0-9><?.,!@#$%^&*+=_)(\}\{\]\[]{8,24}$
 
 public static final String SPECIAL_CHARS = "><?.,!@#$%^&*+=_)(\\}\\{\\]\\[";
@@ -326,20 +261,9 @@ private static final String REGEX = "" +
    "{8,24}" +                            //8 to 24 chars
    "$";                                  //end of input
 
-(100,000 iterations)   ------- FIND ----------------  ------- MATCHES ---------  
-RegexTwoRules:         2,722,639,498                  3,261,099,841
-LogicTwoRules:           593,202,203 (78.21% prev)    727,383,758 (77.70% prev)
-
-(100,000 iterations)   ------- FIND ----------------  ------- MATCHES ---------  
-RegexThreeRules:       1,675,162,125                  1,647,453,015
-LogicThreeRules:         511,055,436 (69.49% prev)    517,908,998 (68.56% prev)
 
 
-100000 iterations
-PasswordRegexTwoRules: 3,972,150,080
-PasswordLogicTwoRules:   745,107,773 (81.24% prev)
-
-^(?:(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])|(?=.*[a-z])(?=.*[A-Z])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[])|(?=.*[a-z])(?=.*[0-9])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[])|(?=.*[A-Z])(?=.*[0-9])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[]))[A-Za-z0-9><?.,!@#$%^&*+=_)(\}\{\]\[]{8,24}$
+PasswordRegexThreeRules: ^(?:(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])|(?=.*[a-z])(?=.*[A-Z])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[])|(?=.*[a-z])(?=.*[0-9])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[])|(?=.*[A-Z])(?=.*[0-9])(?=.*[><?.,!@#$%^&*+=_)(\}\{\]\[]))[A-Za-z0-9><?.,!@#$%^&*+=_)(\}\{\]\[]{8,24}$
 
 public static final String SPECIAL_CHARS = "><?.,!@#$%^&*+=_)(\\}\\{\\]\\[";
 public static final String LKA_LOWER = "(?=.*[a-z])";    //LKA: lookahead
@@ -407,28 +331,28 @@ public class PasswordLogicTwoRules {
    }
 }
 
-100000 iterations
-PasswordRegexThreeRules: 1,573,514,573
-PasswordLogicThreeRules:   543,115,799 (65.48% prev)
+(100,000 iterations)
+RegexTwoRules:         2,722,639,498                  
+LogicTwoRules:           593,202,203 (78.21% prev)    
+
+(100,000 iterations)  
+RegexThreeRules:       1,675,162,125                  
+LogicThreeRules:        511,055,436 (69.49% prev) 
+
+
 
 String toSplit = "one two three four five";
 ...
 String[] splits = toSplit.split(" ");
 System.out.println(Arrays.stream(splits).collect(joining(" "));   //"one two three four five"
 
-100000 iterations
-Regex: " "
-StringDotSplit:       522,078,318
+
 
 String toSplit = "one two three four five";
 ...
 String[] splits = Pattern.compile(" ").split(toSplit);
 System.out.println(Arrays.stream(splits).collect(joining(" "));   //"one two three four five"
 
-100000 iterations
-Regex: " "
-StringDotSplit:       522,078,318
-PatternDotSplit:      680,520,660 (-30.35% prev)
 
 
 Pattern pattern = Pattern.compile(" ");
@@ -437,11 +361,6 @@ String toSplit = "one two three four five";
 String[] splits = pattern.split(toSplit);
 System.out.println(Arrays.stream(splits).collect(joining(" "));   //"one two three four five"
 
-100000 iterations
-Regex: " "
-StringDotSplit:       522,078,318
-PatternDotSplit:      680,520,660 (-30.35% prev)
-ReusedPatternSplit:   498,117,692 (26.80% prev,    4.59% 1st)
 
 
 String toSplit = "one two three four five";
@@ -471,8 +390,6 @@ String replaceWith = "---";
 String output = input.replaceAll(regex, replaceWith);
 System.out.println(output);   //"One---two---three---four---five---six"
 
-100000 iterations
-StringDotReplaceAll: 526,316,515
 
 
 String input = "One, two, three. four/five six";
@@ -482,9 +399,7 @@ String replaceWith = "---";
 String output = Pattern.compile(regex).matcher(input).replaceAll(replaceWith);
 System.out.println(output);   //"One---two---three---four---five---six"
 
-100000 iterations
-StringDotReplaceAll: 526,316,515
-PatternDotReplaceAll: 447,841,131 (14.91% prev)
+
 
 
 String input = "One, two, three. four/five six";
@@ -495,10 +410,7 @@ Pattern pattern = Pattern.compile(regex);
 String output = pattern.matcher(input).replaceAll(replaceWith);
 System.out.println(output);   //"One---two---three---four---five---six"
 
-100000 iterations
-StringDotReplaceAll: 526,316,515
-PatternDotReplaceAll: 447,841,131 (14.91% prev)
-ReusedPatternReplaceAll: 352,345,270 (21.32% prev, 33.05% 1st)
+
 
 
 String input = "One, two, three. four/five six";
@@ -516,24 +428,3 @@ PatternDotReplaceAll: 447,841,131 (14.91% prev)
 ReusedPatternReplaceAll: 352,345,270 (21.32% prev, 33.05% 1st)
 ReusedMatcherReplaceAll: 343,194,252 (2.60% prev, 34.79% 1st)
 
-
-100000 iterations
-RangeRegexUnanchoredFind: 1,515,511,589
-
-
-100000 iterations
-RangeRegexUnanchoredFind: 1,515,511,589
-RangeRegexAnchoredFind: 323,075,406 (78.68% prev)
-
-
-100000 iterations
-RangeRegexUnanchoredFind: 1,515,511,589
-RangeRegexAnchoredFind: 323,075,406 (78.68% prev)
-RangeRegexUnanchoredMatches: 1,425,393,173 (-341.20% prev, 5.95% 1st)
-
-
-100000 iterations
-RangeRegexUnanchoredFind: 1,515,511,589
-RangeRegexAnchoredFind: 323,075,406 (78.68% prev)
-RangeRegexUnanchoredMatches: 1,425,393,173 (-341.20% prev, 5.95% 1st)
-NumericRangeLogic: 155,220,473 (89.11% prev, 89.76% 1st)
