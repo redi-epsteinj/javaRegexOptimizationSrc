@@ -1,25 +1,25 @@
 package benchmark;
 
-import regextalk.numericrange.NumericRangeLogic;
-import regextalk.numericrange.RangeRegexAnchoredFind;
-import regextalk.numericrange.RangeRegexUnanchoredFind;
-import regextalk.numericrange.RangeRegexUnanchoredMatches;
-import regextalk.numericrange.intro.Neg12To12BadBoundedNonCaptured;
-import regextalk.numericrange.intro.Neg12To12BadEveryNumberOrd;
-import regextalk.numericrange.intro.Neg12To12Good0t9First;
-import regextalk.numericrange.intro.Neg12To12Good10to12First;
-import regextalk.numericrange.intro.Neg400To400BadToGood01aBounded;
-import regextalk.numericrange.intro.Neg400To400BadToGood01bNonCapturing;
-import regextalk.numericrange.intro.Neg400To400BadToGood01cNonCapturingWithBounds;
-import regextalk.numericrange.intro.Neg400To400BadToGood02Dash;
-import regextalk.numericrange.intro.Neg400To400BadToGood03aZeroToNineD;
-import regextalk.numericrange.intro.Neg400To400BadToGood03bZeroToNine;
-import regextalk.numericrange.intro.Neg400To400BadToGood04Tens;
-import regextalk.numericrange.intro.Neg400To400BadToGood05Hundreds;
-import regextalk.numericrange.intro.Neg400To400BadToGood06Consolidated;
-import regextalk.numericrange.intro.Neg400To400BadToGood07EasiestOr1st;
-import regextalk.numericrange.intro.Neg400To400EvenBetter;
-import regextalk.numericrange.intro.Neg400To400BadToGood00EveryNumberOrd;
+import regextalk.numericrange.twogrand.NumericRangeLogic;
+import regextalk.numericrange.twogrand.RangeRegexAnchoredFind;
+import regextalk.numericrange.twogrand.RangeRegexUnanchoredFind;
+import regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches;
+import regextalk.numericrange.twelve.Neg12To12BadBoundedNonCaptured;
+import regextalk.numericrange.twelve.Neg12To12BadEveryNumberOrd;
+import regextalk.numericrange.twelve.Neg12To12Good0t9First;
+import regextalk.numericrange.twelve.Neg12To12Good10to12First;
+import regextalk.numericrange.FourHundred02BoundedOnlyToBenchmark;
+import regextalk.numericrange.FourHundred03NonCapturingOnlyToBenchmark;
+import regextalk.numericrange.FourHundred04BoundedAndNonCapturingToBenchmark;
+import regextalk.numericrange.FourHundred05OptionalDashToBenchmark;
+import regextalk.numericrange.FourHundred06DigitOnesDigitDToBenchmark;
+import regextalk.numericrange.FourHundred07OnesDigit0to9ToBenchmark;
+import regextalk.numericrange.FourHundred08TensDigitTo0to9ToBenchmark;
+import regextalk.numericrange.FourHundred09HundredsDigitTo0to9ToBenchmark;
+import regextalk.numericrange.FourHundred10FurtherConsolidationToBenchmark;
+import regextalk.numericrange.Neg400To400BadToGood07EasiestOr1st;
+import regextalk.numericrange.FourHundred11BestToBenchmark;
+import regextalk.numericrange.FourHundred01EveryNumberInOrToBenchmark;
 import regextalk.password.PasswordLogicThreeRules;
 import regextalk.password.PasswordLogicTwoRules;
 import regextalk.password.PasswordRegexThreeRules;
@@ -135,18 +135,18 @@ public class Test {
    public static void runSuiteNeg400To400() {
       StringBuilder builder = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(builder, null, 100_000, 2000,
-                                            new Neg400To400BadToGood00EveryNumberOrd(),
-                                            new Neg400To400BadToGood01aBounded(),
-                                            new Neg400To400BadToGood01bNonCapturing(),
-                                            new Neg400To400BadToGood01cNonCapturingWithBounds(),
-                                            new Neg400To400BadToGood02Dash(),
-                                            new Neg400To400BadToGood03aZeroToNineD(),
-                                            new Neg400To400BadToGood03bZeroToNine(),
-                                            new Neg400To400BadToGood04Tens(),
-                                            new Neg400To400BadToGood05Hundreds(),
-                                            new Neg400To400BadToGood06Consolidated(),
+                                            new FourHundred01EveryNumberInOrToBenchmark(),
+                                            new FourHundred02BoundedOnlyToBenchmark(),
+                                            new FourHundred03NonCapturingOnlyToBenchmark(),
+                                            new FourHundred04BoundedAndNonCapturingToBenchmark(),
+                                            new FourHundred05OptionalDashToBenchmark(),
+                                            new FourHundred06DigitOnesDigitDToBenchmark(),
+                                            new FourHundred07OnesDigit0to9ToBenchmark(),
+                                            new FourHundred08TensDigitTo0to9ToBenchmark(),
+                                            new FourHundred09HundredsDigitTo0to9ToBenchmark(),
+                                            new FourHundred10FurtherConsolidationToBenchmark(),
                                             new Neg400To400BadToGood07EasiestOr1st(),
-                                            new Neg400To400EvenBetter());
+                                            new FourHundred11BestToBenchmark());
       System.out.println(builder.toString());
       System.out.println();
    }

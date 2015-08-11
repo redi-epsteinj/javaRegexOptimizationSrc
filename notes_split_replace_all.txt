@@ -1,0 +1,89 @@
+
+
+String toSplit = "one two three four five";
+...
+String regex = " ";
+String[] splits = toSplit.split(regex);  //!!!!!!!!
+System.out.println(Arrays.stream(splits).collect(joining(" "));   //"one two three four five"
+
+
+
+String toSplit = "one two three four five";
+...
+String[] splits = Pattern.compile(" ").split(toSplit);
+System.out.println(Arrays.stream(splits).collect(joining(" "));   //"one two three four five"
+
+
+
+Pattern pattern = Pattern.compile(" ");
+String toSplit = "one two three four five";
+...
+String[] splits = pattern.split(toSplit);
+System.out.println(Arrays.stream(splits).collect(joining(" "));   //"one two three four five"
+
+
+
+String toSplit = "one two three four five";
+String splitsJoined = pattern.splitAsStream(input).collect(
+      joining(CLOSE_QT_COMMA_OPEN_QT, "\"", "\""));
+System.out.println(splitsJoined);   //"one two three four five"
+
+100000 iterations
+Regex: " "
+StringDotSplit:       522,078,318
+PatternDotSplit:      680,520,660 (-30.35% prev)
+ReusedPatternSplit:   498,117,692 ( 26.80% prev,   4.59% 1st)
+PatternSplitAsStream: 676,661,368 (-35.84% prev, -29.61% 1st)
+
+100000 iterations
+Regex: "[,./ ]+"
+StringDotSplit: 776,093,112
+PatternDotSplit: 858,004,768      (-10.55% prev)
+ReusedPatternSplit: 549,463,008   ( 35.96% prev, 29.20% 1st)
+PatternSplitAsStream: 702,916,075 (-27.93% prev,  9.43% 1st)
+
+
+String input = "One, two, three. four/five six";
+String regex = "[,./ ]+"
+String replaceWith = "---";
+...
+String output = input.replaceAll(regex, replaceWith);
+System.out.println(output);   //"One---two---three---four---five---six"
+
+
+
+String input = "One, two, three. four/five six";
+String regex = "[,./ ]+"
+String replaceWith = "---";
+...
+String output = Pattern.compile(regex).matcher(input).replaceAll(replaceWith);
+System.out.println(output);   //"One---two---three---four---five---six"
+
+
+
+
+String input = "One, two, three. four/five six";
+String regex = "[,./ ]+"
+String replaceWith = "---";
+...
+Pattern pattern = Pattern.compile(regex);
+String output = pattern.matcher(input).replaceAll(replaceWith);
+System.out.println(output);   //"One---two---three---four---five---six"
+
+
+
+
+String input = "One, two, three. four/five six";
+String regex = "[,./ ]+"
+String replaceWith = "---";
+Matcher matcher = Pattern.compile(regex).matcher("ignored input");
+...
+String output = matcher.reset(input).replaceAll(replaceWith);
+System.out.println(output);   //"One---two---three---four---five---six"
+
+
+100000 iterations
+StringDotReplaceAll: 526,316,515
+PatternDotReplaceAll: 447,841,131 (14.91% prev)
+ReusedPatternReplaceAll: 352,345,270 (21.32% prev, 33.05% 1st)
+ReusedMatcherReplaceAll: 343,194,252 (2.60% prev, 34.79% 1st)

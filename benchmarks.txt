@@ -1,0 +1,61 @@
+(100,000 iterations)       ------- FIND ------------------------------    
+
+00EveryNumberOrd:	47,253,585,345                                 
+01aBounded:	53,572,490,923 	13.37                 
+01bNonCapturing:	44,037,833,885	17.80	6.81    
+01cNonCapturingWithBounds: 53,132,395,793 	20.65	12.44    
+02Dash:	30,342,508,921	42.89	35.79    
+03aZeroToNineD:	17,297,258,273	42.99	63.39    
+03bZeroToNine:	17,221,216,262	0.44	63.56    
+04Tens:	1,864,859,217	89.17	96.05    
+05Hundreds:	16,776,636,617	799.62	64.50    
+06Consolidated:	17,323,043,207  	3.26	63.34    
+07EasiestOr1st:	17,129,688,497	1.12	63.75    
+EvenBetter:	16,999,019,122	0.76	64.03    
+
+(100,000 iterations)        ------- MATCHES ------------------------------   
+
+00EveryNumberOrd:	51,232,254,755
+01aBounded:	37,636,583,861	26.54
+01bNonCapturing:	46,135,675,213 	22.58	9.95
+01cNonCapturingWithBounds:  37,759,870,563	18.15	26.30
+02Dash:	25,924,092,390	31.34	49.40
+03aZeroToNineD:	18,813,164,638	27.43	63.28
+03bZeroToNine:	20,001,767,064  	6.32	60.96
+04Tens:	2,086,224,650	89.57	95.93
+05Hundreds:	18,223,555,607	773.52	64.43
+06Consolidated:	18,755,857,716  	2.92	63.39
+07EasiestOr1st:	18,750,002,816	0.03	63.40
+EvenBetter:	18,563,623,741	0.99	63.77   
+
+100000 iterations
+Regex: " "
+StringDotSplit:       522,078,318
+PatternDotSplit:      680,520,660	30.35
+ReusedPatternSplit:   498,117,	26.80	4.59
+PatternSplitAsStream: 676,661,368	35.84	29.61
+
+100000 iterations
+Regex: "[,./ ]+"
+StringDotSplit: 776,093,112
+PatternDotSplit: 858,004,768     	10.55
+ReusedPatternSplit: 549,463,008	35.	29.20
+PatternSplitAsStream: 702,916,075	27.93	9.43
+
+
+
+100000 iterations
+StringDotReplaceAll: 526,316,515
+PatternDotReplaceAll: 447,841	13114.91
+ReusedPatternReplaceAll: 352,345	27021.	33.05
+ReusedMatcherReplaceAll: 343,194	2522.	34.79
+
+
+(100,000 iterations)
+RegexTwoRules:         2,722,639,498                  
+LogicTwoRules:	593,202	20378.21    
+
+(100,000 iterations)  
+RegexThreeRules:       1,675,162,125                  
+LogicThreeRules:        511,055	43669.49 
+
