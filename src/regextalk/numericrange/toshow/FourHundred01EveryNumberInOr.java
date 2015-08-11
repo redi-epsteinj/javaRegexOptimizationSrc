@@ -55,8 +55,8 @@ public class FourHundred01EveryNumberInOr {
 
    public static final String[] newInputs() {
 
-      //All numbers, -400 to 400
-      List<Integer> intList = IntStream.range(-400, 401).boxed().collect(Collectors.toList());
+      //All numbers, including some non-valid
+      List<Integer> intList = IntStream.range(-450, 450).boxed().collect(Collectors.toList());
 
       Collections.shuffle(intList);
 
