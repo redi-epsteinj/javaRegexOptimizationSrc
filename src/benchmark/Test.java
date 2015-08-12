@@ -24,10 +24,10 @@ import regextalk.password.Password01RegexThreeRulesToBenchmark;
 import regextalk.password.Password02RegexTwoRulesToBenchmark;
 import regextalk.password.Password04LogicTwoRulesToBenchmark;
 import regextalk.password.Password03LogicThreeRulesToBenchmark;
-import regextalk.replaceall.PatternDotReplaceAll;
-import regextalk.replaceall.ReusedMatcherReplaceAll;
-import regextalk.replaceall.ReusedPatternReplaceAll;
-import regextalk.replaceall.StringDotReplaceAll;
+import regextalk.replaceall.ReplaceAll01StringDotToBenchmark;
+import regextalk.replaceall.ReplaceAll02PatternDotToBenchmark;
+import regextalk.replaceall.ReplaceAll03ReusedPatternToBenchmark;
+import regextalk.replaceall.ReplaceAll04ReusedMatcherToBenchmark;
 import regextalk.split.AbstractSplit;
 import regextalk.split.Split02PatternDotToBenchmark;
 import regextalk.split.Split04PatternAsStreamToBenchmark;
@@ -136,10 +136,10 @@ public class Test {
       SuiteToBenchmark suite = new SuiteToBenchmark.Builder().
             taskIterations(TASK_ITERS).suiteIterations(SUITE_ITERS).
             millsBetweenSuites(MILLS_BETWEEN_SUITES).
-            build(new StringDotReplaceAll(),
-                  new PatternDotReplaceAll(),
-                  new ReusedPatternReplaceAll(),
-                  new ReusedMatcherReplaceAll());
+            build(new ReplaceAll01StringDotToBenchmark(),
+                  new ReplaceAll02PatternDotToBenchmark(),
+                  new ReplaceAll03ReusedPatternToBenchmark(),
+                  new ReplaceAll04ReusedMatcherToBenchmark());
 
       StringBuilder buffer = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(buffer, TimedTestConsoleOutput.SUPPRESS, suite);

@@ -429,7 +429,7 @@ regextalk.numericrange.twogrand.RangeRegexAnchoredFind: 1,575,521,778 (4.07% fas
 regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches: 1,582,001,919 (-0.41% faster than previous, 3.68% than first)
 regextalk.numericrange.twogrand.NumericRangeLogic: 134,881,873 (91.47% faster than previous, 91.79% than first)
 
-SuiteToBenchmark{immutableTaskList=[regextalk.replaceall.StringDotReplaceAll@1a6c5a9e, regextalk.replaceall.PatternDotReplaceAll@37bba400, regextalk.replaceall.ReusedPatternReplaceAll@179d3b25, regextalk.replaceall.ReusedMatcherReplaceAll@254989ff], taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
+SuiteToBenchmark{immutableTaskList=[regextalk.replaceall.ReplaceAll01StringDotToBenchmark@1a6c5a9e, regextalk.replaceall.ReplaceAll02PatternDotToBenchmark@37bba400, regextalk.replaceall.ReplaceAll03ReusedPatternToBenchmark@179d3b25, regextalk.replaceall.ReplaceAll04ReusedMatcherToBenchmark@254989ff], taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
 100000 iterations
 Suite run 1 of 25
 StringDotReplaceAll...579,864,999
@@ -557,7 +557,7 @@ PatternDotReplaceAll...438,023,803
 ReusedPatternReplaceAll...381,795,276
 ReusedMatcherReplaceAll...380,993,215
 Task iterations=100000, suite iterations=25 (below results averaged)
-regextalk.replaceall.StringDotReplaceAll: 497,003,832
-regextalk.replaceall.PatternDotReplaceAll: 476,673,411 (4.09% faster than previous)
-regextalk.replaceall.ReusedPatternReplaceAll: 365,825,428 (23.25% faster than previous, 26.39% than first)
-regextalk.replaceall.ReusedMatcherReplaceAll: 360,240,780 (1.53% faster than previous, 27.52% than first)
+regextalk.replaceall.ReplaceAll01StringDotToBenchmark: 497,003,832
+regextalk.replaceall.ReplaceAll02PatternDotToBenchmark: 476,673,411 (4.09% faster than previous)
+regextalk.replaceall.ReplaceAll03ReusedPatternToBenchmark: 365,825,428 (23.25% faster than previous, 26.39% than first)
+regextalk.replaceall.ReplaceAll04ReusedMatcherToBenchmark: 360,240,780 (1.53% faster than previous, 27.52% than first)

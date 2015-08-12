@@ -1,30 +1,25 @@
 package regextalk.split.toshow;
 
+import static java.util.stream.Collectors.joining;
+
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
-import regextalk.split.AbstractSplit;
+public class Split03ReusedPattern {
 
-public class Split03ReusedPattern extends AbstractSplit {
+   public static void main(String[] ignored) {
+      String regex = "[,./ ]+";
+      String[] inputs = Split01StringDot.newInputs();
 
-   public Split03ReusedPattern(String regex) {
-      super(regex);
-   }
+      Pattern pattern = Pattern.compile(regex);
+      
+      Arrays.stream(inputs).forEach(input -> {
 
-   public static void main(String[] cmd_lineParams) {
-      new Split03ReusedPattern(REGEX_SPACE).setupRunBreakdown();
-      new Split03ReusedPattern(REGEX_2_PLUS).setupRunBreakdown();
-   }
+         String[] splits = pattern.split(input);
 
+         String joined = Arrays.stream(splits).collect(joining(" "));
 
-   @Override
-   public void runCodeToBeTimed() {
-      Pattern pattern = Pattern.compile(getRegex());
-      Arrays.stream(newInputs()).forEach(input -> {
-         System.out.println(input);
-         System.out.println(Arrays.toString(
-               pattern.split(input)
-         ));
+         System.out.println('"' + input + "\" -> \"" + joined + '"');
       });
    }
 }

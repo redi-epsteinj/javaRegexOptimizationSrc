@@ -1,22 +1,18 @@
 package regextalk.replaceall;
 
 import java.util.Arrays;
-import java.util.regex.Pattern;
 
-/**
- *
- */
-public class PatternDotReplaceAll implements ReplaceAllToBenchmark {
+public class ReplaceAll01StringDotToBenchmark implements ReplaceAllToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
-      new PatternDotReplaceAll().setupRunBreakdown();
+      new ReplaceAll01StringDotToBenchmark().setupRunBreakdown();
    }
 
    @Override
    public void runCodeToBeTimed() {
       Arrays.stream(getInputs()).forEach(input -> {
          System.out.print("\"" + input + "\"    ->    \"");
-         String replaced = Pattern.compile(getRegex()).matcher(input).replaceAll(REPLACE_WITH);
+         String replaced = input.replaceAll(getRegex(), REPLACE_WITH);
          System.out.println(replaced + "\"");
       });
    }

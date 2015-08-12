@@ -3,10 +3,10 @@ package regextalk.replaceall;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
-public class ReusedPatternReplaceAll implements ReplaceAllToBenchmark {
+public class ReplaceAll03ReusedPatternToBenchmark implements ReplaceAllToBenchmark {
 
    public static void main(String[] cmd_lineParams) {
-      new ReusedPatternReplaceAll().setupRunBreakdown();
+      new ReplaceAll03ReusedPatternToBenchmark().setupRunBreakdown();
    }
 
    private Pattern pattern;
