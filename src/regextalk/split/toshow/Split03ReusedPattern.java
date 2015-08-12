@@ -1,24 +1,26 @@
-package regextalk.split;
+package regextalk.split.toshow;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
-public class ReusedPatternSplit extends AbstractSplitToBenchmark {
+import regextalk.split.AbstractSplit;
 
-   public ReusedPatternSplit(String regex) {
+public class Split03ReusedPattern extends AbstractSplit {
+
+   public Split03ReusedPattern(String regex) {
       super(regex);
    }
 
    public static void main(String[] cmd_lineParams) {
-      new ReusedPatternSplit(REGEX_SPACE).setupRunBreakdown();
-      new ReusedPatternSplit(REGEX_2_PLUS).setupRunBreakdown();
+      new Split03ReusedPattern(REGEX_SPACE).setupRunBreakdown();
+      new Split03ReusedPattern(REGEX_2_PLUS).setupRunBreakdown();
    }
 
 
    @Override
    public void runCodeToBeTimed() {
       Pattern pattern = Pattern.compile(getRegex());
-      Arrays.stream(getInputs()).forEach(input -> {
+      Arrays.stream(newInputs()).forEach(input -> {
          System.out.println(input);
          System.out.println(Arrays.toString(
                pattern.split(input)

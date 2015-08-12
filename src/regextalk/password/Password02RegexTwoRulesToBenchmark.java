@@ -3,12 +3,12 @@ package regextalk.password;
 /**
  * http://stackoverflow.com/questions/28886707/how-to-create-regex-for-passwords-validate-with-length-8-24-and-contain-at-lea
  */
-public class PasswordRegexTwoRules extends AbstractPasswordRegex  {
-   public PasswordRegexTwoRules() {
+public class Password02RegexTwoRulesToBenchmark extends AbstractPasswordRegex  {
+   public Password02RegexTwoRulesToBenchmark() {
       super(REGEX);
    }
    public static void main(String[] args) {
-      new PasswordRegexTwoRules().setupRunBreakdown();
+      new Password02RegexTwoRulesToBenchmark().setupRunBreakdown();
    }
 
    public static final String SPECIAL_CHARS = "><?.,!@#$%^&*+=_)(\\}\\{\\]\\[";

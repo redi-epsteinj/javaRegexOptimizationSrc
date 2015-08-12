@@ -47,7 +47,7 @@ public class FourHundred01EveryNumberInOr {
 
       Arrays.stream(inputs).forEach(input -> {
 
-         boolean matches = matcher.reset(input).matches();
+         boolean matches = matcher.reset(input).find();
 
          System.out.printf("\"%s\" is %sin range.%n", input, (matches ? "" : "*NOT* "));
       });
@@ -68,8 +68,7 @@ public class FourHundred01EveryNumberInOr {
 
       //Now a fraction the size of the original, with random elements from it.
 
-      strList.add(0, "-401");
-      strList.addAll(Arrays.asList("401", "Jimmy", "u390x", "-0", "0000", "   (45)   "));
+      strList.addAll(Arrays.asList("Jimmy", "u390x", "-0", "0000", "   (45)   "));
 
       return strList.toArray(new String[strList.size()]);
    }

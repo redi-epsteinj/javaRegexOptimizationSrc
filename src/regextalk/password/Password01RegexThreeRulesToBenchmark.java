@@ -3,17 +3,17 @@ package regextalk.password;
 /**
  * http://stackoverflow.com/questions/28886707/how-to-create-regex-for-passwords-validate-with-length-8-24-and-contain-at-lea
  */
-public class PasswordRegexThreeRules extends AbstractPasswordRegex {
-   public PasswordRegexThreeRules() {
+public class Password01RegexThreeRulesToBenchmark extends AbstractPasswordRegex {
+   public Password01RegexThreeRulesToBenchmark() {
        super(REGEX);
    }
-   public static void main(String[] args) { new PasswordRegexThreeRules().setupRunBreakdown(); }
+   public static void main(String[] args) { new Password01RegexThreeRulesToBenchmark().setupRunBreakdown(); }
 
-   private static final String SPECIAL_CHARS = PasswordRegexTwoRules.SPECIAL_CHARS;
-   private static final String LKA_LOWER = PasswordRegexTwoRules.LKA_LOWER;
-   private static final String LKA_UPPER = PasswordRegexTwoRules.LKA_UPPER;
-   private static final String LKA_DIGIT = PasswordRegexTwoRules.LKA_DIGIT;
-   private static final String LKA_SPECIAL = PasswordRegexTwoRules.LKA_SPECIAL;
+   private static final String SPECIAL_CHARS = Password02RegexTwoRulesToBenchmark.SPECIAL_CHARS;
+   private static final String LKA_LOWER = Password02RegexTwoRulesToBenchmark.LKA_LOWER;
+   private static final String LKA_UPPER = Password02RegexTwoRulesToBenchmark.LKA_UPPER;
+   private static final String LKA_DIGIT = Password02RegexTwoRulesToBenchmark.LKA_DIGIT;
+   private static final String LKA_SPECIAL = Password02RegexTwoRulesToBenchmark.LKA_SPECIAL;
 
    private static final String REGEX = "" +
       "^" +                                       //start of input

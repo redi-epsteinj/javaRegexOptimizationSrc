@@ -31,7 +31,7 @@ public class FourHundred07OnesDigit0to9 {
 
       Arrays.stream(inputs).forEach(input -> {
 
-         boolean matches = matcher.reset(input).matches();
+         boolean matches = matcher.reset(input).find();
 
          System.out.printf("\"%s\" is %sin range.%n", input, (matches ? "" : "*NOT* "));
       });

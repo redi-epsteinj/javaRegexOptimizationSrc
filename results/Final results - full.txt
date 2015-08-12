@@ -1,0 +1,563 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin/java -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/Programming/IntelliJ IDEA 14.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/bin/production/Regex talk:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/hamcrest-core-1.3.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/junit-4.12.jar:/Applications/Programming/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain benchmark.Test
+SuiteToBenchmark{immutableTaskList=[regextalk.password.Password02RegexTwoRulesToBenchmark@78308db1, regextalk.password.Password04LogicTwoRulesToBenchmark@27c170f0], taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
+100000 iterations
+Suite run 1 of 25
+PasswordRegexTwoRules...3,406,650,273
+PasswordLogicTwoRules...578,527,694
+Suite run 2 of 25
+PasswordRegexTwoRules...1,719,405,734
+PasswordLogicTwoRules...494,781,768
+Suite run 3 of 25
+PasswordRegexTwoRules...1,853,851,614
+PasswordLogicTwoRules...503,203,899
+Suite run 4 of 25
+PasswordRegexTwoRules...1,801,779,734
+PasswordLogicTwoRules...484,715,311
+Suite run 5 of 25
+PasswordRegexTwoRules...1,757,777,877
+PasswordLogicTwoRules...501,485,726
+Suite run 6 of 25
+PasswordRegexTwoRules...1,777,874,994
+PasswordLogicTwoRules...504,430,408
+Suite run 7 of 25
+PasswordRegexTwoRules...1,770,964,509
+PasswordLogicTwoRules...495,001,795
+Suite run 8 of 25
+PasswordRegexTwoRules...1,799,561,567
+PasswordLogicTwoRules...506,643,278
+Suite run 9 of 25
+PasswordRegexTwoRules...1,789,902,210
+PasswordLogicTwoRules...502,853,107
+Suite run 10 of 25
+PasswordRegexTwoRules...1,887,555,688
+PasswordLogicTwoRules...489,079,638
+Suite run 11 of 25
+PasswordRegexTwoRules...1,811,942,803
+PasswordLogicTwoRules...501,516,381
+Suite run 12 of 25
+PasswordRegexTwoRules...1,803,237,912
+PasswordLogicTwoRules...493,995,337
+Suite run 13 of 25
+PasswordRegexTwoRules...1,756,633,719
+PasswordLogicTwoRules...497,308,033
+Suite run 14 of 25
+PasswordRegexTwoRules...1,787,238,150
+PasswordLogicTwoRules...507,503,091
+Suite run 15 of 25
+PasswordRegexTwoRules...1,776,332,867
+PasswordLogicTwoRules...507,417,457
+Suite run 16 of 25
+PasswordRegexTwoRules...1,818,855,797
+PasswordLogicTwoRules...505,022,303
+Suite run 17 of 25
+PasswordRegexTwoRules...1,827,615,034
+PasswordLogicTwoRules...504,962,451
+Suite run 18 of 25
+PasswordRegexTwoRules...1,770,498,947
+PasswordLogicTwoRules...560,406,819
+Suite run 19 of 25
+PasswordRegexTwoRules...1,763,651,403
+PasswordLogicTwoRules...487,751,628
+Suite run 20 of 25
+PasswordRegexTwoRules...1,813,277,499
+PasswordLogicTwoRules...488,789,480
+Suite run 21 of 25
+PasswordRegexTwoRules...1,773,214,179
+PasswordLogicTwoRules...490,458,849
+Suite run 22 of 25
+PasswordRegexTwoRules...1,734,902,140
+PasswordLogicTwoRules...522,872,406
+Suite run 23 of 25
+PasswordRegexTwoRules...1,817,526,404
+PasswordLogicTwoRules...498,146,712
+Suite run 24 of 25
+PasswordRegexTwoRules...1,761,530,571
+PasswordLogicTwoRules...494,045,761
+Suite run 25 of 25
+PasswordRegexTwoRules...1,764,235,075
+PasswordLogicTwoRules...502,402,634
+Task iterations=100000, suite iterations=25 (below results averaged)
+regextalk.password.Password02RegexTwoRulesToBenchmark: 1,853,840,668
+regextalk.password.Password04LogicTwoRulesToBenchmark: 504,932,878 (72.76% faster than previous)
+
+SuiteToBenchmark{immutableTaskList=[regextalk.password.Password01RegexThreeRulesToBenchmark@17a7cec2, regextalk.password.Password03LogicThreeRulesToBenchmark@65b3120a], taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
+100000 iterations
+Suite run 1 of 25
+PasswordRegexThreeRules...1,625,069,179
+PasswordLogicThreeRules...590,226,716
+Suite run 2 of 25
+PasswordRegexThreeRules...1,530,877,971
+PasswordLogicThreeRules...496,664,303
+Suite run 3 of 25
+PasswordRegexThreeRules...1,524,509,988
+PasswordLogicThreeRules...479,569,338
+Suite run 4 of 25
+PasswordRegexThreeRules...1,543,067,860
+PasswordLogicThreeRules...487,914,654
+Suite run 5 of 25
+PasswordRegexThreeRules...1,551,226,142
+PasswordLogicThreeRules...499,671,639
+Suite run 6 of 25
+PasswordRegexThreeRules...1,614,782,863
+PasswordLogicThreeRules...485,361,174
+Suite run 7 of 25
+PasswordRegexThreeRules...1,551,926,360
+PasswordLogicThreeRules...501,294,090
+Suite run 8 of 25
+PasswordRegexThreeRules...1,585,009,581
+PasswordLogicThreeRules...487,985,032
+Suite run 9 of 25
+PasswordRegexThreeRules...1,560,425,794
+PasswordLogicThreeRules...487,759,457
+Suite run 10 of 25
+PasswordRegexThreeRules...1,544,052,375
+PasswordLogicThreeRules...498,707,610
+Suite run 11 of 25
+PasswordRegexThreeRules...1,555,431,121
+PasswordLogicThreeRules...539,200,485
+Suite run 12 of 25
+PasswordRegexThreeRules...1,558,253,109
+PasswordLogicThreeRules...492,351,476
+Suite run 13 of 25
+PasswordRegexThreeRules...1,563,902,137
+PasswordLogicThreeRules...496,366,053
+Suite run 14 of 25
+PasswordRegexThreeRules...1,547,039,846
+PasswordLogicThreeRules...484,355,487
+Suite run 15 of 25
+PasswordRegexThreeRules...1,553,106,536
+PasswordLogicThreeRules...499,745,823
+Suite run 16 of 25
+PasswordRegexThreeRules...1,568,868,930
+PasswordLogicThreeRules...503,810,687
+Suite run 17 of 25
+PasswordRegexThreeRules...1,579,397,523
+PasswordLogicThreeRules...510,061,540
+Suite run 18 of 25
+PasswordRegexThreeRules...1,566,827,573
+PasswordLogicThreeRules...489,460,964
+Suite run 19 of 25
+PasswordRegexThreeRules...1,575,995,256
+PasswordLogicThreeRules...490,926,586
+Suite run 20 of 25
+PasswordRegexThreeRules...1,540,190,368
+PasswordLogicThreeRules...518,250,733
+Suite run 21 of 25
+PasswordRegexThreeRules...1,589,482,356
+PasswordLogicThreeRules...505,334,311
+Suite run 22 of 25
+PasswordRegexThreeRules...1,552,073,989
+PasswordLogicThreeRules...502,011,947
+Suite run 23 of 25
+PasswordRegexThreeRules...1,534,249,149
+PasswordLogicThreeRules...482,519,136
+Suite run 24 of 25
+PasswordRegexThreeRules...1,536,896,496
+PasswordLogicThreeRules...503,169,528
+Suite run 25 of 25
+PasswordRegexThreeRules...1,544,988,803
+PasswordLogicThreeRules...494,347,600
+Task iterations=100000, suite iterations=25 (below results averaged)
+regextalk.password.Password01RegexThreeRulesToBenchmark: 1,559,906,052
+regextalk.password.Password03LogicThreeRulesToBenchmark: 501,082,654 (67.88% faster than previous)
+
+SuiteToBenchmark{immutableTaskList=[regextalk.numericrange.twogrand.RangeRegexUnanchoredFind@6f539caf, regextalk.numericrange.twogrand.RangeRegexAnchoredFind@79fc0f2f, regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches@50040f0c, regextalk.numericrange.twogrand.NumericRangeLogic@2dda6444], description='Regex: " "', taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
+100000 iterations
+Suite run 1 of 25
+RangeRegexUnanchoredFind...1,822,208,400
+RangeRegexAnchoredFind...1,662,157,373
+RangeRegexUnanchoredMatches...1,596,019,520
+NumericRangeLogic...148,842,108
+Suite run 2 of 25
+RangeRegexUnanchoredFind...1,620,593,242
+RangeRegexAnchoredFind...1,534,550,977
+RangeRegexUnanchoredMatches...1,518,573,474
+NumericRangeLogic...128,786,441
+Suite run 3 of 25
+RangeRegexUnanchoredFind...1,679,532,130
+RangeRegexAnchoredFind...1,516,249,619
+RangeRegexUnanchoredMatches...1,542,832,667
+NumericRangeLogic...130,208,511
+Suite run 4 of 25
+RangeRegexUnanchoredFind...1,575,860,201
+RangeRegexAnchoredFind...1,545,802,235
+RangeRegexUnanchoredMatches...1,534,923,908
+NumericRangeLogic...130,393,102
+Suite run 5 of 25
+RangeRegexUnanchoredFind...1,598,967,742
+RangeRegexAnchoredFind...1,559,105,176
+RangeRegexUnanchoredMatches...1,476,467,896
+NumericRangeLogic...131,324,912
+Suite run 6 of 25
+RangeRegexUnanchoredFind...1,578,275,871
+RangeRegexAnchoredFind...1,507,277,963
+RangeRegexUnanchoredMatches...1,555,157,596
+NumericRangeLogic...135,442,625
+Suite run 7 of 25
+RangeRegexUnanchoredFind...1,603,733,795
+RangeRegexAnchoredFind...1,559,396,671
+RangeRegexUnanchoredMatches...1,535,934,646
+NumericRangeLogic...138,310,716
+Suite run 8 of 25
+RangeRegexUnanchoredFind...1,562,076,929
+RangeRegexAnchoredFind...1,511,092,681
+RangeRegexUnanchoredMatches...1,520,581,892
+NumericRangeLogic...133,758,551
+Suite run 9 of 25
+RangeRegexUnanchoredFind...1,604,105,363
+RangeRegexAnchoredFind...1,512,528,350
+RangeRegexUnanchoredMatches...1,553,459,051
+NumericRangeLogic...135,103,385
+Suite run 10 of 25
+RangeRegexUnanchoredFind...1,589,643,036
+RangeRegexAnchoredFind...1,527,412,806
+RangeRegexUnanchoredMatches...1,535,265,941
+NumericRangeLogic...127,296,594
+Suite run 11 of 25
+RangeRegexUnanchoredFind...1,566,739,398
+RangeRegexAnchoredFind...1,545,523,001
+RangeRegexUnanchoredMatches...1,492,671,586
+NumericRangeLogic...127,409,033
+Suite run 12 of 25
+RangeRegexUnanchoredFind...1,597,958,258
+RangeRegexAnchoredFind...1,523,975,562
+RangeRegexUnanchoredMatches...1,550,570,760
+NumericRangeLogic...127,896,319
+Suite run 13 of 25
+RangeRegexUnanchoredFind...1,614,712,957
+RangeRegexAnchoredFind...1,549,671,502
+RangeRegexUnanchoredMatches...1,516,916,012
+NumericRangeLogic...129,312,538
+Suite run 14 of 25
+RangeRegexUnanchoredFind...1,578,010,985
+RangeRegexAnchoredFind...1,530,053,341
+RangeRegexUnanchoredMatches...1,526,500,011
+NumericRangeLogic...134,148,792
+Suite run 15 of 25
+RangeRegexUnanchoredFind...1,578,655,164
+RangeRegexAnchoredFind...1,559,128,882
+RangeRegexUnanchoredMatches...1,514,638,941
+NumericRangeLogic...132,456,247
+Suite run 16 of 25
+RangeRegexUnanchoredFind...1,583,034,988
+RangeRegexAnchoredFind...1,800,901,835
+RangeRegexUnanchoredMatches...1,552,772,612
+NumericRangeLogic...128,881,809
+Suite run 17 of 25
+RangeRegexUnanchoredFind...1,614,320,033
+RangeRegexAnchoredFind...1,540,024,636
+RangeRegexUnanchoredMatches...1,540,809,487
+NumericRangeLogic...125,116,027
+Suite run 18 of 25
+RangeRegexUnanchoredFind...1,586,112,164
+RangeRegexAnchoredFind...1,528,135,636
+RangeRegexUnanchoredMatches...1,557,575,493
+NumericRangeLogic...131,029,716
+Suite run 19 of 25
+RangeRegexUnanchoredFind...1,631,945,288
+RangeRegexAnchoredFind...1,527,979,152
+RangeRegexUnanchoredMatches...1,524,870,468
+NumericRangeLogic...140,868,181
+Suite run 20 of 25
+RangeRegexUnanchoredFind...1,598,063,426
+RangeRegexAnchoredFind...1,544,674,239
+RangeRegexUnanchoredMatches...1,527,793,914
+NumericRangeLogic...133,076,648
+Suite run 21 of 25
+RangeRegexUnanchoredFind...1,579,433,411
+RangeRegexAnchoredFind...1,526,371,584
+RangeRegexUnanchoredMatches...1,509,514,863
+NumericRangeLogic...126,612,468
+Suite run 22 of 25
+RangeRegexUnanchoredFind...1,601,514,507
+RangeRegexAnchoredFind...1,542,360,071
+RangeRegexUnanchoredMatches...1,513,904,625
+NumericRangeLogic...126,490,203
+Suite run 23 of 25
+RangeRegexUnanchoredFind...1,598,489,882
+RangeRegexAnchoredFind...1,531,196,128
+RangeRegexUnanchoredMatches...1,505,687,208
+NumericRangeLogic...133,725,142
+Suite run 24 of 25
+RangeRegexUnanchoredFind...1,612,566,293
+RangeRegexAnchoredFind...1,538,764,974
+RangeRegexUnanchoredMatches...1,499,337,122
+NumericRangeLogic...128,172,516
+Suite run 25 of 25
+RangeRegexUnanchoredFind...1,576,463,807
+RangeRegexAnchoredFind...1,541,072,121
+RangeRegexUnanchoredMatches...1,549,718,334
+NumericRangeLogic...127,767,885
+Task iterations=100000, suite iterations=25 (below results averaged)
+Regex: " "
+regextalk.numericrange.twogrand.RangeRegexUnanchoredFind: 1,606,120,690
+regextalk.numericrange.twogrand.RangeRegexAnchoredFind: 1,550,616,260 (3.46% faster than previous)
+regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches: 1,530,099,921 (1.32% faster than previous, 4.73% than first)
+regextalk.numericrange.twogrand.NumericRangeLogic: 131,697,218 (91.39% faster than previous, 91.80% than first)
+
+SuiteToBenchmark{immutableTaskList=[regextalk.numericrange.twogrand.RangeRegexUnanchoredFind@2e817b38, regextalk.numericrange.twogrand.RangeRegexAnchoredFind@c4437c4, regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches@433c675d, regextalk.numericrange.twogrand.NumericRangeLogic@3f91beef], description='Regex: "[,./ ]+"', taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
+100000 iterations
+Suite run 1 of 25
+RangeRegexUnanchoredFind...1,696,255,779
+RangeRegexAnchoredFind...1,566,702,420
+RangeRegexUnanchoredMatches...1,542,916,639
+NumericRangeLogic...135,235,071
+Suite run 2 of 25
+RangeRegexUnanchoredFind...1,583,919,056
+RangeRegexAnchoredFind...1,550,466,197
+RangeRegexUnanchoredMatches...1,537,282,106
+NumericRangeLogic...128,439,094
+Suite run 3 of 25
+RangeRegexUnanchoredFind...1,650,355,681
+RangeRegexAnchoredFind...1,657,701,125
+RangeRegexUnanchoredMatches...2,262,805,625
+NumericRangeLogic...148,376,548
+Suite run 4 of 25
+RangeRegexUnanchoredFind...1,982,773,670
+RangeRegexAnchoredFind...1,546,990,460
+RangeRegexUnanchoredMatches...1,548,378,332
+NumericRangeLogic...138,908,002
+Suite run 5 of 25
+RangeRegexUnanchoredFind...1,983,844,154
+RangeRegexAnchoredFind...1,571,743,896
+RangeRegexUnanchoredMatches...1,509,048,012
+NumericRangeLogic...152,209,663
+Suite run 6 of 25
+RangeRegexUnanchoredFind...1,627,837,085
+RangeRegexAnchoredFind...1,584,512,381
+RangeRegexUnanchoredMatches...1,522,428,577
+NumericRangeLogic...128,768,728
+Suite run 7 of 25
+RangeRegexUnanchoredFind...1,662,392,434
+RangeRegexAnchoredFind...1,585,374,278
+RangeRegexUnanchoredMatches...1,571,756,244
+NumericRangeLogic...134,706,790
+Suite run 8 of 25
+RangeRegexUnanchoredFind...1,605,946,763
+RangeRegexAnchoredFind...1,560,277,765
+RangeRegexUnanchoredMatches...1,554,821,953
+NumericRangeLogic...133,956,093
+Suite run 9 of 25
+RangeRegexUnanchoredFind...1,627,801,521
+RangeRegexAnchoredFind...1,571,358,148
+RangeRegexUnanchoredMatches...1,551,728,754
+NumericRangeLogic...136,227,263
+Suite run 10 of 25
+RangeRegexUnanchoredFind...1,616,415,685
+RangeRegexAnchoredFind...1,596,655,598
+RangeRegexUnanchoredMatches...1,544,244,959
+NumericRangeLogic...130,656,337
+Suite run 11 of 25
+RangeRegexUnanchoredFind...1,598,758,683
+RangeRegexAnchoredFind...1,572,021,535
+RangeRegexUnanchoredMatches...1,554,245,394
+NumericRangeLogic...130,176,401
+Suite run 12 of 25
+RangeRegexUnanchoredFind...1,609,013,177
+RangeRegexAnchoredFind...1,565,185,083
+RangeRegexUnanchoredMatches...1,555,141,542
+NumericRangeLogic...132,062,009
+Suite run 13 of 25
+RangeRegexUnanchoredFind...1,633,997,450
+RangeRegexAnchoredFind...1,554,454,870
+RangeRegexUnanchoredMatches...1,595,451,652
+NumericRangeLogic...132,964,016
+Suite run 14 of 25
+RangeRegexUnanchoredFind...1,618,611,652
+RangeRegexAnchoredFind...1,580,079,957
+RangeRegexUnanchoredMatches...1,543,688,892
+NumericRangeLogic...130,231,976
+Suite run 15 of 25
+RangeRegexUnanchoredFind...1,597,727,682
+RangeRegexAnchoredFind...1,541,729,666
+RangeRegexUnanchoredMatches...1,558,649,157
+NumericRangeLogic...134,030,489
+Suite run 16 of 25
+RangeRegexUnanchoredFind...1,598,967,410
+RangeRegexAnchoredFind...1,586,430,042
+RangeRegexUnanchoredMatches...1,557,705,669
+NumericRangeLogic...136,321,621
+Suite run 17 of 25
+RangeRegexUnanchoredFind...1,604,329,657
+RangeRegexAnchoredFind...1,556,872,051
+RangeRegexUnanchoredMatches...1,555,086,923
+NumericRangeLogic...125,497,743
+Suite run 18 of 25
+RangeRegexUnanchoredFind...1,599,444,418
+RangeRegexAnchoredFind...1,624,774,354
+RangeRegexUnanchoredMatches...1,555,293,964
+NumericRangeLogic...139,291,499
+Suite run 19 of 25
+RangeRegexUnanchoredFind...1,595,300,125
+RangeRegexAnchoredFind...1,578,669,247
+RangeRegexUnanchoredMatches...1,574,765,592
+NumericRangeLogic...136,783,506
+Suite run 20 of 25
+RangeRegexUnanchoredFind...1,598,490,321
+RangeRegexAnchoredFind...1,576,852,845
+RangeRegexUnanchoredMatches...1,552,551,033
+NumericRangeLogic...133,648,382
+Suite run 21 of 25
+RangeRegexUnanchoredFind...1,604,593,368
+RangeRegexAnchoredFind...1,565,582,091
+RangeRegexUnanchoredMatches...1,548,189,213
+NumericRangeLogic...134,528,211
+Suite run 22 of 25
+RangeRegexUnanchoredFind...1,595,735,413
+RangeRegexAnchoredFind...1,548,910,344
+RangeRegexUnanchoredMatches...1,550,986,512
+NumericRangeLogic...132,802,893
+Suite run 23 of 25
+RangeRegexUnanchoredFind...1,591,463,903
+RangeRegexAnchoredFind...1,574,508,710
+RangeRegexUnanchoredMatches...1,544,888,667
+NumericRangeLogic...135,270,261
+Suite run 24 of 25
+RangeRegexUnanchoredFind...1,589,510,191
+RangeRegexAnchoredFind...1,594,232,192
+RangeRegexUnanchoredMatches...1,600,662,086
+NumericRangeLogic...135,973,591
+Suite run 25 of 25
+RangeRegexUnanchoredFind...1,586,038,591
+RangeRegexAnchoredFind...1,575,959,205
+RangeRegexUnanchoredMatches...1,557,330,488
+NumericRangeLogic...134,980,658
+Task iterations=100000, suite iterations=25 (below results averaged)
+Regex: "[,./ ]+"
+regextalk.numericrange.twogrand.RangeRegexUnanchoredFind: 1,642,380,954
+regextalk.numericrange.twogrand.RangeRegexAnchoredFind: 1,575,521,778 (4.07% faster than previous)
+regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches: 1,582,001,919 (-0.41% faster than previous, 3.68% than first)
+regextalk.numericrange.twogrand.NumericRangeLogic: 134,881,873 (91.47% faster than previous, 91.79% than first)
+
+SuiteToBenchmark{immutableTaskList=[regextalk.replaceall.StringDotReplaceAll@1a6c5a9e, regextalk.replaceall.PatternDotReplaceAll@37bba400, regextalk.replaceall.ReusedPatternReplaceAll@179d3b25, regextalk.replaceall.ReusedMatcherReplaceAll@254989ff], taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
+100000 iterations
+Suite run 1 of 25
+StringDotReplaceAll...579,864,999
+PatternDotReplaceAll...470,414,120
+ReusedPatternReplaceAll...380,645,899
+ReusedMatcherReplaceAll...343,910,828
+Suite run 2 of 25
+StringDotReplaceAll...451,212,096
+PatternDotReplaceAll...445,865,597
+ReusedPatternReplaceAll...356,650,281
+ReusedMatcherReplaceAll...347,605,527
+Suite run 3 of 25
+StringDotReplaceAll...441,595,174
+PatternDotReplaceAll...438,889,121
+ReusedPatternReplaceAll...364,928,136
+ReusedMatcherReplaceAll...344,704,996
+Suite run 4 of 25
+StringDotReplaceAll...440,292,694
+PatternDotReplaceAll...444,389,494
+ReusedPatternReplaceAll...361,324,534
+ReusedMatcherReplaceAll...342,240,268
+Suite run 5 of 25
+StringDotReplaceAll...446,633,905
+PatternDotReplaceAll...455,284,501
+ReusedPatternReplaceAll...358,811,480
+ReusedMatcherReplaceAll...344,856,292
+Suite run 6 of 25
+StringDotReplaceAll...452,001,075
+PatternDotReplaceAll...448,485,525
+ReusedPatternReplaceAll...354,176,655
+ReusedMatcherReplaceAll...336,050,687
+Suite run 7 of 25
+StringDotReplaceAll...447,987,927
+PatternDotReplaceAll...442,801,173
+ReusedPatternReplaceAll...364,351,441
+ReusedMatcherReplaceAll...338,264,656
+Suite run 8 of 25
+StringDotReplaceAll...443,604,904
+PatternDotReplaceAll...445,293,129
+ReusedPatternReplaceAll...358,288,585
+ReusedMatcherReplaceAll...353,981,038
+Suite run 9 of 25
+StringDotReplaceAll...440,667,637
+PatternDotReplaceAll...718,475,285
+ReusedPatternReplaceAll...372,234,855
+ReusedMatcherReplaceAll...347,256,826
+Suite run 10 of 25
+StringDotReplaceAll...445,436,739
+PatternDotReplaceAll...428,232,983
+ReusedPatternReplaceAll...356,283,585
+ReusedMatcherReplaceAll...686,167,955
+Suite run 11 of 25
+StringDotReplaceAll...449,402,941
+PatternDotReplaceAll...447,199,176
+ReusedPatternReplaceAll...356,210,638
+ReusedMatcherReplaceAll...341,313,669
+Suite run 12 of 25
+StringDotReplaceAll...449,812,853
+PatternDotReplaceAll...442,855,153
+ReusedPatternReplaceAll...363,058,348
+ReusedMatcherReplaceAll...372,735,988
+Suite run 13 of 25
+StringDotReplaceAll...440,277,842
+PatternDotReplaceAll...456,906,252
+ReusedPatternReplaceAll...352,982,666
+ReusedMatcherReplaceAll...350,034,952
+Suite run 14 of 25
+StringDotReplaceAll...445,104,661
+PatternDotReplaceAll...434,139,415
+ReusedPatternReplaceAll...355,279,812
+ReusedMatcherReplaceAll...334,760,251
+Suite run 15 of 25
+StringDotReplaceAll...440,185,022
+PatternDotReplaceAll...436,696,570
+ReusedPatternReplaceAll...358,255,155
+ReusedMatcherReplaceAll...338,678,247
+Suite run 16 of 25
+StringDotReplaceAll...445,302,927
+PatternDotReplaceAll...447,765,812
+ReusedPatternReplaceAll...354,313,256
+ReusedMatcherReplaceAll...340,472,087
+Suite run 17 of 25
+StringDotReplaceAll...438,752,242
+PatternDotReplaceAll...441,320,460
+ReusedPatternReplaceAll...368,311,166
+ReusedMatcherReplaceAll...339,520,084
+Suite run 18 of 25
+StringDotReplaceAll...441,082,091
+PatternDotReplaceAll...440,130,655
+ReusedPatternReplaceAll...351,636,494
+ReusedMatcherReplaceAll...344,507,546
+Suite run 19 of 25
+StringDotReplaceAll...1,630,627,689
+PatternDotReplaceAll...601,407,544
+ReusedPatternReplaceAll...502,757,134
+ReusedMatcherReplaceAll...381,215,582
+Suite run 20 of 25
+StringDotReplaceAll...441,332,052
+PatternDotReplaceAll...435,741,102
+ReusedPatternReplaceAll...366,583,018
+ReusedMatcherReplaceAll...359,536,438
+Suite run 21 of 25
+StringDotReplaceAll...440,301,203
+PatternDotReplaceAll...449,440,171
+ReusedPatternReplaceAll...356,388,256
+ReusedMatcherReplaceAll...338,531,493
+Suite run 22 of 25
+StringDotReplaceAll...428,480,873
+PatternDotReplaceAll...441,935,994
+ReusedPatternReplaceAll...343,538,846
+ReusedMatcherReplaceAll...334,932,283
+Suite run 23 of 25
+StringDotReplaceAll...468,675,342
+PatternDotReplaceAll...830,892,923
+ReusedPatternReplaceAll...360,905,230
+ReusedMatcherReplaceAll...330,562,337
+Suite run 24 of 25
+StringDotReplaceAll...439,084,012
+PatternDotReplaceAll...434,249,331
+ReusedPatternReplaceAll...345,924,960
+ReusedMatcherReplaceAll...333,186,277
+Suite run 25 of 25
+StringDotReplaceAll...437,376,907
+PatternDotReplaceAll...438,023,803
+ReusedPatternReplaceAll...381,795,276
+ReusedMatcherReplaceAll...380,993,215
+Task iterations=100000, suite iterations=25 (below results averaged)
+regextalk.replaceall.StringDotReplaceAll: 497,003,832
+regextalk.replaceall.PatternDotReplaceAll: 476,673,411 (4.09% faster than previous)
+regextalk.replaceall.ReusedPatternReplaceAll: 365,825,428 (23.25% faster than previous, 26.39% than first)
+regextalk.replaceall.ReusedMatcherReplaceAll: 360,240,780 (1.53% faster than previous, 27.52% than first)

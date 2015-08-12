@@ -1,5 +1,7 @@
 package benchmark;
 
+import static java.lang.String.format;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
@@ -181,8 +183,9 @@ public class Benchmarker {
       AllSuiteResults allResults = runTestSuiteGetResults(output_action, suite);
       List<BenchmarkResult> averagedResults = allResults.getAveragedResultList();
 
-      System.out.printf("Task iterations=%d, suite iterations=%d (below results averaged)%n", 
-                        suite.getTaskIters(), suite.getTaskIters());
+      final String introLine = format("Task iterations=%d, suite iterations=%d (below results averaged)%n",
+                                      suite.getTaskIters(), suite.getSuiteIters());
+      System.out.print(introLine);
       
       if (suite.getDescription() != null) {
          System.out.println(suite.getDescription());
@@ -197,6 +200,8 @@ public class Benchmarker {
       }
 
       buffer.append(LINE_SEP);
+
+      System.out.print(introLine);
 
       BenchmarkResult first = averagedResults.get(0);
       IntStream.range(2, taskCount).forEach(index -> {

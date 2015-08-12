@@ -1,6 +1,10 @@
-package regextalk.password;
+package regextalk.password.toshow;
 
-public class PasswordRegexTwoRulesToShow {
+import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Password02RegexTwoRules {
    public static final String SPECIAL_CHARS = "><?.,!@#$%^&*+=_)(\\}\\{\\]\\[";
    public static final String LKA_LOWER = "(?=.*[a-z])";    //LKA: lookahead
    public static final String LKA_UPPER = "(?=.*[A-Z])";
@@ -25,4 +29,18 @@ public class PasswordRegexTwoRulesToShow {
       "[A-Za-z0-9" + SPECIAL_CHARS + "]" +  //All possible characters
       "{8,24}" +                            //8 to 24 chars
       "$";                                  //end of input
+
+   public static void main(String[] ignored) {
+      String regex = REGEX;
+      String[] inputs = Password01RegexThreeRules.newInputs();
+
+      Matcher matcher = Pattern.compile(regex).matcher("ignored input");
+
+      Arrays.stream(inputs).forEach(input -> {
+         
+         boolean valid = matcher.reset(input).find();
+
+         System.out.printf("\"%s\" is %s password.%n", input, (valid ? "a VALID" : "an invalid"));
+      });
+   }
 }

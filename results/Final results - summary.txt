@@ -1,0 +1,27 @@
+Task iterations=100000, suite iterations=25 (below results averaged)
+regextalk.password.Password01RegexThreeRulesToBenchmark: 1,559,906,052
+regextalk.password.Password03LogicThreeRulesToBenchmark: 501,082,654 (67.88% faster than previous)
+
+Task iterations=100000, suite iterations=25 (below results averaged)
+regextalk.password.Password02RegexTwoRulesToBenchmark: 1,853,840,668
+regextalk.password.Password04LogicTwoRulesToBenchmark: 504,932,878 (72.76% faster than previous)
+
+Task iterations=100000, suite iterations=25 (below results averaged)
+Regex: " "
+regextalk.numericrange.twogrand.RangeRegexUnanchoredFind: 1,606,120,690
+regextalk.numericrange.twogrand.RangeRegexAnchoredFind: 1,550,616,260 (3.46% faster than previous)
+regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches: 1,530,099,921 (1.32% faster than previous, 4.73% than first)
+regextalk.numericrange.twogrand.NumericRangeLogic: 131,697,218 (91.39% faster than previous, 91.80% than first)
+
+Task iterations=100000, suite iterations=25 (below results averaged)
+Regex: "[,./ ]+"
+regextalk.numericrange.twogrand.RangeRegexUnanchoredFind: 1,642,380,954
+regextalk.numericrange.twogrand.RangeRegexAnchoredFind: 1,575,521,778 (4.07% faster than previous)
+regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches: 1,582,001,919 (-0.41% faster than previous, 3.68% than first)
+regextalk.numericrange.twogrand.NumericRangeLogic: 134,881,873 (91.47% faster than previous, 91.79% than first)
+
+Task iterations=100000, suite iterations=25 (below results averaged)
+regextalk.replaceall.StringDotReplaceAll: 497,003,832
+regextalk.replaceall.PatternDotReplaceAll: 476,673,411 (4.09% faster than previous)
+regextalk.replaceall.ReusedPatternReplaceAll: 365,825,428 (23.25% faster than previous, 26.39% than first)
+regextalk.replaceall.ReusedMatcherReplaceAll: 360,240,780 (1.53% faster than previous, 27.52% than first)

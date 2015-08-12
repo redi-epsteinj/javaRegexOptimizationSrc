@@ -17,7 +17,8 @@ import java.util.regex.Pattern;
  * Password last as "good use"
  *
  * extract fields from structured data.
- *
+ * 
+ * Bounds PLUS matches() slowed by having to check redundant bounds.
  */
 public class History01OnePointFour {
    public static void main(String[] ignored) {

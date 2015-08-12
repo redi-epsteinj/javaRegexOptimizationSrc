@@ -20,15 +20,19 @@ import regextalk.numericrange.twogrand.NumericRangeLogic;
 import regextalk.numericrange.twogrand.RangeRegexAnchoredFind;
 import regextalk.numericrange.twogrand.RangeRegexUnanchoredFind;
 import regextalk.numericrange.twogrand.RangeRegexUnanchoredMatches;
-import regextalk.password.PasswordLogicThreeRules;
-import regextalk.password.PasswordLogicTwoRules;
-import regextalk.password.PasswordRegexThreeRules;
-import regextalk.password.PasswordRegexTwoRules;
+import regextalk.password.Password01RegexThreeRulesToBenchmark;
+import regextalk.password.Password02RegexTwoRulesToBenchmark;
+import regextalk.password.Password04LogicTwoRulesToBenchmark;
+import regextalk.password.Password03LogicThreeRulesToBenchmark;
 import regextalk.replaceall.PatternDotReplaceAll;
 import regextalk.replaceall.ReusedMatcherReplaceAll;
 import regextalk.replaceall.ReusedPatternReplaceAll;
 import regextalk.replaceall.StringDotReplaceAll;
-import regextalk.split.AbstractSplitToBenchmark;
+import regextalk.split.AbstractSplit;
+import regextalk.split.Split02PatternDotToBenchmark;
+import regextalk.split.Split04PatternAsStreamToBenchmark;
+import regextalk.split.Split03ReusedPatternToBenchmark;
+import regextalk.split.Split01StringDotToBenchmark;
 
 public class Test {
 
@@ -38,23 +42,23 @@ public class Test {
 
    public static void main(String[] cmd_lineParams) {
 
+      runSuiteNeg12To12();
+      runSuiteRange();
+      runSuiteNeg400To400();
+      if (true) {
+         return;
+      }
       runSuitePasswordTwoRules();
       runSuitePasswordThreeRules();
       runSuiteSplitSpace();
       runSuiteSplit2PlusChars();
       runSuiteReplaceAll();
-      if (true) {
-         return;
-      }
-      runSuiteNeg400To400();
-      runSuiteNeg12To12();
-      runSuiteRange();
    }
 
    private static void runSuitePasswordThreeRules() {
       SuiteToBenchmark suite = new SuiteToBenchmark.Builder().taskIterations(TASK_ITERS)
-            .suiteIterations(SUITE_ITERS).build(new PasswordRegexThreeRules(),
-                                                new PasswordLogicThreeRules());
+            .suiteIterations(SUITE_ITERS).build(new Password01RegexThreeRulesToBenchmark(),
+                                                new Password03LogicThreeRulesToBenchmark());
 
       StringBuilder buffer = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(buffer, TimedTestConsoleOutput.SUPPRESS, suite);
@@ -66,8 +70,8 @@ public class Test {
    private static void runSuitePasswordTwoRules() {
       SuiteToBenchmark suite = new SuiteToBenchmark.Builder().taskIterations(TASK_ITERS)
             .millsBetweenSuites(MILLS_BETWEEN_SUITES).suiteIterations(SUITE_ITERS)
-            .build(new PasswordRegexTwoRules(),
-                   new PasswordLogicTwoRules());
+            .build(new Password02RegexTwoRulesToBenchmark(),
+                   new Password04LogicTwoRulesToBenchmark());
 
       StringBuilder buffer = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(buffer, TimedTestConsoleOutput.SUPPRESS, suite);
@@ -92,14 +96,15 @@ public class Test {
    }
 
    private static void runSuiteSplit2PlusChars() {
+      final String regex = AbstractSplit.REGEX_2_PLUS;
       SuiteToBenchmark suite = new SuiteToBenchmark.Builder().
-            description("Regex: \"" + AbstractSplitToBenchmark.REGEX_2_PLUS + "\"").
+            description("Regex: \"" + regex + "\"").
             taskIterations(TASK_ITERS).suiteIterations(SUITE_ITERS).
             millsBetweenSuites(MILLS_BETWEEN_SUITES).
-            build(new RangeRegexUnanchoredFind(),
-                  new RangeRegexAnchoredFind(),
-                  new RangeRegexUnanchoredMatches(),
-                  new NumericRangeLogic());
+            build(new Split02PatternDotToBenchmark(regex),
+                  new Split01StringDotToBenchmark(regex),
+                  new Split03ReusedPatternToBenchmark(regex),
+                  new Split04PatternAsStreamToBenchmark(regex));
 
       StringBuilder buffer = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(buffer, TimedTestConsoleOutput.SUPPRESS, suite);
@@ -109,14 +114,16 @@ public class Test {
    }
 
    private static void runSuiteSplitSpace() {
+      final String regex = AbstractSplit.REGEX_SPACE;
+      
       SuiteToBenchmark suite = new SuiteToBenchmark.Builder().
-            description("Regex: \"" + AbstractSplitToBenchmark.REGEX_SPACE + "\"").
+            description("Regex: \"" + regex + "\"").
             taskIterations(TASK_ITERS).suiteIterations(SUITE_ITERS).
             millsBetweenSuites(MILLS_BETWEEN_SUITES).
-            build(new RangeRegexUnanchoredFind(),
-                  new RangeRegexAnchoredFind(),
-                  new RangeRegexUnanchoredMatches(),
-                  new NumericRangeLogic());
+            build(new Split02PatternDotToBenchmark(regex),
+                  new Split01StringDotToBenchmark(regex),
+                  new Split03ReusedPatternToBenchmark(regex),
+                  new Split04PatternAsStreamToBenchmark(regex));
 
       StringBuilder buffer = new StringBuilder();
       Benchmarker.runTestSuiteAppendResults(buffer, TimedTestConsoleOutput.SUPPRESS, suite);
