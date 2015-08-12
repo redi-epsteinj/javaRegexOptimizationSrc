@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xbnjava2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/xbnjava2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
