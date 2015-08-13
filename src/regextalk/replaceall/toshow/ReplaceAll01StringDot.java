@@ -9,7 +9,8 @@ public class ReplaceAll01StringDot {
       String regex = "[,./ ]+";            //Replace each instance of: "One or more comma, 
                                            //                           period, up-right slash, 
                                            //                           or space"
-      String replaceWith = "---";          //With three dashes
+      String replaceWith = "-" +
+                           "--";          //With three dashes
 
       String[] inputs = newInputs();
       

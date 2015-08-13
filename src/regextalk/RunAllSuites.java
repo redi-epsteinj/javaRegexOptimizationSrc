@@ -1,5 +1,8 @@
-package benchmark;
+package regextalk;
 
+import benchmark.Benchmarker;
+import benchmark.SuiteToBenchmark;
+import benchmark.TimedTestConsoleOutput;
 import regextalk.numericrange.FourHundred01EveryNumberInOrToBenchmark;
 import regextalk.numericrange.FourHundred02BoundedOnlyToBenchmark;
 import regextalk.numericrange.FourHundred03NonCapturingOnlyToBenchmark;
@@ -34,7 +37,7 @@ import regextalk.split.Split04PatternAsStreamToBenchmark;
 import regextalk.split.Split03ReusedPatternToBenchmark;
 import regextalk.split.Split01StringDotToBenchmark;
 
-public class Test {
+public class RunAllSuites {
 
    private static final int MILLS_BETWEEN_SUITES = 8000;
    private static int TASK_ITERS = 100_000;
@@ -42,12 +45,12 @@ public class Test {
 
    public static void main(String[] cmd_lineParams) {
 
-      runSuiteNeg12To12();
-      runSuiteRange();
       runSuiteNeg400To400();
       if (true) {
          return;
       }
+      runSuiteNeg12To12();
+      runSuiteRange();
       runSuitePasswordTwoRules();
       runSuitePasswordThreeRules();
       runSuiteSplitSpace();

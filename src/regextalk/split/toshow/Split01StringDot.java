@@ -27,7 +27,7 @@ public class Split01StringDot {
             "One, two, three. four/five six",
             "The snow glows white on the mountain tonight",
             "abcde",
-            "a b c d--e"
+            "a b c d//e"
       };
    }
 }

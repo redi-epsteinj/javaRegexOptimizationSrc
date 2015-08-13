@@ -9,11 +9,12 @@ import java.util.regex.Pattern;
 public class History04OnePointEightSplitAsStreamPredicate {
    public static void main(String[] ignored) {
 
+      String regex = " ";
       String input = "one two three four five six seven eight";
 
       //splitAsStream example
 
-      String output = Pattern.compile(" ").splitAsStream(input).
+      String output = Pattern.compile(regex).splitAsStream(input).
             map(split -> split.contains("e") ? split.toUpperCase() : split).
             collect(joining(" "));
 

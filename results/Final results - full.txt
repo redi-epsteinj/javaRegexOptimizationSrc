@@ -1,4 +1,4 @@
-/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin/java -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/Programming/IntelliJ IDEA 14.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/bin/production/Regex talk:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/hamcrest-core-1.3.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/junit-4.12.jar:/Applications/Programming/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain benchmark.Test
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin/java -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/Programming/IntelliJ IDEA 14.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/bin/production/Regex talk:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/hamcrest-core-1.3.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/junit-4.12.jar:/Applications/Programming/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain regextalk.RunAllSuites
 SuiteToBenchmark{immutableTaskList=[regextalk.password.Password02RegexTwoRulesToBenchmark@78308db1, regextalk.password.Password04LogicTwoRulesToBenchmark@27c170f0], taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
 100000 iterations
 Suite run 1 of 25
@@ -561,3 +561,347 @@ regextalk.replaceall.ReplaceAll01StringDotToBenchmark: 497,003,832
 regextalk.replaceall.ReplaceAll02PatternDotToBenchmark: 476,673,411 (4.09% faster than previous)
 regextalk.replaceall.ReplaceAll03ReusedPatternToBenchmark: 365,825,428 (23.25% faster than previous, 26.39% than first)
 regextalk.replaceall.ReplaceAll04ReusedMatcherToBenchmark: 360,240,780 (1.53% faster than previous, 27.52% than first)
+
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin/java -Didea.launcher.port=7536 "-Didea.launcher.bin.path=/Applications/Programming/IntelliJ IDEA 14.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/bin/production/Regex talk:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/hamcrest-core-1.3.jar:/Users/jeff.epstein/Documents/Other Java/Regex talk/libs/junit-4.12.jar:/Applications/Programming/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain regextalk.RunAllSuites
+SuiteToBenchmark{immutableTaskList=[regextalk.numericrange.FourHundred01EveryNumberInOrToBenchmark@cc34f4d, regextalk.numericrange.FourHundred02BoundedOnlyToBenchmark@17a7cec2, regextalk.numericrange.FourHundred03NonCapturingOnlyToBenchmark@65b3120a, regextalk.numericrange.FourHundred04BoundedAndNonCapturingToBenchmark@6f539caf, regextalk.numericrange.FourHundred05OptionalDashToBenchmark@79fc0f2f, regextalk.numericrange.FourHundred06DigitOnesDigitDToBenchmark@50040f0c, regextalk.numericrange.FourHundred07OnesDigit0to9ToBenchmark@2dda6444, regextalk.numericrange.FourHundred08TensDigitTo0to9ToBenchmark@5e9f23b4, regextalk.numericrange.FourHundred09HundredsDigitTo0to9ToBenchmark@4783da3f, regextalk.numericrange.FourHundred10FurtherConsolidationToBenchmark@378fd1ac, regextalk.numericrange.FourHundred11BestToBenchmark@49097b5d, regextalk.numericrange.FourHundred12LogicToBenchmark@6e2c634b], taskIters=100000, suiteIters=25, millsBetweenTasks=2000, millsBetweenSuites=8000}
+100000 iterations
+Suite run 1 of 25
+FourHundred01EveryNumberInOrToBenchmark...58,242,370,641
+FourHundred02BoundedOnlyToBenchmark...42,625,904,024
+FourHundred03NonCapturingOnlyToBenchmark...54,192,796,167
+FourHundred04BoundedAndNonCapturingToBenchmark...40,454,745,700
+FourHundred05OptionalDashToBenchmark...26,893,076,841
+FourHundred06DigitOnesDigitDToBenchmark...19,240,484,651
+FourHundred07OnesDigit0to9ToBenchmark...19,193,501,803
+FourHundred08TensDigitTo0to9ToBenchmark...1,905,962,781
+FourHundred09HundredsDigitTo0to9ToBenchmark...18,342,213,387
+FourHundred10FurtherConsolidationToBenchmark...19,301,498,723
+FourHundred11BestToBenchmark...18,500,412,738
+FourHundred12LogicToBenchmark...20,817,312,780
+Suite run 2 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,778,260,673
+FourHundred02BoundedOnlyToBenchmark...38,318,346,024
+FourHundred03NonCapturingOnlyToBenchmark...50,552,278,476
+FourHundred04BoundedAndNonCapturingToBenchmark...37,860,826,473
+FourHundred05OptionalDashToBenchmark...24,895,612,756
+FourHundred06DigitOnesDigitDToBenchmark...17,811,755,632
+FourHundred07OnesDigit0to9ToBenchmark...17,518,550,045
+FourHundred08TensDigitTo0to9ToBenchmark...1,758,777,831
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,673,735,420
+FourHundred10FurtherConsolidationToBenchmark...17,783,035,963
+FourHundred11BestToBenchmark...16,967,141,619
+FourHundred12LogicToBenchmark...15,386,474,148
+Suite run 3 of 25
+FourHundred01EveryNumberInOrToBenchmark...51,365,915,836
+FourHundred02BoundedOnlyToBenchmark...37,640,947,394
+FourHundred03NonCapturingOnlyToBenchmark...50,810,970,250
+FourHundred04BoundedAndNonCapturingToBenchmark...38,483,707,699
+FourHundred05OptionalDashToBenchmark...24,959,559,639
+FourHundred06DigitOnesDigitDToBenchmark...17,777,599,171
+FourHundred07OnesDigit0to9ToBenchmark...17,555,071,751
+FourHundred08TensDigitTo0to9ToBenchmark...1,742,421,373
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,734,825,451
+FourHundred10FurtherConsolidationToBenchmark...17,816,114,211
+FourHundred11BestToBenchmark...16,923,652,379
+FourHundred12LogicToBenchmark...15,604,761,556
+Suite run 4 of 25
+FourHundred01EveryNumberInOrToBenchmark...51,663,890,825
+FourHundred02BoundedOnlyToBenchmark...37,891,808,882
+FourHundred03NonCapturingOnlyToBenchmark...50,423,048,977
+FourHundred04BoundedAndNonCapturingToBenchmark...37,905,129,217
+FourHundred05OptionalDashToBenchmark...25,978,540,955
+FourHundred06DigitOnesDigitDToBenchmark...17,959,824,991
+FourHundred07OnesDigit0to9ToBenchmark...18,035,830,150
+FourHundred08TensDigitTo0to9ToBenchmark...1,751,264,700
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,970,595,296
+FourHundred10FurtherConsolidationToBenchmark...17,844,391,174
+FourHundred11BestToBenchmark...17,097,816,404
+FourHundred12LogicToBenchmark...15,799,970,285
+Suite run 5 of 25
+FourHundred01EveryNumberInOrToBenchmark...58,291,949,471
+FourHundred02BoundedOnlyToBenchmark...40,110,350,262
+FourHundred03NonCapturingOnlyToBenchmark...50,990,959,025
+FourHundred04BoundedAndNonCapturingToBenchmark...38,836,528,675
+FourHundred05OptionalDashToBenchmark...24,957,060,732
+FourHundred06DigitOnesDigitDToBenchmark...17,759,791,085
+FourHundred07OnesDigit0to9ToBenchmark...19,321,301,536
+FourHundred08TensDigitTo0to9ToBenchmark...1,952,556,088
+FourHundred09HundredsDigitTo0to9ToBenchmark...17,871,376,039
+FourHundred10FurtherConsolidationToBenchmark...17,743,250,302
+FourHundred11BestToBenchmark...17,254,507,107
+FourHundred12LogicToBenchmark...15,538,200,323
+Suite run 6 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,891,413,160
+FourHundred02BoundedOnlyToBenchmark...37,680,406,013
+FourHundred03NonCapturingOnlyToBenchmark...49,994,754,036
+FourHundred04BoundedAndNonCapturingToBenchmark...37,614,636,034
+FourHundred05OptionalDashToBenchmark...24,654,676,296
+FourHundred06DigitOnesDigitDToBenchmark...17,613,947,055
+FourHundred07OnesDigit0to9ToBenchmark...17,516,951,787
+FourHundred08TensDigitTo0to9ToBenchmark...1,706,889,287
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,751,438,413
+FourHundred10FurtherConsolidationToBenchmark...17,584,840,282
+FourHundred11BestToBenchmark...16,876,697,377
+FourHundred12LogicToBenchmark...15,446,434,153
+Suite run 7 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,274,433,061
+FourHundred02BoundedOnlyToBenchmark...37,792,245,906
+FourHundred03NonCapturingOnlyToBenchmark...50,411,850,234
+FourHundred04BoundedAndNonCapturingToBenchmark...37,873,732,172
+FourHundred05OptionalDashToBenchmark...25,473,582,592
+FourHundred06DigitOnesDigitDToBenchmark...17,709,305,358
+FourHundred07OnesDigit0to9ToBenchmark...17,834,610,603
+FourHundred08TensDigitTo0to9ToBenchmark...1,717,557,545
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,792,710,976
+FourHundred10FurtherConsolidationToBenchmark...17,589,896,979
+FourHundred11BestToBenchmark...16,982,095,743
+FourHundred12LogicToBenchmark...15,371,104,870
+Suite run 8 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,751,683,835
+FourHundred02BoundedOnlyToBenchmark...37,635,031,868
+FourHundred03NonCapturingOnlyToBenchmark...50,602,857,405
+FourHundred04BoundedAndNonCapturingToBenchmark...38,266,009,539
+FourHundred05OptionalDashToBenchmark...25,099,560,204
+FourHundred06DigitOnesDigitDToBenchmark...17,891,464,556
+FourHundred07OnesDigit0to9ToBenchmark...17,892,766,668
+FourHundred08TensDigitTo0to9ToBenchmark...1,743,383,244
+FourHundred09HundredsDigitTo0to9ToBenchmark...17,305,130,676
+FourHundred10FurtherConsolidationToBenchmark...17,619,796,974
+FourHundred11BestToBenchmark...16,690,951,846
+FourHundred12LogicToBenchmark...15,555,394,878
+Suite run 9 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,844,956,882
+FourHundred02BoundedOnlyToBenchmark...38,636,270,346
+FourHundred03NonCapturingOnlyToBenchmark...50,648,171,255
+FourHundred04BoundedAndNonCapturingToBenchmark...37,917,282,924
+FourHundred05OptionalDashToBenchmark...25,241,200,302
+FourHundred06DigitOnesDigitDToBenchmark...17,710,551,300
+FourHundred07OnesDigit0to9ToBenchmark...17,584,608,994
+FourHundred08TensDigitTo0to9ToBenchmark...1,775,616,386
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,692,786,059
+FourHundred10FurtherConsolidationToBenchmark...17,784,597,183
+FourHundred11BestToBenchmark...16,801,223,254
+FourHundred12LogicToBenchmark...15,383,855,001
+Suite run 10 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,360,966,538
+FourHundred02BoundedOnlyToBenchmark...39,537,785,541
+FourHundred03NonCapturingOnlyToBenchmark...50,675,228,209
+FourHundred04BoundedAndNonCapturingToBenchmark...37,870,717,068
+FourHundred05OptionalDashToBenchmark...25,506,590,455
+FourHundred06DigitOnesDigitDToBenchmark...17,590,078,478
+FourHundred07OnesDigit0to9ToBenchmark...17,588,806,622
+FourHundred08TensDigitTo0to9ToBenchmark...1,737,584,406
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,763,538,574
+FourHundred10FurtherConsolidationToBenchmark...17,747,239,593
+FourHundred11BestToBenchmark...16,776,706,067
+FourHundred12LogicToBenchmark...15,488,834,564
+Suite run 11 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,482,392,690
+FourHundred02BoundedOnlyToBenchmark...37,922,163,123
+FourHundred03NonCapturingOnlyToBenchmark...50,415,876,546
+FourHundred04BoundedAndNonCapturingToBenchmark...39,582,479,507
+FourHundred05OptionalDashToBenchmark...25,254,420,056
+FourHundred06DigitOnesDigitDToBenchmark...17,715,085,430
+FourHundred07OnesDigit0to9ToBenchmark...17,741,895,214
+FourHundred08TensDigitTo0to9ToBenchmark...1,736,725,282
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,955,193,049
+FourHundred10FurtherConsolidationToBenchmark...17,620,769,394
+FourHundred11BestToBenchmark...16,865,579,561
+FourHundred12LogicToBenchmark...16,610,849,541
+Suite run 12 of 25
+FourHundred01EveryNumberInOrToBenchmark...51,729,744,874
+FourHundred02BoundedOnlyToBenchmark...38,029,651,279
+FourHundred03NonCapturingOnlyToBenchmark...51,193,593,671
+FourHundred04BoundedAndNonCapturingToBenchmark...38,044,717,489
+FourHundred05OptionalDashToBenchmark...24,973,106,174
+FourHundred06DigitOnesDigitDToBenchmark...17,748,305,459
+FourHundred07OnesDigit0to9ToBenchmark...18,222,986,693
+FourHundred08TensDigitTo0to9ToBenchmark...1,846,785,657
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,866,003,358
+FourHundred10FurtherConsolidationToBenchmark...17,623,168,445
+FourHundred11BestToBenchmark...16,832,077,703
+FourHundred12LogicToBenchmark...15,663,572,049
+Suite run 13 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,567,309,266
+FourHundred02BoundedOnlyToBenchmark...38,023,774,819
+FourHundred03NonCapturingOnlyToBenchmark...50,553,152,686
+FourHundred04BoundedAndNonCapturingToBenchmark...37,620,981,202
+FourHundred05OptionalDashToBenchmark...25,401,513,830
+FourHundred06DigitOnesDigitDToBenchmark...17,829,565,456
+FourHundred07OnesDigit0to9ToBenchmark...17,586,703,433
+FourHundred08TensDigitTo0to9ToBenchmark...1,814,854,325
+FourHundred09HundredsDigitTo0to9ToBenchmark...17,390,939,370
+FourHundred10FurtherConsolidationToBenchmark...17,956,486,180
+FourHundred11BestToBenchmark...17,339,199,608
+FourHundred12LogicToBenchmark...15,512,199,527
+Suite run 14 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,666,610,222
+FourHundred02BoundedOnlyToBenchmark...37,663,918,044
+FourHundred03NonCapturingOnlyToBenchmark...50,619,113,679
+FourHundred04BoundedAndNonCapturingToBenchmark...38,219,991,834
+FourHundred05OptionalDashToBenchmark...24,764,189,781
+FourHundred06DigitOnesDigitDToBenchmark...17,607,724,815
+FourHundred07OnesDigit0to9ToBenchmark...18,453,321,341
+FourHundred08TensDigitTo0to9ToBenchmark...1,753,682,330
+FourHundred09HundredsDigitTo0to9ToBenchmark...18,091,978,236
+FourHundred10FurtherConsolidationToBenchmark...18,366,731,457
+FourHundred11BestToBenchmark...17,802,942,645
+FourHundred12LogicToBenchmark...15,698,885,046
+Suite run 15 of 25
+FourHundred01EveryNumberInOrToBenchmark...51,672,239,528
+FourHundred02BoundedOnlyToBenchmark...37,542,857,853
+FourHundred03NonCapturingOnlyToBenchmark...50,418,196,387
+FourHundred04BoundedAndNonCapturingToBenchmark...37,775,619,545
+FourHundred05OptionalDashToBenchmark...25,022,015,754
+FourHundred06DigitOnesDigitDToBenchmark...17,559,847,068
+FourHundred07OnesDigit0to9ToBenchmark...17,934,679,266
+FourHundred08TensDigitTo0to9ToBenchmark...1,875,852,308
+FourHundred09HundredsDigitTo0to9ToBenchmark...17,007,004,640
+FourHundred10FurtherConsolidationToBenchmark...17,714,039,192
+FourHundred11BestToBenchmark...16,944,596,098
+FourHundred12LogicToBenchmark...15,720,157,787
+Suite run 16 of 25
+FourHundred01EveryNumberInOrToBenchmark...51,003,120,826
+FourHundred02BoundedOnlyToBenchmark...43,882,560,780
+FourHundred03NonCapturingOnlyToBenchmark...51,183,338,138
+FourHundred04BoundedAndNonCapturingToBenchmark...37,975,634,748
+FourHundred05OptionalDashToBenchmark...25,007,653,270
+FourHundred06DigitOnesDigitDToBenchmark...17,669,425,839
+FourHundred07OnesDigit0to9ToBenchmark...17,654,562,735
+FourHundred08TensDigitTo0to9ToBenchmark...1,736,118,847
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,972,634,483
+FourHundred10FurtherConsolidationToBenchmark...17,671,690,286
+FourHundred11BestToBenchmark...16,770,892,785
+FourHundred12LogicToBenchmark...15,442,051,984
+Suite run 17 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,511,699,167
+FourHundred02BoundedOnlyToBenchmark...37,748,832,945
+FourHundred03NonCapturingOnlyToBenchmark...50,779,433,865
+FourHundred04BoundedAndNonCapturingToBenchmark...38,206,083,623
+FourHundred05OptionalDashToBenchmark...25,165,380,732
+FourHundred06DigitOnesDigitDToBenchmark...17,771,305,499
+FourHundred07OnesDigit0to9ToBenchmark...17,858,492,259
+FourHundred08TensDigitTo0to9ToBenchmark...1,755,411,723
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,809,994,952
+FourHundred10FurtherConsolidationToBenchmark...18,009,064,098
+FourHundred11BestToBenchmark...17,125,388,662
+FourHundred12LogicToBenchmark...15,613,496,981
+Suite run 18 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,956,090,248
+FourHundred02BoundedOnlyToBenchmark...37,837,311,215
+FourHundred03NonCapturingOnlyToBenchmark...51,024,882,920
+FourHundred04BoundedAndNonCapturingToBenchmark...37,911,948,814
+FourHundred05OptionalDashToBenchmark...25,017,522,679
+FourHundred06DigitOnesDigitDToBenchmark...17,732,678,590
+FourHundred07OnesDigit0to9ToBenchmark...17,633,482,443
+FourHundred08TensDigitTo0to9ToBenchmark...1,743,723,022
+FourHundred09HundredsDigitTo0to9ToBenchmark...17,012,596,918
+FourHundred10FurtherConsolidationToBenchmark...17,641,695,488
+FourHundred11BestToBenchmark...17,048,130,525
+FourHundred12LogicToBenchmark...15,575,610,864
+Suite run 19 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,491,726,988
+FourHundred02BoundedOnlyToBenchmark...37,913,243,697
+FourHundred03NonCapturingOnlyToBenchmark...50,376,306,868
+FourHundred04BoundedAndNonCapturingToBenchmark...37,753,154,265
+FourHundred05OptionalDashToBenchmark...25,451,072,161
+FourHundred06DigitOnesDigitDToBenchmark...18,030,568,708
+FourHundred07OnesDigit0to9ToBenchmark...17,632,608,367
+FourHundred08TensDigitTo0to9ToBenchmark...1,756,773,134
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,815,378,772
+FourHundred10FurtherConsolidationToBenchmark...17,825,978,391
+FourHundred11BestToBenchmark...17,150,932,997
+FourHundred12LogicToBenchmark...15,647,247,200
+Suite run 20 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,236,749,129
+FourHundred02BoundedOnlyToBenchmark...37,440,945,983
+FourHundred03NonCapturingOnlyToBenchmark...50,882,964,854
+FourHundred04BoundedAndNonCapturingToBenchmark...37,770,018,812
+FourHundred05OptionalDashToBenchmark...25,032,357,843
+FourHundred06DigitOnesDigitDToBenchmark...17,858,541,067
+FourHundred07OnesDigit0to9ToBenchmark...17,653,712,824
+FourHundred08TensDigitTo0to9ToBenchmark...1,784,731,363
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,803,282,575
+FourHundred10FurtherConsolidationToBenchmark...17,852,039,226
+FourHundred11BestToBenchmark...16,910,702,984
+FourHundred12LogicToBenchmark...15,614,231,227
+Suite run 21 of 25
+FourHundred01EveryNumberInOrToBenchmark...52,063,357,586
+FourHundred02BoundedOnlyToBenchmark...38,031,539,209
+FourHundred03NonCapturingOnlyToBenchmark...50,542,982,867
+FourHundred04BoundedAndNonCapturingToBenchmark...37,802,903,597
+FourHundred05OptionalDashToBenchmark...25,161,844,719
+FourHundred06DigitOnesDigitDToBenchmark...17,814,366,118
+FourHundred07OnesDigit0to9ToBenchmark...17,645,510,429
+FourHundred08TensDigitTo0to9ToBenchmark...1,767,342,146
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,877,997,310
+FourHundred10FurtherConsolidationToBenchmark...17,907,918,917
+FourHundred11BestToBenchmark...16,990,916,908
+FourHundred12LogicToBenchmark...15,546,260,322
+Suite run 22 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,807,155,970
+FourHundred02BoundedOnlyToBenchmark...38,019,705,752
+FourHundred03NonCapturingOnlyToBenchmark...51,039,013,972
+FourHundred04BoundedAndNonCapturingToBenchmark...38,078,309,237
+FourHundred05OptionalDashToBenchmark...25,041,969,729
+FourHundred06DigitOnesDigitDToBenchmark...17,713,960,402
+FourHundred07OnesDigit0to9ToBenchmark...17,851,341,766
+FourHundred08TensDigitTo0to9ToBenchmark...1,749,889,112
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,989,084,990
+FourHundred10FurtherConsolidationToBenchmark...17,918,959,051
+FourHundred11BestToBenchmark...17,145,978,800
+FourHundred12LogicToBenchmark...15,699,156,125
+Suite run 23 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,505,199,187
+FourHundred02BoundedOnlyToBenchmark...37,999,240,895
+FourHundred03NonCapturingOnlyToBenchmark...50,853,521,841
+FourHundred04BoundedAndNonCapturingToBenchmark...38,023,771,760
+FourHundred05OptionalDashToBenchmark...25,276,386,158
+FourHundred06DigitOnesDigitDToBenchmark...17,965,450,212
+FourHundred07OnesDigit0to9ToBenchmark...17,786,087,075
+FourHundred08TensDigitTo0to9ToBenchmark...1,738,048,437
+FourHundred09HundredsDigitTo0to9ToBenchmark...17,169,675,502
+FourHundred10FurtherConsolidationToBenchmark...17,781,589,969
+FourHundred11BestToBenchmark...16,948,242,562
+FourHundred12LogicToBenchmark...15,564,363,097
+Suite run 24 of 25
+FourHundred01EveryNumberInOrToBenchmark...50,709,288,294
+FourHundred02BoundedOnlyToBenchmark...37,917,476,359
+FourHundred03NonCapturingOnlyToBenchmark...50,661,149,355
+FourHundred04BoundedAndNonCapturingToBenchmark...38,060,035,960
+FourHundred05OptionalDashToBenchmark...25,143,253,915
+FourHundred06DigitOnesDigitDToBenchmark...17,789,251,417
+FourHundred07OnesDigit0to9ToBenchmark...17,951,572,793
+FourHundred08TensDigitTo0to9ToBenchmark...1,722,676,873
+FourHundred09HundredsDigitTo0to9ToBenchmark...17,166,748,697
+FourHundred10FurtherConsolidationToBenchmark...17,904,279,431
+FourHundred11BestToBenchmark...16,637,719,547
+FourHundred12LogicToBenchmark...15,411,197,934
+Suite run 25 of 25
+FourHundred01EveryNumberInOrToBenchmark...49,867,399,699
+FourHundred02BoundedOnlyToBenchmark...37,372,554,483
+FourHundred03NonCapturingOnlyToBenchmark...51,058,094,650
+FourHundred04BoundedAndNonCapturingToBenchmark...37,401,783,072
+FourHundred05OptionalDashToBenchmark...25,122,507,911
+FourHundred06DigitOnesDigitDToBenchmark...17,537,630,215
+FourHundred07OnesDigit0to9ToBenchmark...17,486,737,779
+FourHundred08TensDigitTo0to9ToBenchmark...1,718,901,311
+FourHundred09HundredsDigitTo0to9ToBenchmark...16,853,417,176
+FourHundred10FurtherConsolidationToBenchmark...17,706,714,790
+FourHundred11BestToBenchmark...16,745,842,480
+FourHundred12LogicToBenchmark...15,401,072,228
+Task iterations=100000, suite iterations=25 (below results averaged)
+Task iterations=100000, suite iterations=25 (below results averaged)
+regextalk.numericrange.FourHundred01EveryNumberInOrToBenchmark: 51,429,436,983
+regextalk.numericrange.FourHundred02BoundedOnlyToBenchmark: 38,448,594,907 (25.24% faster than previous)
+regextalk.numericrange.FourHundred03NonCapturingOnlyToBenchmark: 50,836,181,453 (-32.22% faster than previous, 1.15% than first)
+regextalk.numericrange.FourHundred04BoundedAndNonCapturingToBenchmark: 38,132,429,958 (24.99% faster than previous, 25.85% than first)
+regextalk.numericrange.FourHundred05OptionalDashToBenchmark: 25,219,786,219 (33.86% faster than previous, 50.96% than first)
+regextalk.numericrange.FourHundred06DigitOnesDigitDToBenchmark: 17,816,340,342 (29.36% faster than previous, 65.36% than first)
+regextalk.numericrange.FourHundred07OnesDigit0to9ToBenchmark: 17,885,427,775 (-0.39% faster than previous, 65.22% than first)
+regextalk.numericrange.FourHundred08TensDigitTo0to9ToBenchmark: 1,771,741,180 (90.09% faster than previous, 96.56% than first)
+regextalk.numericrange.FourHundred09HundredsDigitTo0to9ToBenchmark: 17,067,211,212 (-863.30% faster than previous, 66.81% than first)
+regextalk.numericrange.FourHundred10FurtherConsolidationToBenchmark: 17,852,631,427 (-4.60% faster than previous, 65.29% than first)
+regextalk.numericrange.FourHundred11BestToBenchmark: 17,045,213,935 (4.52% faster than previous, 66.86% than first)
+regextalk.numericrange.FourHundred12LogicToBenchmark: 15,804,507,778 (7.28% faster than previous, 69.27% than first)
+
