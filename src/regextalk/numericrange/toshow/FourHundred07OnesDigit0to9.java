@@ -4,7 +4,8 @@ package regextalk.numericrange.toshow;
       import java.util.regex.Matcher;
       import java.util.regex.Pattern;
 
-public class FourHundred07OnesDigit0to9 {
+public class 
+      FourHundred07OnesDigit0to9 {
 
    public static void main(String[] ignored) {
 //@formatter:off
