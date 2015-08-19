@@ -10,10 +10,11 @@ public class Password03LogicTwoRules {
    public static final int RULE_COUNT = 2;
    public static final boolean WHITESPACE_OK = false;
 
-   private Matcher lowerCaseMatcher = matcherForRegex("[a-z]");
-   private Matcher upperCaseMatcher = matcherForRegex("[A-Z]");   
-   private Matcher digitMatcher = matcherForRegex("[0-9]");
-   private Matcher symbolMatcher = matcherForRegex("[!@#$%^&+=_)(}{\\]\\[]");
+   private Matcher lowerCaseMatcher =  matcherForRegex("[a-z]");
+   private Matcher upperCaseMatcher =  matcherForRegex("[A-Z]");   
+   private Matcher digitMatcher =      matcherForRegex("[0-9]");
+   private Matcher symbolMatcher =     matcherForRegex(
+         "[><?.,!@#$%^&*+=_)(\\}\\{\\]\\[]");
    private Matcher whitespaceMatcher = matcherForRegex("\\s");
 
    public boolean isPasswordValid(String password) {
