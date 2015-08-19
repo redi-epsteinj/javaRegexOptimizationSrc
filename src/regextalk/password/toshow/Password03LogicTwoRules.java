@@ -19,8 +19,8 @@ public class Password03LogicTwoRules {
 
    public boolean isPasswordValid(String password) {
 
-      int specialRulesFollowedCount = getSpecialRulesFollowedCount(password);
-      if(specialRulesFollowedCount < RULE_COUNT) { return false; }
+      int rulesFollowed = getSpecialRulesFollowedCount(password);
+      if(rulesFollowed < RULE_COUNT) { return false; }
 
       boolean longEnough = (password.length() >= MIN_LENGTH);
       if (!longEnough) { return false; }
@@ -29,7 +29,8 @@ public class Password03LogicTwoRules {
           return true;
       }
       
-      boolean whitespaceWasFoundAndIsBad = whitespaceMatcher.reset(password).find();
+      boolean whitespaceWasFoundAndIsBad = whitespaceMatcher.
+            reset(password).find();
       return whitespaceWasFoundAndIsBad;
    }
 
@@ -37,7 +38,8 @@ public class Password03LogicTwoRules {
       int count = (lowerCaseMatcher.reset(password).find() ? 1 : 0) +
                   (upperCaseMatcher.reset(password).find() ? 1 : 0);
 
-      //Short circuiting, for when RULE_COUNT happens to be two or greater.
+      //Short circuiting, for when RULE_COUNT happens to be 
+      //two or greater.
       if (count < RULE_COUNT) {
          count = (digitMatcher.reset(password).find() ? 1 : 0);
       }
@@ -54,15 +56,25 @@ public class Password03LogicTwoRules {
    }
 
    public static void main(String[] ignored) {
-      
-      String[] inputs = Password01RegexThreeRules.newInputs();
+
+      String[] inputs = new String[] {
+            "",                     //bad (bad rules, bad length)
+            "abcdefghij",           //bad (bad rules, good length)
+            "abc123",               //bad (good rules, bad length)
+            "abc123abc",            //3 rules: bad, 2 rules: good
+            "a1$A",                 //bad (good rules, bad length)
+            "abc123$%^ABC",         //good
+            "abcABC123$&*",         //good
+            "abc ABC123$#$"         //bad (whitespace)
+      };
       
       Password03LogicTwoRules validator = new Password03LogicTwoRules();
       
       Arrays.stream(inputs).forEach(input -> {
 
          boolean valid = validator.isPasswordValid(input);
-         System.out.printf("\"%s\" is %s password.%n", input, (valid ? "a VALID" : "an invalid"));
+         System.out.printf("\"%s\" is %s password.%n", input, 
+                           (valid ? "a VALID" : "an invalid"));
       });
    }
 }
