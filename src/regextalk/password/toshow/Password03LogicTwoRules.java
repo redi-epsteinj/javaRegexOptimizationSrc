@@ -3,7 +3,6 @@ package regextalk.password.toshow;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 public class Password03LogicTwoRules {
 
    public static final int MIN_LENGTH = 8;
@@ -25,9 +24,7 @@ public class Password03LogicTwoRules {
       boolean longEnough = (password.length() >= MIN_LENGTH);
       if (!longEnough) { return false; }
       
-      if (WHITESPACE_OK) {
-          return true;
-      }
+      if (WHITESPACE_OK) { return true; }
       
       boolean whitespaceWasFoundAndIsBad = whitespaceMatcher.
             reset(password).find();
@@ -38,26 +35,30 @@ public class Password03LogicTwoRules {
       int count = (lowerCaseMatcher.reset(password).find() ? 1 : 0) +
                   (upperCaseMatcher.reset(password).find() ? 1 : 0);
 
-      //Short circuiting, for when RULE_COUNT happens to be 
-      //two or greater.
-      if (count < RULE_COUNT) {
-         count = (digitMatcher.reset(password).find() ? 1 : 0);
-      }
+      //Short circuits, for when RULE_COUNT is two or greater.
+      if (count >= RULE_COUNT) { return count; }
 
-      if (count < RULE_COUNT) {
-         count = (symbolMatcher.reset(password).find() ? 1 : 0);
-      }
+      count += (digitMatcher.reset(password).find() ? 1 : 0);
 
+      if (count >= RULE_COUNT) { return count; }
+
+      count += (symbolMatcher.reset(password).find() ? 1 : 0);
       return count;
    }
-
    private Matcher matcherForRegex(String regex) {
       return Pattern.compile(regex).matcher("ignored input");
    }
-
    public static void main(String[] ignored) {
+      Password03LogicTwoRules validator = new Password03LogicTwoRules();  
+      Arrays.stream(newInputStringArray()).forEach(input -> {
+         boolean valid = validator.isPasswordValid(input);
+         System.out.printf("\"%s\" is %s password.%n", input,
+                           (valid ? "a VALID" : "an invalid"));
+      });
+   }
 
-      String[] inputs = new String[] {
+   private static String[] newInputStringArray() {
+      return new String[] {
             "",                     //bad (bad rules, bad length)
             "abcdefghij",           //bad (bad rules, good length)
             "abc123",               //bad (good rules, bad length)
@@ -67,14 +68,5 @@ public class Password03LogicTwoRules {
             "abcABC123$&*",         //good
             "abc ABC123$#$"         //bad (whitespace)
       };
-      
-      Password03LogicTwoRules validator = new Password03LogicTwoRules();
-      
-      Arrays.stream(inputs).forEach(input -> {
-
-         boolean valid = validator.isPasswordValid(input);
-         System.out.printf("\"%s\" is %s password.%n", input, 
-                           (valid ? "a VALID" : "an invalid"));
-      });
    }
 }
