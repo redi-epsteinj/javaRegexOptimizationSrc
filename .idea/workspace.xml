@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41529e91-53c8-4ad6-9fe5-85ee7ac22950" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/benchmarks.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/META-INF/BenchmarkList" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/classes/META-INF/CompilerHints" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/openjdk/jmh/infra/generated/Blackhole_jmhType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/openjdk/jmh/infra/generated/Blackhole_jmhType_B1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/openjdk/jmh/infra/generated/Blackhole_jmhType_B3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_testMethod_jmhTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/test-1.0.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/test/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regex-talk-benchmarks/.idea/workspace.xml" afterPath="$PROJECT_DIR$/regex-talk-benchmarks/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/benchmark/TaskToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/benchmark/TaskToBenchmark.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/regextalk/AbstractReusedMatcherToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/AbstractReusedMatcherToBenchmark.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/regextalk/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/regextalk/numericrange/FourHundred12LogicToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/numericrange/FourHundred12LogicToBenchmark.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/regextalk/numericrange/twogrand/NumericRangeLogic.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/numericrange/twogrand/NumericRangeLogic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/regextalk/password/AbstractPasswordLogic.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/password/AbstractPasswordLogic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/test/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/FourHundred01EveryNumberInOrToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/org/sample/FourHundred01EveryNumberInOrToBenchmark.java" />
     </list>
     <ignored path="Regex talk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1079,7 +1056,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="71" width="1377" height="825" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
