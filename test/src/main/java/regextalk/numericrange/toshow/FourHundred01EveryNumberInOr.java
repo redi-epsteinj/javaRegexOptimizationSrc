@@ -1,26 +1,17 @@
-package regextalk.numericrange;
+package regextalk.numericrange.toshow;
 
 import static java.util.stream.Collectors.joining;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class FourHundred01EveryNumberInOrToBenchmark extends AbstractNeg400To400 {
-   public static void main(String[] ignored) {
-      new FourHundred01EveryNumberInOrToBenchmark().setupRunBreakdown();
-   }
-
-   public static final String[] INPUTS = newInputs();
-
-   @Override
-   public String[] getInputs() {
-      return INPUTS;
-   }
-
-   //@formatter:off
+public class FourHundred01EveryNumberInOr {
+//@formatter:off
    public static final String NEG_400_TO_350 = "-400|-399|-398|-397|-396|-395|-394|-393|-392|-391|-390|-389|-388|-387|-386|-385|-384|-383|-382|-381|-380|-379|-378|-377|-376|-375|-374|-373|-372|-371|-370|-369|-368|-367|-366|-365|-364|-363|-362|-361|-360|-359|-358|-357|-356|-355|-354|-353|-352|-351|-350";
    public static final String NEG_349_TO_300 = "-349|-348|-347|-346|-345|-344|-343|-342|-341|-340|-339|-338|-337|-336|-335|-334|-333|-332|-331|-330|-329|-328|-327|-326|-325|-324|-323|-322|-321|-320|-319|-318|-317|-316|-315|-314|-313|-312|-311|-310|-309|-308|-307|-306|-305|-304|-303|-302|-301|-300";
    public static final String NEG_299_TO_250 = "-299|-298|-297|-296|-295|-294|-293|-292|-291|-290|-289|-288|-287|-286|-285|-284|-283|-282|-281|-280|-279|-278|-277|-276|-275|-274|-273|-272|-271|-270|-269|-268|-267|-266|-265|-264|-263|-262|-261|-260|-259|-258|-257|-256|-255|-254|-253|-252|-251|-250";
@@ -44,25 +35,26 @@ public class FourHundred01EveryNumberInOrToBenchmark extends AbstractNeg400To400
                        TWO01_TO_250, TWO51_TO_300, THREE01_TO_350, THREE51_TO_400};
    public static final String NEG_400_TO_400 = Arrays.stream(NEG_400_TO_400_PIECES).
          collect(joining("|"));
-   //@formatter:on
-   @Override
-   public String getRegex() {
-      //No bounds, captured, redundancies, unmaintainable.
-      //But! Obviously correct, so a good starting point.
-      return "(" + NEG_400_TO_400 + ")";
+//@formatter:on
+
+   public static void main(String[] ignored) {
+      String regex = "(" + NEG_400_TO_400 + ")";
+      System.out.println(regex);
+
+      String[] inputs = newInputs();
+
+      Matcher matcher = Pattern.compile(regex).matcher("ignored input");
+
+      Arrays.stream(inputs).forEach(input -> {
+
+         boolean matches = matcher.reset(input).find();
+
+         System.out.printf("\"%s\" is %sin range.%n", input, (matches ? "" : "*NOT* "));
+      });
    }
 
-   private static final String[] newInputs() {
-      List<String> strList = newIntInputs().stream().map(Object::toString).collect(Collectors.toList());
+   public static final String[] newInputs() {
 
-      //Now a fraction the size of the original, with random elements from it.
-
-      strList.add(0, "-401");
-      strList.addAll(Arrays.asList("401", "Jimmy", "u390x", "-0", "0000", "   (45)   "));
-
-      return strList.toArray(new String[strList.size()]);
-   }
-   public static final List<Integer> newIntInputs() {
       //All numbers, including some non-valid
       List<Integer> intList = IntStream.range(-450, 450).boxed().collect(Collectors.toList());
 
@@ -72,8 +64,12 @@ public class FourHundred01EveryNumberInOrToBenchmark extends AbstractNeg400To400
       intList.subList(size / 10, size).clear();
       Collections.sort(intList);
 
+      List<String> strList = intList.stream().map(Object::toString).collect(Collectors.toList());
+
       //Now a fraction the size of the original, with random elements from it.
 
-      return  intList.stream().collect(Collectors.toList());
+      strList.addAll(Arrays.asList("Jimmy", "u390x", "-0", "0000", "   (45)   "));
+
+      return strList.toArray(new String[strList.size()]);
    }
 }

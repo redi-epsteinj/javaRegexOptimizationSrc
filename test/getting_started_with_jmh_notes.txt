@@ -1,0 +1,4 @@
+Getting started with JMH
+
+http://stackoverflow.com/questions/33617788/getting-started-with-jmh-java-lang-outofmemoryerror-java-heap-space
+
