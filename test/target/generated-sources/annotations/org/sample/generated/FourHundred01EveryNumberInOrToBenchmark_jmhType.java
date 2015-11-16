@@ -1,0 +1,4 @@
+package org.sample.generated;
+public class FourHundred01EveryNumberInOrToBenchmark_jmhType extends FourHundred01EveryNumberInOrToBenchmark_jmhType_B3 {
+}
+

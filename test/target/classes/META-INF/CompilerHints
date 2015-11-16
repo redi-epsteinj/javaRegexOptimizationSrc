@@ -4,4 +4,5 @@ dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,org/openjdk/jmh/infra/Blackhole.clearSinks
+inline,org/sample/FourHundred01EveryNumberInOrToBenchmark.testMethod
 inline,org/sample/MyBenchmark.testMethod

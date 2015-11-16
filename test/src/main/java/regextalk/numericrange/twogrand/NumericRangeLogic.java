@@ -1,6 +1,7 @@
 package regextalk.numericrange.twogrand;
 
 import java.util.Arrays;
+
 import benchmark.TaskToBenchmark;
 
 public class NumericRangeLogic implements TaskToBenchmark {

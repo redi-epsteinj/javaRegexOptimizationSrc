@@ -2,6 +2,11 @@ package regextalk.numericrange;
 
 import static java.util.stream.Collectors.joining;
 
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.RunnerException;
+import org.openjdk.jmh.runner.options.Options;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -9,18 +14,28 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class FourHundred01EveryNumberInOrToBenchmark extends AbstractNeg400To400 {
-   public static void main(String[] ignored) {
-      new FourHundred01EveryNumberInOrToBenchmark().setupRunBreakdown();
-   }
+//
+//    public static void main(String[] ignored) {
+//        new FourHundred01EveryNumberInOrToBenchmark().setupRunBreakdown();
+//    }
 
-   public static final String[] INPUTS = newInputs();
+    public static void main(String[] args) throws RunnerException {
+        Options opt = new OptionsBuilder()
+                .include(".*" + FourHundred01EveryNumberInOrToBenchmark.class.getSimpleName() + ".*")
+                .forks(1)
+                .build();
 
-   @Override
-   public String[] getInputs() {
-      return INPUTS;
-   }
+        new Runner(opt).run();
+    }
 
-   //@formatter:off
+    public static final String[] INPUTS = newInputs();
+
+    @Override
+    public String[] getInputs() {
+        return INPUTS;
+    }
+
+    //@formatter:off
    public static final String NEG_400_TO_350 = "-400|-399|-398|-397|-396|-395|-394|-393|-392|-391|-390|-389|-388|-387|-386|-385|-384|-383|-382|-381|-380|-379|-378|-377|-376|-375|-374|-373|-372|-371|-370|-369|-368|-367|-366|-365|-364|-363|-362|-361|-360|-359|-358|-357|-356|-355|-354|-353|-352|-351|-350";
    public static final String NEG_349_TO_300 = "-349|-348|-347|-346|-345|-344|-343|-342|-341|-340|-339|-338|-337|-336|-335|-334|-333|-332|-331|-330|-329|-328|-327|-326|-325|-324|-323|-322|-321|-320|-319|-318|-317|-316|-315|-314|-313|-312|-311|-310|-309|-308|-307|-306|-305|-304|-303|-302|-301|-300";
    public static final String NEG_299_TO_250 = "-299|-298|-297|-296|-295|-294|-293|-292|-291|-290|-289|-288|-287|-286|-285|-284|-283|-282|-281|-280|-279|-278|-277|-276|-275|-274|-273|-272|-271|-270|-269|-268|-267|-266|-265|-264|-263|-262|-261|-260|-259|-258|-257|-256|-255|-254|-253|-252|-251|-250";
@@ -47,33 +62,36 @@ public class FourHundred01EveryNumberInOrToBenchmark extends AbstractNeg400To400
    //@formatter:on
    @Override
    public String getRegex() {
-      //No bounds, captured, redundancies, unmaintainable.
-      //But! Obviously correct, so a good starting point.
-      return "(" + NEG_400_TO_400 + ")";
+       //No bounds, captured, redundancies, unmaintainable.
+       //But! Obviously correct, so a good starting point.
+       return "(" + NEG_400_TO_400 + ")";
    }
 
-   private static final String[] newInputs() {
-      List<String> strList = newIntInputs().stream().map(Object::toString).collect(Collectors.toList());
+    private static final String[] newInputs() {
+        List<String> strList = newIntInputs().stream().map(Object::toString)
+                .collect(Collectors.toList());
 
-      //Now a fraction the size of the original, with random elements from it.
+        //Now a fraction the size of the original, with random elements from it.
 
-      strList.add(0, "-401");
-      strList.addAll(Arrays.asList("401", "Jimmy", "u390x", "-0", "0000", "   (45)   "));
+        strList.add(0, "-401");
+        strList.addAll(Arrays.asList("401", "Jimmy", "u390x", "-0", "0000", "   (45)   "));
 
-      return strList.toArray(new String[strList.size()]);
-   }
-   public static final List<Integer> newIntInputs() {
-      //All numbers, including some non-valid
-      List<Integer> intList = IntStream.range(-450, 450).boxed().collect(Collectors.toList());
+        return strList.toArray(new String[strList.size()]);
+    }
 
-      Collections.shuffle(intList);
+    public static final List<Integer> newIntInputs() {
+        //All numbers, including some non-valid
+        List<Integer> intList = IntStream.range(-450, 450).boxed().collect(Collectors.toList());
 
-      final int size = intList.size();
-      intList.subList(size / 10, size).clear();
-      Collections.sort(intList);
+        Collections.shuffle(intList);
 
-      //Now a fraction the size of the original, with random elements from it.
+        final int size = intList.size();
+        intList.subList(size / 10, size).clear();
+        Collections.sort(intList);
 
-      return  intList.stream().collect(Collectors.toList());
-   }
+        //Now a fraction the size of the original, with random elements from it.
+
+        return intList.stream().collect(Collectors.toList());
+    }
+
 }
