@@ -2,3 +2,4 @@ Getting started with JMH
 
 http://stackoverflow.com/questions/33617788/getting-started-with-jmh-java-lang-outofmemoryerror-java-heap-space
 
+java -Djmh.ignoreLock=true -jar target/benchmarks.jar -f 1 -wi 0 -i 2 FourHundred01EveryNumberInOrToBenchmark -v EXTRA
