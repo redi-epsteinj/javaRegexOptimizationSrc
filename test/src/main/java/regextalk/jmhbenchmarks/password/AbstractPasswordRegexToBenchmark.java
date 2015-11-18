@@ -1,4 +1,4 @@
-package org.sample.numericrange;
+package regextalk.jmhbenchmarks.password;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
@@ -6,14 +6,14 @@ import org.openjdk.jmh.annotations.State;
 
 import java.util.regex.Pattern;
 
-@State(Scope.Thread)
-public abstract class AbstractNumericRangeToBenchmark {
+import regextalk.jmhbenchmarks.numericrange.RegexTalkUtil;
 
+@State(Scope.Thread)
+public abstract class AbstractPasswordRegexToBenchmark {
 
     private final Pattern pattern;
-    private static final String[] INPUTS = NumericRangeUtil.newInputs();
 
-    public AbstractNumericRangeToBenchmark(String regex) {
+    public AbstractPasswordRegexToBenchmark(String regex) {
         pattern = Pattern.compile(regex);
     }
 
@@ -23,6 +23,6 @@ public abstract class AbstractNumericRangeToBenchmark {
 
     @Benchmark
     public void testMethod() {
-        NumericRangeUtil.runCodeToTest(getPattern(), INPUTS);
+        RegexTalkUtil.runCodeToTest(getPattern(), PasswordUtil.INPUTS);
     }
 }

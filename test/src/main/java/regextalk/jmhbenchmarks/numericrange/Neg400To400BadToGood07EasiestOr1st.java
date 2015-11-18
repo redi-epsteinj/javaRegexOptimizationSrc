@@ -1,4 +1,4 @@
-package org.sample.numericrange;
+package regextalk.jmhbenchmarks.numericrange;
 
 //@formatter:off
 /**
@@ -13,7 +13,7 @@ public class Neg400To400BadToGood07EasiestOr1st extends AbstractNumericRangeToBe
          "[1-9]?[0-9]|" +
          "[1-3][0-9]{2}";
 
-   public static final String REGEX = "(?:" + regextalk.numericrange.FourHundred05OptionalDashToBenchmark.ONE_OR_MORE_ZEROS_NOT_PRECEDED_BY_DASH + "|-?(?:" +
+   public static final String REGEX = "(?:" + FourHundred05OptionalDashToBenchmark.ONE_OR_MORE_ZEROS_NOT_PRECEDED_BY_DASH + "|-?(?:" +
              ONE_TO_400 + "))";
 //@formatter:on
 

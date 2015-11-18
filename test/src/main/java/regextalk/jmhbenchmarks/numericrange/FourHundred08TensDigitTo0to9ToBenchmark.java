@@ -1,4 +1,4 @@
-package org.sample.numericrange;
+package regextalk.jmhbenchmarks.numericrange;
 
 //@formatter:off
 /**
@@ -15,7 +15,7 @@ public class FourHundred08TensDigitTo0to9ToBenchmark extends AbstractNumericRang
             "3[0-9][0-9]|" +
             "400";
 
-    public static final String REGEX = "\\b(?:" + regextalk.numericrange.FourHundred05OptionalDashToBenchmark.ONE_OR_MORE_ZEROS_NOT_PRECEDED_BY_DASH +
+    public static final String REGEX = "\\b(?:" + FourHundred05OptionalDashToBenchmark.ONE_OR_MORE_ZEROS_NOT_PRECEDED_BY_DASH +
                "|-?(?:" + ONE_TO_400 + "))\\b";
 
     public FourHundred08TensDigitTo0to9ToBenchmark() {

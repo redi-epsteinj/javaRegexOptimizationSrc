@@ -1,11 +1,8 @@
-package org.sample.numericrange;
-
-import static java.lang.String.format;
+package regextalk.jmhbenchmarks.numericrange;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -37,22 +34,5 @@ public class NumericRangeUtil {
         //Now a tenth of the original size, with random elements from it.
 
         return intList.stream().collect(Collectors.toList());
-    }
-
-    public static void runCodeToTest(Pattern pattern, String[] inputs) {
-        int[] indexElem0 = {0};
-        Arrays.stream(inputs).forEach(input -> {
-            if (input == null) {
-                String message = format("input element %d is null. All inputs: %s", indexElem0[0],
-                                        Arrays.toString(inputs));
-                //System.out.println(message);
-            }
-
-            assert input != null;
-
-            boolean inRange = pattern.matcher(input).matches();
-            //System.out.printf("* %s: %satched%n", input, (inRange ? "M" : "NOT m"));
-            indexElem0[0]++;
-        });
     }
 }

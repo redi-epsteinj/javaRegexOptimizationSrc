@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2708f1c4-09fd-43d6-8923-c9d8fc60b943" name="Default" comment="" />
+    <list default="true" id="2708f1c4-09fd-43d6-8923-c9d8fc60b943" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/RegexTalkUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordRegexToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password01RegexThreeRulesToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password02RegexTwoRulesToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password03LogicThreeRulesToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password04LogicTwoRulesToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordUtil.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType_B1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType_B2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType_B3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_testMethod_jmhTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_testMethod_jmhTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/MyBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/MyBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/AbstractNumericRangeToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/AbstractNumericRangeToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred05OptionalDashToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred05OptionalDashToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred10FurtherConsolidationToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred10FurtherConsolidationToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred11BestToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred11BestToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred12LogicToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred12LogicToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400BadToGood07EasiestOr1st.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/Neg400To400BadToGood07EasiestOr1st.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400Good400Last.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/Neg400To400Good400Last.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/NumericRangeUtil.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/NumericRangeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/target/benchmarks.jar" afterPath="$PROJECT_DIR$/../test/target/benchmarks.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/target/test-1.0.jar" afterPath="$PROJECT_DIR$/../test/target/test-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password01RegexThreeRulesToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password01RegexThreeRulesToBenchmark.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password02RegexTwoRulesToBenchmark.java" afterPath="$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password02RegexTwoRulesToBenchmark.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/target/classes/META-INF/BenchmarkList" afterPath="$PROJECT_DIR$/../test/target/classes/META-INF/BenchmarkList" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/target/classes/META-INF/CompilerHints" afterPath="$PROJECT_DIR$/../test/target/classes/META-INF/CompilerHints" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../test/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../test/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../test/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+    </list>
     <ignored path="regex-talk-benchmarks.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/../test/target/maven-archiver/" />
@@ -23,268 +70,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FourHundred01EveryNumberInOrToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java">
+      <file leaf-file-name="AbstractPasswordRegexToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordRegexToBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AbstractNumericRangeToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/AbstractNumericRangeToBenchmark.java">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/AbstractNumericRangeToBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred04BoundedAndNonCapturingToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding>
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred05OptionalDashToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred05OptionalDashToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding>
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1452#1453#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred06DigitOnesDigitDToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred07OnesDigit0to9ToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FourHundred08TensDigitTo0to9ToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java">
+      <file leaf-file-name="Password01RegexThreeRulesToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password01RegexThreeRulesToBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="119" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FourHundred09HundredsDigitTo0to9ToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="123" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
-              <folding>
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred10FurtherConsolidationToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred10FurtherConsolidationToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-              <folding>
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred11BestToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred11BestToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Neg400To400BadToGood07EasiestOr1st.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400BadToGood07EasiestOr1st.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
-              <folding>
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Neg400To400Good400Last.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400Good400Last.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred12LogicToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred12LogicToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Neg400To400BadToGood07EasiestOr1st.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/Neg400To400BadToGood07EasiestOr1st.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Neg400To400Good400Last.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/Neg400To400Good400Last.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred12LogicToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred12LogicToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred11BestToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred11BestToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred10FurtherConsolidationToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred10FurtherConsolidationToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred09HundredsDigitTo0to9ToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred08TensDigitTo0to9ToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred07OnesDigit0to9ToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred06DigitOnesDigitDToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred05OptionalDashToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred05OptionalDashToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred02BoundedOnlyToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred02BoundedOnlyToBenchmark.java">
+      <file leaf-file-name="Password04LogicTwoRulesToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password04LogicTwoRulesToBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -293,31 +120,121 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FourHundred04BoundedAndNonCapturingToBenchmark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java">
+      <file leaf-file-name="Password01RegexThreeRulesToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password01RegexThreeRulesToBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="86" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="86" />
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getting_started_with_jmh_notes.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/getting_started_with_jmh_notes.txt">
+      <file leaf-file-name="AbstractPasswordRegex.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/AbstractPasswordRegex.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NumericRangeUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/NumericRangeUtil.java">
+      <file leaf-file-name="Password03LogicThreeRulesToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password03LogicThreeRulesToBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5916115">
-              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="49" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Password03LogicThreeRulesToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password03LogicThreeRulesToBenchmark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="116" />
+              <folding>
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Password04LogicTwoRulesToBenchmark.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password04LogicTwoRulesToBenchmark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07488987">
+              <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Password02RegexTwoRulesToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password02RegexTwoRulesToBenchmark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractPasswordLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/AbstractPasswordLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractPasswordLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1688#1689#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordToBenchmarkComposer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/PasswordToBenchmarkComposer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/PasswordToBenchmark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordToBenchmark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordToBenchmark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -331,6 +248,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -358,27 +278,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../test/src/main/java/benchmark/TaskToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred12LogicToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/AbstractRegexToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/FourHundred01EveryNumberInOrToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/AbstractNeg400To400.java" />
-        <option value="$PROJECT_DIR$/../test/getting_started_with_jmh_notes.txt" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred05OptionalDashToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred10FurtherConsolidationToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred11BestToBenchmark.java" />
-        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/AbstractNumericRangeToBenchmark.java" />
         <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred12LogicToBenchmark.java" />
         <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400BadToGood07EasiestOr1st.java" />
         <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400Good400Last.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/password/Password01RegexThreeRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password02RegexTwoRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/password/Password02RegexTwoRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/RegexTalkUtil.java" />
         <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/NumericRangeUtil.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/AbstractNumericRangeToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/password/AbstractPasswordRegexToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/org/sample/password/PasswordUtil.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordRegexToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password01RegexThreeRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password01RegexThreeRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password02RegexTwoRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password04LogicTwoRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password03LogicThreeRulesToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordToBenchmark.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordLogic.java" />
+        <option value="$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordUtil.java" />
       </list>
     </option>
   </component>
@@ -399,13 +319,23 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1440" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1053" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -432,7 +362,6 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -461,19 +390,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regex-talk-benchmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="generated-sources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="regextalk" />
+              <option name="myItemId" value="annotations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,8 +441,34 @@
               <option name="myItemId" value="regextalk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="numericrange" />
+              <option name="myItemId" value="regex-talk-benchmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regextalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="split" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,11 +498,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="numericrange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twogrand" />
+              <option name="myItemId" value="replaceall" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,7 +524,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
+              <option name="myItemId" value="regextalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="password" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,7 +554,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
+              <option name="myItemId" value="regextalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmhbenchmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regex-talk-benchmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regextalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmhbenchmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="password" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regex-talk-benchmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regextalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmhbenchmarks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -621,6 +654,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -642,6 +676,8 @@
       <recent name="org.sample.numericrange" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="regextalk.jmhbenchmarks.password" />
+      <recent name="org.sample.password" />
       <recent name="org.sample.numericrange" />
       <recent name="org.sample" />
     </key>
@@ -935,31 +971,31 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28700745" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26091588" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28700745" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -978,20 +1014,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred05OptionalDashToBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred05OptionalDashToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.62229615">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
@@ -1000,178 +1025,171 @@
           <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33943427">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred01EveryNumberInOrToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42429283">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/AbstractNeg400To400.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14143094">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred03NonCapturingOnlyToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056572378">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password01RegexThreeRulesToBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/AbstractPasswordRegex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password04LogicTwoRulesToBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="119" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/AbstractPasswordLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/Password03LogicThreeRulesToBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="123" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
-          <folding>
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred10FurtherConsolidationToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred10FurtherConsolidationToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred11BestToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred12LogicToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/FourHundred11BestToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/FourHundred12LogicToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/Neg400To400BadToGood07EasiestOr1st.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400BadToGood07EasiestOr1st.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
-          <folding>
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/numericrange/Neg400To400Good400Last.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/Neg400To400Good400Last.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/AbstractNumericRangeToBenchmark.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/numericrange/AbstractNumericRangeToBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/PasswordToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/password/PasswordToBenchmarkComposer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordRegexToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/src/main/java/org/sample/numericrange/NumericRangeUtil.java">
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/PasswordUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5916115">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password01RegexThreeRulesToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password03LogicThreeRulesToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="116" />
+          <folding>
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password02RegexTwoRulesToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/src/main/java/regextalk/jmhbenchmarks/password/Password04LogicTwoRulesToBenchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07488987">
+          <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
           <folding />
         </state>
       </provider>

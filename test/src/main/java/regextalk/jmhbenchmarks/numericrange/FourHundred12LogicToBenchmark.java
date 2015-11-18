@@ -1,4 +1,4 @@
-package org.sample.numericrange;
+package regextalk.jmhbenchmarks.numericrange;
 
 //@formatter:off
 import org.openjdk.jmh.annotations.Benchmark;

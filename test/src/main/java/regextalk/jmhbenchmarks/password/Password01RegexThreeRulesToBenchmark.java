@@ -1,17 +1,13 @@
-package regextalk.password;
+package regextalk.jmhbenchmarks.password;
 
+import regextalk.password.Password02RegexTwoRulesToBenchmark;
+
+//@formatter:off
 /**
- * http://stackoverflow.com/questions/28886707/how-to-create-regex-for-passwords-validate-with-length-8-24-and-contain-at-lea
+ java -Djmh.ignoreLock=true -jar target/benchmarks.jar -f 1 -wi 0 -i 2 -v EXTRA Password01RegexThreeRulesToBenchmark
  */
-public class Password01RegexThreeRulesToBenchmark extends AbstractPasswordRegex {
-
-    public Password01RegexThreeRulesToBenchmark() {
-        super(REGEX);
-    }
-
-    public static void main(String[] args) {
-        new Password01RegexThreeRulesToBenchmark().setupRunBreakdown();
-    }
+//@formatter:on
+public class Password01RegexThreeRulesToBenchmark extends AbstractPasswordRegexToBenchmark {
 
     private static final String SPECIAL_CHARS = Password02RegexTwoRulesToBenchmark.SPECIAL_CHARS;
     private static final String LKA_LOWER = Password02RegexTwoRulesToBenchmark.LKA_LOWER;
@@ -35,4 +31,9 @@ public class Password01RegexThreeRulesToBenchmark extends AbstractPasswordRegex 
          "{8,24}" +                               //8 to 24 chars
       "$";                                        //end of input
 //@formatter:on
+
+    public Password01RegexThreeRulesToBenchmark() {
+        super(REGEX);
+    }
+
 }

@@ -2,17 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41529e91-53c8-4ad6-9fe5-85ee7ac22950" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/FourHundred01EveryNumberInOrToBenchmark.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex-talk-benchmarks/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/RegexTalkUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/password/AbstractPasswordRegexToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/password/Password01RegexThreeRulesToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/password/Password02RegexTwoRulesToBenchmark.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/password/PasswordUtil.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType_B1.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType_B2.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_jmhType_B3.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/FourHundred01EveryNumberInOrToBenchmark_testMethod_jmhTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_jmhType_B3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/target/generated-sources/annotations/org/sample/generated/MyBenchmark_testMethod_jmhTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/MyBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/MyBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/AbstractNumericRangeToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/AbstractNumericRangeToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred01EveryNumberInOrToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred04BoundedAndNonCapturingToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred05OptionalDashToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred05OptionalDashToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred06DigitOnesDigitDToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred07OnesDigit0to9ToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred08TensDigitTo0to9ToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred09HundredsDigitTo0to9ToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred10FurtherConsolidationToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred10FurtherConsolidationToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred11BestToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred11BestToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred12LogicToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/FourHundred12LogicToBenchmark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/Neg400To400BadToGood07EasiestOr1st.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/Neg400To400BadToGood07EasiestOr1st.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/Neg400To400Good400Last.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/Neg400To400Good400Last.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/NumericRangeUtil.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/jmhbenchmarks/numericrange/NumericRangeUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/target/benchmarks.jar" afterPath="$PROJECT_DIR$/test/target/benchmarks.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/target/test-1.0.jar" afterPath="$PROJECT_DIR$/test/target/test-1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regex-talk-benchmarks/.idea/workspace.xml" afterPath="$PROJECT_DIR$/regex-talk-benchmarks/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/regextalk/password/Password01RegexThreeRulesToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/password/Password01RegexThreeRulesToBenchmark.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/src/main/java/regextalk/password/Password02RegexTwoRulesToBenchmark.java" afterPath="$PROJECT_DIR$/test/src/main/java/regextalk/password/Password02RegexTwoRulesToBenchmark.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/target/classes/META-INF/BenchmarkList" afterPath="$PROJECT_DIR$/test/target/classes/META-INF/BenchmarkList" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/target/classes/META-INF/CompilerHints" afterPath="$PROJECT_DIR$/test/target/classes/META-INF/CompilerHints" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/test/target/maven-archiver/pom.properties" />
@@ -46,10 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FourHundred04BoundedAndNonCapturing.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FourHundred04BoundedAndNonCapturing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/regextalk/numericrange/toshow/FourHundred04BoundedAndNonCapturing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.15011038">
               <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding />
             </state>
@@ -141,16 +167,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourHundred01EveryNumberInOrToBenchmark.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9627193">
-              <caret line="77" column="25" selection-start-line="60" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -269,7 +285,7 @@
     <option name="x" value="1440" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -640,8 +656,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -710,27 +724,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -744,7 +738,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regextalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regex talk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regex talk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -752,19 +760,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
+              <option name="myItemId" value="regextalk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -772,9 +768,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regex talk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regex talk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regextalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="numericrange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toshow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1238,11 +1262,11 @@
     <option name="totallyTimeSpent" value="196709000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="1440" y="23" width="1920" height="1053" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19382322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30617678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1343,6 +1367,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/regextalk/numericrange/toshow/FourHundred11Best.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/regextalk/numericrange/toshow/FourHundred01EveryNumberInOr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1380,7 +1412,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/regextalk/numericrange/toshow/FourHundred04BoundedAndNonCapturing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.15011038">
           <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
         </state>
@@ -1494,14 +1526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/java/org/sample/numericrange/FourHundred01EveryNumberInOrToBenchmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9627193">
-          <caret line="77" column="25" selection-start-line="60" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>

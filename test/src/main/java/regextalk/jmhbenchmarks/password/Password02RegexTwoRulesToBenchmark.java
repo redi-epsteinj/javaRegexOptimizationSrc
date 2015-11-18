@@ -1,23 +1,19 @@
-package regextalk.password;
-
-/**
- * http://stackoverflow.com/questions/28886707/how-to-create-regex-for-passwords-validate-with-length-8-24-and-contain-at-lea
- */
-public class Password02RegexTwoRulesToBenchmark extends AbstractPasswordRegex  {
-   public Password02RegexTwoRulesToBenchmark() {
-      super(REGEX);
-   }
-   public static void main(String[] args) {
-      new Password02RegexTwoRulesToBenchmark().setupRunBreakdown();
-   }
-
-   public static final String SPECIAL_CHARS = "><?.,!@#$%^&*+=_)(\\}\\{\\]\\[";
-   public static final String LKA_LOWER = "(?=.*[a-z])";    //LKA: lookahead
-   public static final String LKA_UPPER = "(?=.*[A-Z])";
-   public static final String LKA_DIGIT = "(?=.*[0-9])";
-   public static final String LKA_SPECIAL = "(?=.*[" + SPECIAL_CHARS + "])";
+package regextalk.jmhbenchmarks.password;
 
 //@formatter:off
+/**
+ java -Djmh.ignoreLock=true -jar target/benchmarks.jar -f 1 -wi 0 -i 2 -v EXTRA Password02RegexTwoRulesToBenchmark
+ */
+//@formatter:on
+public class Password02RegexTwoRulesToBenchmark extends AbstractPasswordRegexToBenchmark {
+
+    public static final String SPECIAL_CHARS = "><?.,!@#$%^&*+=_)(\\}\\{\\]\\[";
+    public static final String LKA_LOWER = "(?=.*[a-z])";    //LKA: lookahead
+    public static final String LKA_UPPER = "(?=.*[A-Z])";
+    public static final String LKA_DIGIT = "(?=.*[0-9])";
+    public static final String LKA_SPECIAL = "(?=.*[" + SPECIAL_CHARS + "])";
+
+    //@formatter:off
    private static final String REGEX = "" +
       "^" +                                //start of input
          "(?:" +                           //non capturing group
@@ -37,4 +33,9 @@ public class Password02RegexTwoRulesToBenchmark extends AbstractPasswordRegex  {
       "{8,24}" +                            //8 to 24 chars
       "$";                                  //end of input
 //@formatter:on
+
+    public Password02RegexTwoRulesToBenchmark() {
+        super(REGEX);
+    }
+
 }

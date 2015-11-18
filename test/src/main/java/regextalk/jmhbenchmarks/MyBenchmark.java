@@ -29,7 +29,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.sample;
+package regextalk.jmhbenchmarks;
 
 import org.openjdk.jmh.annotations.Benchmark;
 

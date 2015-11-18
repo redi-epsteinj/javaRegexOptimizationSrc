@@ -1,4 +1,4 @@
-package org.sample.numericrange;
+package regextalk.jmhbenchmarks.numericrange;
 
 import static java.util.stream.Collectors.joining;
 
