@@ -1,5 +1,8 @@
 package regextalk.numericrange;
 
+/**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
+ */
 public class FourHundred07OnesDigit0to9ToBenchmark extends AbstractNeg400To400 {
 
    public static void main(String[] ignored) {

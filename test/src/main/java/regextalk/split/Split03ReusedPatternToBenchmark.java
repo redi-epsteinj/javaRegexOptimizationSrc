@@ -3,6 +3,9 @@ package regextalk.split;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
+/**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
+ */
 public class Split03ReusedPatternToBenchmark extends AbstractSplit {
 
    public Split03ReusedPatternToBenchmark(String regex) {

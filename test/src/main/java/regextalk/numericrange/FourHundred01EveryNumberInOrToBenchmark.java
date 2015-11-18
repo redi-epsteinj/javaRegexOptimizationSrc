@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
+ */
 public class FourHundred01EveryNumberInOrToBenchmark extends AbstractNeg400To400 {
 //
 //    public static void main(String[] ignored) {

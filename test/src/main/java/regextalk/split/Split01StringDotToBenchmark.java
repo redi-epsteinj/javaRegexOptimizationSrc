@@ -2,6 +2,9 @@ package regextalk.split;
 
 import java.util.Arrays;
 
+/**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
+ */
 public class Split01StringDotToBenchmark extends AbstractSplit {
 
    public Split01StringDotToBenchmark(String regex) {

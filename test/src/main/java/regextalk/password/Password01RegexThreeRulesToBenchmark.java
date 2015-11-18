@@ -1,6 +1,7 @@
 package regextalk.password;
 
 /**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
  * http://stackoverflow.com/questions/28886707/how-to-create-regex-for-passwords-validate-with-length-8-24-and-contain-at-lea
  */
 public class Password01RegexThreeRulesToBenchmark extends AbstractPasswordRegex {

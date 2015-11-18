@@ -2,6 +2,9 @@ package regextalk.replaceall;
 
 import java.util.Arrays;
 
+/**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
+ */
 public class ReplaceAll01StringDotToBenchmark implements ReplaceAllToBenchmark {
 
    public static void main(String[] cmd_lineParams) {

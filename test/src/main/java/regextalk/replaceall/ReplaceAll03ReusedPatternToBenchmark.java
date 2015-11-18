@@ -3,6 +3,9 @@ package regextalk.replaceall;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
+/**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
+ */
 public class ReplaceAll03ReusedPatternToBenchmark implements ReplaceAllToBenchmark {
 
    public static void main(String[] cmd_lineParams) {

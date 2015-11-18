@@ -4,6 +4,9 @@ import static java.util.stream.Collectors.joining;
 
 import java.util.Arrays;
 
+/**
+ * Benchmarks using my own custom benchmark library, meaning unreliable. Use the JMH benchmarks instead.
+ */
 public class FourHundred05OptionalDashToBenchmark extends AbstractNeg400To400 {
 
    public static final String ONE_OR_MORE_ZEROS_NOT_PRECEDED_BY_DASH = "(?<!-)0+";
