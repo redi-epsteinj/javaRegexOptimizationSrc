@@ -4,5 +4,9 @@ dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,org/openjdk/jmh/infra/Blackhole.clearSinks
-inline,org/sample/FourHundred01EveryNumberInOrToBenchmark.testMethod
-inline,org/sample/MyBenchmark.testMethod
+inline,regextalk/jmhbenchmarks/MyBenchmark.testMethod
+inline,regextalk/jmhbenchmarks/numericrange/AbstractNumericRangeToBenchmark.testMethod
+inline,regextalk/jmhbenchmarks/numericrange/FourHundred12LogicToBenchmark.runCodeToBeTimed
+inline,regextalk/jmhbenchmarks/password/AbstractPasswordLogic.runCodeToBeTimed
+inline,regextalk/jmhbenchmarks/password/AbstractPasswordRegexToBenchmark.testMethod
+inline,regextalk/jmhbenchmarks/replaceall/AbstractReplaceAllToBenchmark.runCodeToBeTimed
